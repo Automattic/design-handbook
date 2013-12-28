@@ -68,7 +68,7 @@
 				<div class="demo">
 					<input type="text" name="name" value="" id="text-input" placeholder="Placeholder text.">
 				</div><!-- .demo -->
-				<pre class="pre--sub"></pre>
+				<pre class="pre--sub">&lt;input type="text" name="name" value="" id="text-input" placeholder="Placeholder text."&gt;</pre>
 			</article><!-- .sub-->
 
 			<article class="sub">
@@ -77,7 +77,7 @@
 				<div class="demo">
 					<textarea name="name" id="textarea">Some regular text.</textarea>
 				</div><!-- .demo -->
-				<pre class="pre--sub"></pre>
+				<pre class="pre--sub">&lt;textarea name="name" id="textarea"&gt;Some regular text.&lt;/textarea&gt;</pre>
 			</article><!-- .sub-->
 
 			<article class="sub">
@@ -87,7 +87,7 @@
 					<input type="radio" name="filters" id="newest" value="newest" checked="checked" /> <label for="newest">Newest</label>
 					<input type="radio" name="filters" id="most-popular" value="most-popular" /> <label for="most-popular">Most Popular</label>
 				</div><!-- .demo -->
-				<pre class="pre--sub">pre</pre>
+				<pre class="pre--sub">&lt;input type="radio" name="filters" id="most-popular" value="most-popular" /&gt; &lt;label for="most-popular"&gt;Most Popular&lt;/label&gt;</pre>
 			</article><!-- .sub-->
 
 			<article class="sub">
