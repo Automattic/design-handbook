@@ -30,8 +30,10 @@ WordPress.com Styles
 @import "base"; // Style naked elements
 
 // Begin partials
+@import "partials/avatars"; // Avatar styles
 @import "partials/buttons"; // Button styles
-// @import "partials/form"; // Form and input styles
+@import "partials/radio-buttons"; // Radio button styles
+@import "partials/form"; // Textarea and input styles
 @import "partials/nav-horizontal"; // Horizontal navigation
 @import "partials/nav-off-canvas"; // Slide-in "hamburger" or drawer menu for small screens
 @import "partials/wpcom-header"; // Blue WordPress.com Header

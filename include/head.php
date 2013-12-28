@@ -15,7 +15,7 @@
         <link rel='stylesheet' href='css/style.css'>
         <script src='js/vendor/modernizr-2.6.2.min.js'></script>
 
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Merriweather:700,900|Open+Sans:400italic,700italic,400,700,300' rel='stylesheet' type='text/css'>
     </head>
 
     <!-- I'd love a a function to add to the body class based on page or page type. EX: typography, colors, cheat-sheet -->

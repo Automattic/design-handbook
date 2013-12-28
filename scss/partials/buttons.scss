@@ -3,7 +3,8 @@
 // ==========================================================================
 
 %button {
-	padding: em(7,13) em(15,13);
+	display: inline-block;
+	padding: em(9,13) em(15,13);
 	font-size: em(13);
 	font-weight: 400;
 	line-height: 1;
@@ -36,7 +37,7 @@
 		);
 	}
 }
-%button-disabled {
+%button--disabled {
 	color: #94cde7;
 	background: #298cba;
 	@include box-shadow(none);
@@ -57,7 +58,7 @@ input[type="submit"] {
 button[disabled],
 input[disabled],
 input[disabled]:hover {
-	@extend %button-disabled;
+	@extend %button--disabled;
 }
 
 
@@ -66,17 +67,17 @@ input[disabled]:hover {
 // ==========================================================================
 
 
-.button-primary,
-.button-secondary {
+.button--primary,
+.button--secondary {
 	@extend %button;
 }
-.button-primary[disabled],
-// .button-primary.disabled, Maybe?
-.button-primary:disabled {
-	@extend %button-disabled;
+.button--primary[disabled],
+// .button--primary.disabled, Maybe?
+.button--primary:disabled {
+	@extend %button--disabled;
 	cursor: default;
 }
-.button-secondary {
+.button--secondary {
 	color: #555;
 	text-shadow: 0 1px 0 rgba(255,255,255,.7);
 	@include gradient(#f5f5f5, #ddd);
@@ -106,9 +107,9 @@ input[disabled]:hover {
 		);
 	}
 }
-.button-secondary[disabled],
-// .button-secondary.disabled, Maybe?
-.button-secondary:disabled {
+.button--secondary[disabled],
+// .button--secondary.disabled, Maybe?
+.button--secondary:disabled {
 	color: #999;
 	background: #e3e3e3;
 	cursor: default;

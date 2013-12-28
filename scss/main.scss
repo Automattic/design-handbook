@@ -8,15 +8,48 @@
 	padding: 0;
 	min-width: 320px;
 	max-width: 960px;
+
+	@media screen and (max-width: 768px) {
+		margin-top: 15px;
+	}
 }
 .primary {
-	// margin-right: 32%; (Will need a side nav)
+	// margin-left: 32%; (Will need a side nav probably)
 }
 .sub {
-	margin-bottom: 30px;
-	padding: 0 20px 12px;
+	margin-bottom: em(30);
+	padding: 0 em(20) em(20);
 	background: #fff;
 	overflow: hidden;
 	@include box-shadow(0 1px 2px rgba(0,0,0,0.075));
+}
+
+// Demo section
+.demo {
 	@extend .clearfix;
+	margin: 0 -20px;
+	padding: 20px;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	background: #fafafa;
+}
+
+// Title styles
+.title--page { // .title--reader might be a better name for this
+	margin: 0 em(14,24) em(20,24) -1px;
+	font-size: em(24);
+	font-weight: 300;
+	line-height: 1;
+}
+.title--sub {
+	margin: 32px 0 0;
+	font: 700 1.9375em/1.318 $merriweather; // 31/16
+}
+
+// Pre styling
+.pre--sub {
+	margin: 0 em(-20,14) em(-20,14);
+	padding: em(20,14);
+	color: #666;
+	font-size: em(14);
 }
