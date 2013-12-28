@@ -27,7 +27,7 @@
         <li><a href="#">Up</a></li>
     </ul>
 </nav>
-<div class="wrapper">
+<div class="content-wrapper">
     <h1>The off-canvas menu is on. To turn it off, simply remove or comment it out from style.scss.</h1>
 
     <p>Donec ullamcorper nulla non metus auctor fringilla. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod. Maecenas sed diam eget risus varius blandit sit amet non magna. Nulla vitae elit libero, a pharetra augue. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
