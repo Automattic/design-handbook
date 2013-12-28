@@ -4,17 +4,16 @@
 
 .main {
 	position: relative;
-	margin: 2.5% auto 0;
-	width: 95%;
+	margin: 61px auto 0;
+	padding: 0;
 	min-width: 320px;
 	max-width: 960px;
 }
 .primary {
-	// margin-right: 32%;
+	// margin-right: 32%; (Will need a side nav)
 }
 .sub {
-	height: 800px;
-	margin-bottom: 6%;
+	margin-bottom: 30px;
 	padding: 0 20px 12px;
 	background: #fff;
 	overflow: hidden;
