@@ -1,0 +1,27 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Michael Arestad -- @michaelarestad
+
+# THANKS
+
+    Everyone who worked on any of the technology Frankensteined into this glorious mess
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3, SCSS
+    jQuery, Modernizr
+
+    HTML5 ★ Boilerplate v4.0.1
+    h5bp.com
+
+    Bootstrap Responsive v2.2.1
+    Copyright 2012 Twitter, Inc
+    Licensed under the Apache License v2.0
+    http://www.apache.org/licenses/LICENSE-2.0
+    Designed and built with all the love in the world @twitter by @mdo and @fat.
+
+    Tim Pietrusky's Off Canvas menu:
+    http://codepen.io/TimPietrusky/pen/CLIsl

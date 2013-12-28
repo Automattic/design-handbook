@@ -1,0 +1,130 @@
+// ==========================================================================
+// HAMBURGER (DRAWER) MENU
+// 
+// Based on Tim Pietrusky's Off Canvas menu:
+// http://codepen.io/TimPietrusky/pen/CLIsl
+//
+// Refer to hamburger.kit as an example for quick setup.
+//
+// SETUP:
+// 1. Copy the input and following label from hamburger.kit and paste them
+//    above your menu.
+//    [lines 5-6 of hamburger.kit]
+// 2. Add the class .nav-off-canvas to the menu container (nav or div).
+//    [line 8 of hamburger.kit]
+// 3. Add the class .wrapper to the element containing all elements on the
+//    website below the menu.
+//    [line 32 of hamburger.kit]
+// ==========================================================================
+
+
+// Main content goes in this container to behave properly on small screens
+.wrapper {
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+}
+// Advanced Checkbox Hack 
+.checkbox-off-canvas {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+.label-off-canvas {
+    display: none;
+    position: fixed;
+    right: 6px;
+    top: 6px;
+    color: #888;
+    font: 30px/44px Arial, sans-serif;
+    background: #fafafa;
+    cursor: pointer;
+    user-select: none;
+    z-index: 9999;
+    border: 1px solid #e3e3e3;
+    @include border-radius(3px);
+
+    &:after {
+        content:"\2261";
+        display: block;
+        width: 44px;
+        text-align: center;
+    }
+}
+
+// iPad and smaller
+@media screen and (max-width: 768px) {
+    $menu_width: 260px;
+
+    .wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        padding: 56px 30px 30px;
+    }
+    .nav-off-canvas,
+    .wrapper {
+        @include transition(all .3s ease-in-out);
+        @include transform(translate3d(0px, 0px, 0px));
+    }
+    .nav-off-canvas {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left:-$menu_width;
+        width: $menu_width;
+        background: #fafafa;
+        border-right: 1px solid #d5d7d7;
+        overflow: scroll;
+
+        ul {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+
+            > li {
+                width: 100%;
+            }
+        }
+        li {
+            float: none;
+            width: 100%;
+            background: transparent;
+
+            &:hover {
+                background: transparent;
+            }
+            > ul {
+                position: static;
+                display: block;
+                width: $menu_width;
+                background: transparent;
+
+                &:hover {
+                    background: transparent;
+                }
+            }
+        }
+        a,
+        a:hover,
+        a:visited {
+            display: block;
+            padding: 0 16px;
+            color: #6682ba;
+            font-size: 16px;
+            line-height: 44px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+    }
+    .label-off-canvas {
+        display: block;
+    }
+    .checkbox-off-canvas:checked ~ .label-off-canvas {
+        color: #aaa;;
+    }
+    .checkbox-off-canvas:checked ~ .nav-off-canvas,
+    .checkbox-off-canvas:checked ~ .wrapper {
+        @include transform(translate3d($menu-width, 0px, 0px));
+    }
+}

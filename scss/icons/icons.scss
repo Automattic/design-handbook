@@ -1,0 +1,40 @@
+// ==========================================================================
+// Base icons rules
+// ==========================================================================
+
+.icon {
+	&:before {
+		display: inline-block;
+		position: relative;
+		top: em(3);
+		margin-right: em(4);
+		font-family: $icon; // Automatticons & Genericons
+		font-weight: normal;
+		font-size: 1.375em;
+	}
+}
+
+.wpcom--logo {
+	$size: 32px;
+
+	display: inline-block;
+	position: relative;
+	top: 7px;
+	width: $size;
+	height: $size;
+	text-indent: -9999px;
+	margin-right: 10px;
+
+	&:after {
+		content: 'W';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		font-size: $size;
+		line-height: $size;
+		font-family: $icon; // Automatticons & Genericons
+		font-weight: normal;
+		text-indent: 0;
+	}
+}

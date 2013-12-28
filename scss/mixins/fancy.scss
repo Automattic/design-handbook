@@ -1,0 +1,148 @@
+// ==========================================================================
+// FANCY MIXINS
+//
+// These are custom mixins developed to implement common patterns quickly. 
+//
+// Available Mixins
+//    arrow
+//    arrow-lazy
+//    custom-scrollbar
+//    full-width-bars
+//    replace-image
+//    retina-background
+//
+// ==========================================================================
+
+@mixin arrow($size: 10px, $color: #ccc, $direction: top){
+    @if $direction == "right" {
+        width: 0;
+        height: 0;
+        border-top: $size solid transparent;
+        border-bottom: $size solid transparent;
+        border-left: $size solid $color;
+    } @else if $direction == "down" {
+        width: 0;
+        height: 0;
+        border-left: $size solid transparent;
+        border-right: $size solid transparent;
+        border-top: $size solid $color;
+    } @else if $direction == "left" {
+        width: 0;
+        height: 0;
+        border-top: $size solid transparent;
+        border-bottom: $size solid transparent; 
+        border-right:$size solid $color;
+    } @else {
+        width: 0;
+        height: 0;
+        border-left: $size solid transparent;
+        border-right: $size solid transparent;
+        border-bottom: $size solid $color;
+    }
+}
+
+@mixin arrow-lazy($direction: top, $size: 10px, $color: #ccc, $center: 50%, $margin: -1px, $pseudo: before){
+    position: relative;
+    border-color: $color;
+
+    &:#{$pseudo} {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 0;
+        border-color: $color;
+
+        @if $direction == "right" {
+            top: $center;
+            left: 100%;
+            margin-left: $margin;
+            margin-top: $size * -1;
+            border-top: $size solid transparent;
+            border-bottom: $size solid transparent;
+            border-left: $size solid $color;
+            border-left-color: inherit;
+        } @else if $direction == "down" {
+            top: 100%;
+            left: $center;
+            margin-top: $margin;
+            margin-left: $size * -1;
+            border-left: $size solid transparent;
+            border-right: $size solid transparent;
+            border-top: $size solid $color;
+            border-top-color: inherit;
+        } @else if $direction == "left" {
+            top: $center;
+            right: 100%;
+            margin-right: $margin;
+            margin-top: $size * -1;
+            border-top: $size solid transparent;
+            border-bottom: $size solid transparent; 
+            border-right:$size solid $color;
+            border-right-color: inherit;
+        } @else {
+            bottom: 100%;
+            left: $center;
+            margin-bottom: $margin;
+            margin-left: $size * -1;
+            border-left: $size solid transparent;
+            border-right: $size solid transparent;
+            border-bottom: $size solid $color;
+            border-bottom-color: inherit;
+        }
+    }
+}
+
+@mixin custom-scrollbar($width: .8em, $track: rgba(217, 217, 217, .5), $thumb: rgba(184, 184, 184, .5)){
+    ::-webkit-scrollbar {
+        width: $width;
+    }
+    ::-webkit-scrollbar-track {
+        background-color: $track;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: $thumb;
+        @include box-shadow(inset .05em .05em 0 rgba(0, 0, 0, .1), inset 0 -.05em 0 rgba(0, 0, 0, .07));
+    }
+}
+
+@mixin full-width-bars() {
+    // Still testing this one
+    position: relative;
+    z-index: 1;
+
+    &:before {
+        position: absolute;
+        content: "";
+        display: block;
+        top: 0;
+        left: -5000px;
+        height: 100%;
+        width: 15000px;
+        z-index: -1;
+        @content;
+    }
+}
+
+@mixin replace-image($url, $width, $height) {
+    // I totally stole this idea from Marcel Shields.
+    // Read his article: http://css-tricks.com/replace-the-image-in-an-img-with-css/
+    display: block;
+    width: $width; // Width of new image
+    height: $height; // Height of new image
+    padding-left: $width; // Equal to width of new image
+    background: url($url) no-repeat;
+}
+
+@mixin retina-background ($url, $file-type, $width: auto, $repeat: repeat, $ratio: 1.5, $suffix: "@2x") {
+    background: url($url + "." + $file-type);
+    background-repeat: $repeat;
+    // Media queries from http://git.io/k-x0wA
+    @media only screen and (-webkit-min-device-pixel-ratio: $ratio),
+        only screen and (min--moz-device-pixel-ratio: $ratio),
+        only screen and (-o-min-device-pixel-ratio: #{$ratio}/1),
+        only screen and (min-resolution: #{round($ratio*96)}dpi),
+        only screen and (min-resolution: #{$ratio}dppx) {
+        background: url($url + $suffix + "." + $file-type);
+        background-size: $width auto;
+    }
+}

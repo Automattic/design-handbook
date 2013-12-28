@@ -1,0 +1,23 @@
+// ==========================================================================
+// FUNCTIONS
+// ==========================================================================
+
+// EM
+// Convert px to em in a readable fashion.
+//
+// USAGE:
+//     1. Set root-font-size in variables/_typographyscss
+//     2. Writing em(14) would convert 14px to em by dividing 14 by the
+//        $root-font-size (Aviator default of 16 outputting 0.875em.
+//     3. If the font size has changed within an element, you will want to 
+//        calculate based on the new font size. For example, if you wanted
+//        an element to have a padding of 28px and its font-size is 14, you
+//        would write em(28,14).
+
+@function em($value, $root: "false") {
+    @if $root == "false" {
+        @return ($value/$root-font-size * 1em);
+    } @else {
+        @return ($value/$root * 1em);
+    }
+}

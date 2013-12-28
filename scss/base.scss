@@ -1,0 +1,130 @@
+// ==========================================================================
+//  Base styles: opinionated defaults
+// ==========================================================================
+
+// Sets box-sizing default to border-box on all elements
+*,
+*:before,
+*:after {
+    // Paul Irish box sizing!!!
+    // http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+    @include box-sizing();
+    -webkit-font-smoothing: antialiased;
+}
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+html,
+body {
+    background: #f1f1f1;
+}
+body {
+    font-size: $root-font-size * 1px; // See EM in _functions.scss for info
+    line-height: 1.4;
+    font-family: $open-sans;
+}
+
+// (highlight color, text color)
+@include selection();
+
+// ==========================================================================
+// Headings
+// ==========================================================================
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #000;
+    font-weight: $bold;
+}
+
+// ==========================================================================
+// Links
+// ==========================================================================
+
+a {
+    color: #0d72b2;
+    text-decoration: none;
+
+    &:visited {
+        color: #0d72b2;
+    }
+    &:hover {
+        color: #0f92e5;
+    }
+    &:focus {
+        outline: thin dotted;
+    }
+}
+
+// ==========================================================================
+// Basic block-level elements
+// ==========================================================================
+
+address {
+    margin: 0 0 1.5em;
+}
+
+// ==========================================================================
+// Text-level markup
+// ==========================================================================
+
+abbr[title],
+acronym {
+    cursor: help;
+}
+
+ins {
+    background: #eee;
+    text-decoration: none;
+}
+
+// ==========================================================================
+// Media elements
+// ==========================================================================
+
+// Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+img {
+    vertical-align: middle;
+}
+
+// ==========================================================================
+// Lists
+// ==========================================================================
+
+dt {
+    font-weight: $bold;
+}
+
+// ==========================================================================
+// Forms
+// ==========================================================================
+
+// Remove default fieldset styles.
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+// Allow only vertical resizing of textareas.
+textarea {
+    resize: vertical;
+}
+
+// A better looking default horizontal rule
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}

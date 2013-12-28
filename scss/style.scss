@@ -1,0 +1,46 @@
+/*
+
+WordPress.com Styles
+
+*/
+
+
+// Based loosely on HTML5 Boilerplate
+
+// Variables
+@import "variables/colors"; // Colors
+@import "variables/typography"; // Typography
+@import "variables/variables"; // Other variables
+
+// Functions
+@import "functions.scss"; // Nifty functions. Take a look!
+
+// Mixins
+@import "mixins/vendor-prefixes"; // Quickly implement vendor-prefixes
+@import "mixins/fancy"; // Fancy mixins full of nifty patterns
+
+// Fonts and Icon fonts
+@import "icons/icons"; // Base icon rules
+@import "icons/genericons"; // Genericons icon font
+@import "icons/dashicons"; // Dashicons icon font
+@import "icons/automatticons"; // Automatticons icon font
+
+// Normalize
+@import "normalize"; // Normalize.css + a goody or two
+@import "base"; // Style naked elements
+
+// Begin partials
+// @import "partials/buttons"; // Button styles
+// @import "partials/form"; // Form and input styles
+@import "partials/nav-horizontal"; // Horizontal navigation
+@import "partials/nav-off-canvas"; // Slide-in "hamburger" or drawer menu for small screens
+@import "partials/wpcom-header"; // Blue WordPress.com Header
+
+// Main styles
+@import "main"; // All of your .classy styles
+// @import "media-queries"; // Media queries!
+
+// Support styles
+@import "helper"; // Some useful helper classes
+@import "ie"; // IE-specific styling :D
+@import "print"; // Print styling

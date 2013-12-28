@@ -1,0 +1,728 @@
+@font-face {
+	font-family: 'dashicons';
+	src: url('../fonts/dashicons/dashicons.eot');
+	src: url('../fonts/dashicons/dashicons.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/dashicons/dashicons.woff') format('woff'),
+		 url('../fonts/dashicons/dashicons.ttf') format('truetype'),
+		 url('../fonts/dashicons/dashicons.svg#dashicons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+// Admin Menu Icons
+
+// .dashicons-menu:before {
+// 	content:"\f333";
+// }
+
+// .dashicons-admin-site:before {
+// 	content:"\f319";
+// }
+
+// .dashicons-dashboard:before {
+// 	content:"\f226";
+// }
+
+// .dashicons-admin-media:before {
+// 	content: "\f104";
+// }
+
+// .dashicons-admin-page:before {
+// 	content: "\f105";
+// }
+
+// .dashicons-admin-comments:before {
+// 	content: "\f101";
+// }
+
+// .dashicons-admin-appearance:before {
+// 	content: "\f100";
+// }
+
+// .dashicons-admin-plugins:before {
+// 	content: "\f106";
+// }
+
+// .dashicons-admin-users:before {
+// 	content: "\f110";
+// }
+
+// .dashicons-admin-tools:before {
+// 	content: "\f107";
+// }
+
+// .dashicons-admin-settings:before {
+// 	content: "\f108";
+// }
+
+// .dashicons-admin-network:before {
+// 	content: "\f112";
+// }
+
+// .dashicons-admin-generic:before {
+// 	content: "\f111";
+// }
+
+// .dashicons-admin-home:before {
+// 	content: "\f102";
+// }
+
+// .dashicons-admin-collapse:before {
+// 	content:"\f148";
+// }
+
+
+// Both Admin Menu and Post Formats
+
+// .dashicons-admin-links:before,
+// .dashicons-format-links:before {
+// 	content: "\f103";
+// }
+
+// .dashicons-admin-post:before,
+// .dashicons-format-standard:before {
+// 	content: "\f109";
+// }
+
+
+// Post Format Icons
+
+// .dashicons-format-image:before {
+// 	content: "\f128";
+// }
+
+// .dashicons-format-gallery:before {
+// 	content: "\f161";
+// }
+
+// .dashicons-format-audio:before {
+// 	content: "\f127";
+// }
+
+// .dashicons-format-video:before {
+// 	content: "\f126";
+// }
+
+// .dashicons-format-chat:before {
+// 	content: "\f125";
+// }
+
+// .dashicons-format-status:before {
+// 	content: "\f130";
+// }
+
+// .dashicons-format-aside:before {
+// 	content: "\f123";
+// }
+
+// .dashicons-format-quote:before {
+// 	content: "\f122";
+// }
+
+
+// Welcome Screen Icons
+
+// .dashicons-welcome-write-blog:before,
+// .dashicons-welcome-edit-page:before {
+// 	content:"\f119";
+// }
+
+// .dashicons-welcome-add-page:before {
+// 	content:"\f133";
+// }
+
+// .dashicons-welcome-view-site:before {
+// 	content:"\f115";
+// }
+
+// .dashicons-welcome-widgets-menus:before {
+// 	content:"\f116";
+// }
+
+// .dashicons-welcome-comments:before {
+// 	content:"\f117";
+// }
+
+// .dashicons-welcome-learn-more:before {
+// 	content:"\f118";
+// }
+
+
+// Image Editing Icons
+
+// .dashicons-image-crop:before {
+// 	content:"\f165";
+// }
+
+// .dashicons-image-rotate-left:before {
+// 	content:"\f166";	
+// }
+
+// .dashicons-image-rotate-right:before {
+// 	content:"\f167";
+// }
+
+// .dashicons-image-flip-vertical:before {
+// 	content:"\f168";
+// }
+
+// .dashicons-image-flip-horizontal:before {
+// 	content:"\f169";
+// }
+
+
+// Both Image Editing and TinyMCE
+
+// .dashicons-undo:before {
+// 	content:"\f171";
+// }
+
+// .dashicons-redo:before {
+// 	content:"\f172";
+// }
+
+// TinyMCE Icons
+
+// .dashicons-editor-bold:before {
+// 	content:"\f200";	
+// }
+
+// .dashicons-editor-italic:before {
+// 	content:"\f201";	
+// }
+
+// .dashicons-editor-ul:before {
+// 	content:"\f203";	
+// }
+
+// .dashicons-editor-ol:before {
+// 	content:"\f204";	
+// }
+
+// .dashicons-editor-quote:before {
+// 	content:"\f205";	
+// }
+
+// .dashicons-editor-alignleft:before {
+// 	content:"\f206";	
+// }
+
+// .dashicons-editor-aligncenter:before {
+// 	content:"\f207";	
+// }
+
+// .dashicons-editor-alignright:before {
+// 	content:"\f208";	
+// }
+
+// .dashicons-editor-insertmore:before {
+// 	content:"\f209";	
+// }
+
+// .dashicons-editor-spellcheck:before {
+// 	content:"\f210";	
+// }
+
+// .dashicons-editor-distractionfree:before {
+// 	content:"\f211";	
+// }
+
+// .dashicons-editor-kitchensink:before {
+// 	content:"\f212";	
+// }
+
+// .dashicons-editor-underline:before {
+// 	content:"\f213";	
+// }
+
+// .dashicons-editor-justify:before {
+// 	content:"\f214";	
+// }
+
+// .dashicons-editor-textcolor:before {
+// 	content:"\f215";	
+// }
+
+// .dashicons-editor-paste-word:before {
+// 	content:"\f216";	
+// }
+
+// .dashicons-editor-paste-text:before {
+// 	content:"\f217";	
+// }
+
+// .dashicons-editor-removeformatting:before {
+// 	content:"\f218";
+// }
+
+// .dashicons-editor-video:before {
+// 	content:"\f219";
+// }
+
+// .dashicons-editor-customchar:before {
+// 	content:"\f220";
+// }
+
+// .dashicons-editor-outdent:before {
+// 	content:"\f221";
+// }
+
+// .dashicons-editor-indent:before {
+// 	content:"\f222";
+// }
+
+// .dashicons-editor-help:before {
+// 	content:"\f223";
+// }
+
+// .dashicons-editor-strikethrough:before {
+// 	content:"\f224";
+// }
+
+// .dashicons-editor-unlink:before {
+// 	content:"\f225";
+// }
+
+// .dashicons-editor-rtl:before {
+// 	content:"\f320";
+// }
+
+
+// Post Icons
+
+// .dashicons-align-left:before {
+// 	content:"\f135";
+// }
+
+// .dashicons-align-right:before {
+// 	content:"\f136";
+// }
+
+// .dashicons-align-center:before {
+// 	content:"\f134";
+// }
+
+// .dashicons-align-none:before {
+// 	content:"\f138";
+// }
+
+// .dashicons-lock:before {
+// 	content:"\f160";
+// }
+
+// .dashicons-calendar:before {
+// 	content:"\f145";
+// }
+
+// .dashicons-visibility:before {
+// 	content:"\f177";
+// }
+
+// .dashicons-post-status:before {
+// 	content:"\f173";
+// }
+
+// .dashicons-edit:before {
+// 	content:"\f464";
+// }
+
+// .dashicons-trash:before {
+// 	content:"\f182";
+// }
+
+
+// Sorting
+
+// .dashicons-arrow-up:before {
+// 	content:"\f142";
+// }
+
+// .dashicons-arrow-down:before {
+// 	content:"\f140";
+// }
+
+// .dashicons-arrow-left:before {
+// 	content:"\f141";
+// }
+
+// .dashicons-arrow-right:before {
+// 	content:"\f139";
+// }
+
+// .dashicons-arrow-up-alt:before {
+// 	content:"\f342";
+// }
+
+// .dashicons-arrow-down-alt:before {
+// 	content:"\f346";
+// }
+
+// .dashicons-arrow-left-alt:before {
+// 	content:"\f340";
+// }
+
+// .dashicons-arrow-right-alt:before {
+// 	content:"\f344";
+// }
+
+// .dashicons-arrow-up-alt2:before {
+// 	content:"\f343";
+// }
+
+// .dashicons-arrow-down-alt2:before {
+// 	content:"\f347";
+// }
+
+// .dashicons-arrow-left-alt2:before {
+// 	content:"\f341";
+// }
+
+// .dashicons-arrow-right-alt2:before {
+// 	content:"\f345";
+// }
+
+// .dashicons-leftright:before {
+// 	content:"\f229";
+// }
+
+// .dashicons-sort:before {
+// 	content:"\f156";
+// }
+
+// .dashicons-list-view:before {
+// 	content:"\f163";
+// }
+
+// .dashicons-exerpt-view:before {
+// 	content:"\f164";
+// }
+
+
+// Social Icons
+
+// .dashicons-share:before {
+// 	content:"\f237";
+// }
+
+// .dashicons-share1:before { 
+// 	content:"\f237";
+// }
+
+// .dashicons-share-alt:before { 
+// 	content:"\f240";
+// }
+
+// .dashicons-share-alt2:before { 
+// 	content:"\f242";
+// }
+
+// .dashicons-twitter:before { 
+// 	content:"\f301";
+// }
+
+// .dashicons-rss:before { 
+// 	content:"\f303";
+// }
+
+// .dashicons-email:before {
+// 	content:"\f465";	
+// }
+
+// .dashicons-email-alt:before {
+// 	content:"\f466";	
+// }
+
+// .dashicons-facebook:before { 
+// 	content:"\f304";
+// }
+
+// .dashicons-facebook-alt:before { 
+// 	content:"\f305";
+// }
+
+// .dashicons-networking:before { 
+// 	content:"\f325";
+// }
+
+// .dashicons-googleplus:before { 
+// 	content:"\f462";
+// }
+
+
+// Jobs Icons
+
+// .dashicons-hammer:before { 
+// 	content:"\f308";
+// }
+
+// .dashicons-art:before { 
+// 	content:"\f309";
+// }
+
+// .dashicons-migrate:before { 
+// 	content:"\f310";
+// }
+
+// .dashicons-performance:before { 
+// 	content:"\f311";
+// }
+
+
+// Internal/Products
+
+// .dashicons-wordpress:before {
+// 	content:"\f120";
+// }
+
+// .dashicons-wordpress-alt:before {
+// 	content:"\f324";	
+// }
+
+// .dashicons-pressthis:before {
+// 	content:"\f157";
+// }
+
+// .dashicons-update:before {
+// 	content:"\f463";
+// }
+
+// .dashicons-screenoptions:before {
+// 	content:"\f180";
+// }
+
+// .dashicons-info:before {
+// 	content:"\f348";
+// }
+
+// .dashicons-cart:before {
+// 	content:"\f174";
+// }
+
+// .dashicons-feedback:before {
+// 	content:"\f175";
+// }
+
+// .dashicons-cloud:before {
+// 	content:"\f176";
+// }
+
+// .dashicons-translation:before {
+// 	content:"\f326";
+// }
+
+
+// Taxonomies
+
+// .dashicons-tag:before { 
+// 	content:"\f323";
+// }
+
+// .dashicons-category:before { 
+// 	content:"\f318";
+// }
+
+
+// Alerts/Notifications/Flags
+
+// .dashicons-yes:before {
+// 	content:"\f147";
+// }
+
+// .dashicons-no:before {
+// 	content:"\f158";
+// }
+
+// .dashicons-no-alt:before {
+// 	content:"\f335";
+// }
+
+// .dashicons-plus:before {
+// 	content:"\f132";
+// }
+
+// .dashicons-minus:before {
+// 	content:"\f460";
+// }
+
+// .dashicons-dismiss:before {
+// 	content:"\f153";
+// }
+
+// .dashicons-marker:before {
+// 	content:"\f159";
+// }
+
+// .dashicons-star-filled:before {
+// 	content:"\f155";
+// }
+
+// .dashicons-star-half:before {
+// 	content:"\f459";
+// }
+
+// .dashicons-star-empty:before {
+// 	content:"\f154";
+// }
+
+// .dashicons-flag:before {
+// 	content:"\f227";
+// }
+
+
+// Misc/CPT
+
+// .dashicons-location:before {
+// 	content:"\f230";
+// }
+
+// .dashicons-location-alt:before {
+// 	content:"\f231";
+// }
+
+// .dashicons-camera:before { 
+// 	content:"\f306";
+// }
+
+// .dashicons-images-alt:before {
+// 	content:"\f232";
+// }
+
+// .dashicons-images-alt2:before {
+// 	content:"\f233";
+// }
+
+// .dashicons-video-alt:before {
+// 	content:"\f234";
+// }
+
+// .dashicons-video-alt2:before {
+// 	content:"\f235";
+// }
+
+// .dashicons-video-alt3:before {
+// 	content:"\f236";
+// }
+
+// .dashicons-vault:before {
+// 	content:"\f178";
+// }
+
+// .dashicons-shield:before {
+// 	content:"\f332";
+// }
+
+// .dashicons-shield-alt:before {
+// 	content:"\f334";
+// }
+
+// .dashicons-sos:before {
+// 	content:"\f468";
+// }
+
+// .dashicons-search:before {
+// 	content:"\f179";
+// }
+
+// .dashicons-slides:before {
+// 	content:"\f181";
+// }
+
+// .dashicons-analytics:before {
+// 	content:"\f183";
+// }
+
+// .dashicons-chart-pie:before {
+// 	content:"\f184";
+// }
+
+// .dashicons-chart-bar:before {
+// 	content:"\f185";
+// }
+
+// .dashicons-chart-line:before { 
+// 	content:"\f238";
+// }
+
+// .dashicons-chart-area:before { 
+// 	content:"\f239";
+// }
+
+// .dashicons-groups:before { 
+// 	content:"\f307";
+// }
+
+// .dashicons-businessman:before { 
+// 	content:"\f338";
+// }
+
+// .dashicons-id:before { 
+// 	content:"\f336";
+// }
+
+// .dashicons-id-alt:before { 
+// 	content:"\f337";
+// }
+
+// .dashicons-products:before { 
+// 	content:"\f312";
+// }
+
+// .dashicons-awards:before { 
+// 	content:"\f313";
+// }
+
+// .dashicons-forms:before { 
+// 	content:"\f314";
+// }
+
+// .dashicons-testimonial:before { 
+// 	content:"\f473";
+// }
+
+// .dashicons-portfolio:before { 
+// 	content:"\f322";
+// }
+
+// .dashicons-book:before { 
+// 	content:"\f330";
+// }
+
+// .dashicons-book-alt:before { 
+// 	content:"\f331";
+// }
+
+// .dashicons-download:before { 
+// 	content:"\f316";
+// }
+
+// .dashicons-upload:before { 
+// 	content:"\f317";
+// }
+
+// .dashicons-backup:before {
+// 	content:"\f321";
+// }
+
+// .dashicons-clock:before {
+// 	content:"\f469";
+// }
+
+// .dashicons-lightbulb:before {
+// 	content:"\f339";
+// }
+
+// .dashicons-desktop:before {
+// 	content:"\f472";
+// }
+
+// .dashicons-tablet:before {
+// 	content:"\f471";
+// }
+
+// .dashicons-smartphone:before {
+// 	content:"\f470";
+// }
+
+// .dashicons-smiley:before {
+// 	content:"\f328";
+// }

@@ -1,0 +1,165 @@
+// ==========================================================================
+// WordPress.com Header Navigation
+//
+// So blue. So good.
+// ==========================================================================
+
+
+// I added sectional prefixes. They seem like a good idea, but could be 
+// improved upon.
+//
+// syntax == style--section--part
+// Example: .wpcom--header--title
+// wpcom  == style
+// header == current section
+// title  == part
+
+.wpcom--header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 46px;
+	background: #1e8cbe;
+	z-index: 9999;
+	@include box-shadow(
+		inset 0 -1px 0 rgba(0, 86, 132, 0.8),
+		0 1px 3px rgba(0, 86, 132, 0.4)
+	);
+
+	div {// change to .wrapper class for reuse?
+		margin: 0 auto;
+		max-width: 956px;
+	}
+	ul {
+		border: 0;
+		padding: 0;
+		margin: 0;
+	}
+	a {
+		color: #fff;
+		font-size: em(14); // see functions.scss
+		font-weight: 400;
+		text-decoration: none;
+		@include transition(all 0.15s ease-in-out);
+	}
+}
+.wpcom--header--title {
+	float: left;
+}
+.wpcom--header--nav {
+	h3 {
+		display: none;
+		// margin: 0;
+		// height: 46px;
+		// border: none;
+	}
+	> ul { // Top-level menu
+		display: inline-block;
+		height: 46px;
+		line-height: 46px;
+		margin: 0;
+		outline: 0;
+
+		ul { // Dropdown menu
+			display: none;
+			position: absolute;
+			top: 44px;
+			left: 0;
+			width: auto;
+			min-width: 220px;
+			line-height: 46px;
+			background: #fff;
+			background: rgba(255,255,255,0.99);
+			z-index: 1000000;
+			@include box-shadow(
+				0 0 2px rgba(0, 0, 0, 0.15),
+				0 3px 8px rgba(0, 0, 0, 0.1)
+			);
+
+			ul { // Level 3+ menu
+				top: 0;
+				left: 100%;
+			}
+			li {
+				float: none;
+				display: block;
+				margin: 0;
+				height: auto;
+				color: #1e8cbe;
+
+				&:hover {
+					> a {
+						color: #fff;
+						// Maybe not this bright blue
+						background: $base-lighter-blue;
+					}
+				}
+			}
+			a {
+				float: none;
+				display: block;
+				margin: 0;
+				padding: 0 14px;
+				height: auto;
+				color: #1e8cbe;
+				text-decoration: none;
+				overflow: hidden;
+				border-bottom: 1px solid #dfdfdf;
+				border-color: rgba(0,0,0,0.1);
+			}
+		}
+		> li {
+			> ul {
+				&:after {
+					content: '';
+					position: absolute;
+					bottom: 100%;
+					left: 20px;
+					width: 0;
+					height: 0;
+					border: 6px solid transparent;
+					border-bottom-color: #fff;
+				}
+			}
+		}
+	}
+	li {
+		float: left;
+		position: relative;
+		display: inline-block;
+		margin: 0;
+		height: 46px;
+		line-height: 46px;
+		outline: 0;
+
+		&:hover {
+			> a {
+				color: #78c8e6;
+			}
+			> ul {
+				display: block;
+			}
+		}
+	}
+	a {
+		display: inline-block;
+		margin: 0;
+		padding: 0 12px;
+		height: 46px;
+		color: #fff;
+		line-height: 46px;
+		text-decoration: none;
+		border: none;
+		overflow: hidden;
+		outline: 0;
+	}
+	.current {
+		a {
+			background: #36a3ca;
+			color: #fff;
+			cursor: default;
+			@include box-shadow(inset 0 -1px 0 rgba(0, 86, 132, 0.5));
+		}
+	}
+}

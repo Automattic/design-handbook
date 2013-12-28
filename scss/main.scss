@@ -1,0 +1,22 @@
+// ==========================================================================
+// Main author styles
+// ==========================================================================
+
+.main {
+	position: relative;
+	margin: 60px auto 0;
+	width: 95%;
+	min-width: 320px;
+	max-width: 960px;
+}
+.primary {
+	margin-right: 32%;
+}
+.sub {
+	margin-bottom: 6%;
+	padding: 0 20px 12px;
+	background: #fff;
+	overflow: hidden;
+	@include box-shadow(0 1px 2px rgba(0,0,0,0.075));
+	@extend .clearfix;
+}

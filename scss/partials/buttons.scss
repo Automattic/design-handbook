@@ -1,0 +1,72 @@
+// ==========================================================================
+// Buttony button buttons
+// ==========================================================================
+
+%button {
+	padding: 0.6785714286em 1.3571428571em; // 9.5/14 19/14
+	font-size: 0.875em; // 14/16
+	color: #dcedf5;
+	border: 1px solid #0a3c59;
+	background: #54b2de;
+	@include border-radius(4px);
+
+}
+%button-hover {
+	color: #fff;
+	background: #65c4f0;
+}
+%button-active {
+	color: #fff;
+	background: #3089b0;
+}
+%button-disabled {
+	border: 1px solid #999;
+	color: #aaa;
+	background: #eee;
+}
+
+
+// ==========================================================================
+// Buttons
+// ==========================================================================
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	@extend %button;
+}
+button:hover,
+html input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+	@extend %button-hover;
+}
+button:active,
+html input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active {
+	@extend %button-active;
+}
+// Disabled buttons
+button[disabled],
+input[disabled],
+input[disabled]:hover {
+	@extend %button-disabled;
+}
+
+
+// ==========================================================================
+// Button classes
+// ==========================================================================
+
+.button,
+.button:visited {
+	@extend %button;
+}
+.button:hover {
+	@extend %button-hover;
+}
+.button:active {
+	@extend %button-active;
+}
