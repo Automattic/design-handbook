@@ -19,7 +19,6 @@
 
 	display: inline-block;
 	position: relative;
-	top: 7px;
 	width: $size;
 	height: $size;
 	text-indent: -9999px;
@@ -32,9 +31,21 @@
 		left: 0;
 		width: 100%;
 		font-size: $size;
-		line-height: $size;
+		line-height: 1;
 		font-family: $icon; // Automatticons & Genericons
 		font-weight: normal;
 		text-indent: 0;
 	}
 }
+// If you want to reuse/resize do something like:
+// .foo.wpcom--logo {
+// 	$size: 50px;
+
+// 	color: $base-lighter-blue;
+// 	width: $size;
+// 	height: $size;
+
+// 	&:after {
+// 		font-size: $size;
+// 	}
+// }

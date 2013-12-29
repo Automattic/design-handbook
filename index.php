@@ -11,6 +11,15 @@
 			<h1 class="title--page"><?php echo $page; ?></h1>
 
 			<article class="sub">
+				<h2 class="title--sub">WordPress Icon</h2>
+				<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+				<div class="demo">
+					<span class="wpcom--logo"></span>
+				</div><!-- .demo -->
+				<pre class="pre--sub">&lt;span class="wpcom--logo"&gt;&lt;span&gt;</pre>
+			</article><!-- .sub-->
+
+			<article class="sub">
 				<h2 class="title--sub">Avatar</h2>
 				<p>Donec id elit non mi porta gravida at eget metus.</p>
 				<div class="demo">

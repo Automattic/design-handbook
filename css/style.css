@@ -15,7 +15,6 @@ WordPress.com Styles
 .wpcom--logo {
   display: inline-block;
   position: relative;
-  top: 7px;
   width: 32px;
   height: 32px;
   text-indent: -9999px;
@@ -27,7 +26,7 @@ WordPress.com Styles
     left: 0;
     width: 100%;
     font-size: 32px;
-    line-height: 32px;
+    line-height: 1;
     font-family: "automatticons", "genericons", "Open Sans", Helvetica, Arial, sans-serif;
     font-weight: normal;
     text-indent: 0; }
@@ -1182,6 +1181,8 @@ textarea {
     text-decoration: none;
     -webkit-transition: all 0.15s ease-in-out;
     transition: all 0.15s ease-in-out; }
+  .wpcom--header .wpcom--logo {
+    top: 7px; }
 
 .wpcom--header--title {
   float: left; }
@@ -1336,6 +1337,13 @@ textarea {
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
   background: #fafafa; }
+
+.demo .wpcom--logo {
+  color: #1e8cbe;
+  width: 50px;
+  height: 50px; }
+  .demo .wpcom--logo:after {
+    font-size: 50px; }
 
 .title--page {
   margin: 0 0.58333em 0.83333em -1px;

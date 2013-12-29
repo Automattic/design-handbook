@@ -43,6 +43,9 @@
 		text-decoration: none;
 		@include transition(all 0.15s ease-in-out);
 	}
+	.wpcom--logo {
+		top: 7px;
+	}
 }
 .wpcom--header--title {
 	float: left;

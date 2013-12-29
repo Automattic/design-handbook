@@ -34,6 +34,18 @@
 	background: #fafafa;
 }
 
+.demo .wpcom--logo {
+	$size: 50px;
+
+	color: $base-lighter-blue;
+	width: $size;
+	height: $size;
+
+	&:after {
+		font-size: $size;
+	}
+}
+
 // Title styles
 .title--page { // .title--reader might be a better name for this
 	margin: 0 em(14,24) em(20,24) -1px;
