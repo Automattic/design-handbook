@@ -846,7 +846,7 @@ input[type=radio] {
     width: 8px;
     height: 8px;
     text-indent: -9999px;
-    background: #6f7476;
+    background: #1e8cbe;
     vertical-align: middle;
     border-radius: 50%;
     -webkit-animation: grow 0.2s ease-in-out;
@@ -854,9 +854,15 @@ input[type=radio] {
     -o-animation: grow 0.2s ease-in-out;
     animation: grow 0.2s ease-in-out; }
   input[type=radio] + label {
-    cursor: pointer;
     margin-right: 15px;
-    padding-left: 4px; }
+    padding-left: 4px;
+    font-size: 0.875em;
+    cursor: pointer; }
+
+.radio--row {
+  margin-top: 10px; }
+  .radio--row:first-of-type {
+    margin-top: 0; }
 
 @-webkit-keyframes grow {
   0% {

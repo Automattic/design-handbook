@@ -28,15 +28,23 @@ input[type=radio] {
 		width: 8px;
 		height: 8px;
 		text-indent: -9999px;
-		background: #6f7476;
+		background: $base-lighter-blue;
 		vertical-align: middle;
 		border-radius: 50%;
 		@include animation(grow .2s ease-in-out);
 	}
 	+ label {
-		cursor: pointer;
 		margin-right: 15px;
 		padding-left: 4px;
+		font-size: em(14);
+		cursor: pointer;
+	}
+}
+.radio--row {
+	margin-top: 10px;
+
+	&:first-of-type {
+		margin-top: 0;
 	}
 }
 @include keyframes(grow) { // Needs to be rewritten if used

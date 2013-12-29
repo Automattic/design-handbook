@@ -1,10 +1,14 @@
-<?php include 'include/head.php'; ?>
-<?php include 'include/nav.php'; ?>
+<?php
+	$page = "Components";
+	$page_title = "WordPress.com Styles - " . $page;
+	include 'include/head.php';
+	include 'include/nav.php';
+?>
 
 <div class="content-wrapper">
 	<div class="main">
 		<div class="primary">
-			<h1 class="title--page">Components</h1>
+			<h1 class="title--page"><?php echo $page; ?></h1>
 
 			<article class="sub">
 				<h2 class="title--sub">Avatar</h2>
@@ -84,8 +88,12 @@
 				<h2 class="title--sub">Radio Button</h2>
 				<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
 				<div class="demo">
-					<input type="radio" name="filters" id="newest" value="newest" checked="checked" /> <label for="newest">Newest</label>
-					<input type="radio" name="filters" id="most-popular" value="most-popular" /> <label for="most-popular">Most Popular</label>
+					<div class="radio--row">
+						<input type="radio" name="filters" id="newest" value="newest" checked="checked" /> <label for="newest">Newest</label><br>
+					</div>
+					<div class="radio--row">
+						<input type="radio" name="filters" id="most-popular" value="most-popular" /> <label for="most-popular">Most Popular</label>
+					</div>
 				</div><!-- .demo -->
 				<pre class="pre--sub">&lt;input type="radio" name="filters" id="most-popular" value="most-popular" /&gt; &lt;label for="most-popular"&gt;Most Popular&lt;/label&gt;</pre>
 			</article><!-- .sub-->

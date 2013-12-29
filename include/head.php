@@ -4,9 +4,10 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
+        <?php include 'functions.php' ?>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>WordPress.com Styles</title>
+        <title><?php page_title($page_title); ?></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
