@@ -12,14 +12,14 @@ WordPress.com Styles
   font-weight: normal;
   font-size: 1.375em; }
 
-.wpcom--logo {
+.wpcom_logo {
   display: inline-block;
   position: relative;
   width: 32px;
   height: 32px;
   text-indent: -9999px;
   margin-right: 10px; }
-  .wpcom--logo:after {
+  .wpcom_logo:after {
     content: 'W';
     position: absolute;
     top: 0;
@@ -858,9 +858,9 @@ input[type=radio] {
     font-size: 0.875em;
     cursor: pointer; }
 
-.radio--row {
+.radio_row {
   margin-top: 10px; }
-  .radio--row:first-of-type {
+  .radio_row:first-of-type {
     margin-top: 0; }
 
 @-webkit-keyframes grow {
@@ -1157,7 +1157,7 @@ textarea {
     -webkit-transform: translate3d(-260px, 0px, 0px);
     -ms-transform: translate3d(-260px, 0px, 0px);
     transform: translate3d(-260px, 0px, 0px); } }
-.wpcom--header {
+.wpcom_header {
   position: fixed;
   top: 0;
   left: 0;
@@ -1167,35 +1167,35 @@ textarea {
   z-index: 9999;
   -webkit-box-shadow: inset 0 -1px 0 rgba(0, 86, 132, 0.8), 0 1px 3px rgba(0, 86, 132, 0.4);
   box-shadow: inset 0 -1px 0 rgba(0, 86, 132, 0.8), 0 1px 3px rgba(0, 86, 132, 0.4); }
-  .wpcom--header div {
+  .wpcom_header div {
     margin: 0 auto;
     max-width: 956px; }
-  .wpcom--header ul {
+  .wpcom_header ul {
     border: 0;
     padding: 0;
     margin: 0; }
-  .wpcom--header a {
+  .wpcom_header a {
     color: #fff;
     font-size: 0.875em;
     font-weight: 400;
     text-decoration: none;
     -webkit-transition: all 0.15s ease-in-out;
     transition: all 0.15s ease-in-out; }
-  .wpcom--header .wpcom--logo {
+  .wpcom_header .wpcom_logo {
     top: 7px; }
 
-.wpcom--header--title {
+.wpcom_header_title {
   float: left; }
 
-.wpcom--header--nav h3 {
+.wpcom_header_nav h3 {
   display: none; }
-.wpcom--header--nav > ul {
+.wpcom_header_nav > ul {
   display: inline-block;
   height: 46px;
   line-height: 46px;
   margin: 0;
   outline: 0; }
-  .wpcom--header--nav > ul ul {
+  .wpcom_header_nav > ul ul {
     display: none;
     position: absolute;
     top: 45px;
@@ -1208,19 +1208,19 @@ textarea {
     z-index: 9999;
     -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.15), 0 3px 8px rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.15), 0 3px 8px rgba(0, 0, 0, 0.1); }
-    .wpcom--header--nav > ul ul ul {
+    .wpcom_header_nav > ul ul ul {
       top: 0;
       left: 100%; }
-    .wpcom--header--nav > ul ul li {
+    .wpcom_header_nav > ul ul li {
       float: none;
       display: block;
       margin: 0;
       height: auto;
       color: #1e8cbe; }
-      .wpcom--header--nav > ul ul li:hover > a {
+      .wpcom_header_nav > ul ul li:hover > a {
         color: #fff;
         background: #1e8cbe; }
-    .wpcom--header--nav > ul ul a {
+    .wpcom_header_nav > ul ul a {
       float: none;
       display: block;
       margin: 0;
@@ -1231,7 +1231,7 @@ textarea {
       overflow: hidden;
       border-bottom: 1px solid #dfdfdf;
       border-color: rgba(0, 0, 0, 0.1); }
-  .wpcom--header--nav > ul > li > ul:after {
+  .wpcom_header_nav > ul > li > ul:after {
     content: '';
     position: absolute;
     bottom: 100%;
@@ -1240,7 +1240,7 @@ textarea {
     height: 0;
     border: 6px solid transparent;
     border-bottom-color: #fff; }
-.wpcom--header--nav li {
+.wpcom_header_nav li {
   float: left;
   position: relative;
   display: inline-block;
@@ -1248,11 +1248,11 @@ textarea {
   height: 46px;
   line-height: 46px;
   outline: 0; }
-  .wpcom--header--nav li:hover > a {
+  .wpcom_header_nav li:hover > a {
     color: #78c8e6; }
-  .wpcom--header--nav li:hover > ul {
+  .wpcom_header_nav li:hover > ul {
     display: block; }
-.wpcom--header--nav a {
+.wpcom_header_nav a {
   display: inline-block;
   margin: 0;
   padding: 0 12px;
@@ -1263,7 +1263,7 @@ textarea {
   border: none;
   overflow: hidden;
   outline: 0; }
-.wpcom--header--nav .current a {
+.wpcom_header_nav .current a {
   background: #36a3ca;
   color: #fff;
   cursor: default;
@@ -1271,30 +1271,30 @@ textarea {
   box-shadow: inset 0 -1px 0 rgba(0, 86, 132, 0.5); }
 
 @media screen and (max-width: 768px) {
-  .wpcom--header {
+  .wpcom_header {
     position: fixed;
     z-index: 10000; }
 
-  .wpcom--header--title {
+  .wpcom_header_title {
     margin-left: 6px; }
 
-  .wpcom--header--nav {
+  .wpcom_header_nav {
     background: #fafafa;
     border-left: 1px solid #e7e7e7;
     -webkit-box-shadow: inset 0 2px 2px -2px rgba(0, 0, 0, 0.15), inset 0 11px 8px -8px rgba(0, 0, 0, 0.1);
     box-shadow: inset 0 2px 2px -2px rgba(0, 0, 0, 0.15), inset 0 11px 8px -8px rgba(0, 0, 0, 0.1); }
-    .wpcom--header--nav a {
+    .wpcom_header_nav a {
       display: block;
       color: #278dbc;
       line-height: 44px;
       border-bottom: 1px solid #f0f0f0;
       overflow: visible; }
-      .wpcom--header--nav a:hover {
+      .wpcom_header_nav a:hover {
         color: #78c8e6; }
-    .wpcom--header--nav .current a {
+    .wpcom_header_nav .current a {
       -webkit-box-shadow: none;
       box-shadow: none; }
-    .wpcom--header--nav li > ul {
+    .wpcom_header_nav li > ul {
       position: static;
       display: block;
       width: 100%;
@@ -1302,16 +1302,16 @@ textarea {
       background: transparent;
       -webkit-box-shadow: none;
       box-shadow: none; }
-      .wpcom--header--nav li > ul a {
+      .wpcom_header_nav li > ul a {
         border-bottom: 1px solid #f0f0f0; }
-      .wpcom--header--nav li > ul:after {
+      .wpcom_header_nav li > ul:after {
         display: none; }
-      .wpcom--header--nav li > ul ul {
+      .wpcom_header_nav li > ul ul {
         border-left: 5px solid #e7e7e7; }
-      .wpcom--header--nav li > ul li:hover a {
+      .wpcom_header_nav li > ul li:hover a {
         color: #78c8e6;
         background: transparent; }
-    .wpcom--header--nav:after {
+    .wpcom_header_nav:after {
       display: none; } }
 .main {
   position: relative;
@@ -1338,24 +1338,24 @@ textarea {
   border-bottom: 1px solid #eee;
   background: #fafafa; }
 
-.demo .wpcom--logo {
+.demo .wpcom_logo {
   color: #1e8cbe;
   width: 50px;
   height: 50px; }
-  .demo .wpcom--logo:after {
+  .demo .wpcom_logo:after {
     font-size: 50px; }
 
-.title--page {
+.title_page {
   margin: 0 0.58333em 0.83333em -1px;
   font-size: 1.5em;
   font-weight: 300;
   line-height: 1; }
 
-.title--sub {
+.title_sub {
   margin: 32px 0 0;
   font: 700 1.9375em/1.318 "Merriweather", Georgia, "Times New Roman", Times, serif; }
 
-.pre--sub {
+.pre_sub {
   margin: 0 -1.42857em -1.42857em;
   padding: 1.42857em;
   color: #666;

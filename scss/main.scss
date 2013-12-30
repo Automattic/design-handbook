@@ -34,7 +34,7 @@
 	background: #fafafa;
 }
 
-.demo .wpcom--logo {
+.demo .wpcom_logo {
 	$size: 50px;
 
 	color: $base-lighter-blue;
@@ -47,19 +47,19 @@
 }
 
 // Title styles
-.title--page { // .title--reader might be a better name for this
+.title_page { // .title--reader might be a better name for this
 	margin: 0 em(14,24) em(20,24) -1px;
 	font-size: em(24);
 	font-weight: 300;
 	line-height: 1;
 }
-.title--sub {
+.title_sub {
 	margin: 32px 0 0;
 	font: 700 1.9375em/1.318 $merriweather; // 31/16
 }
 
 // Pre styling
-.pre--sub {
+.pre_sub {
 	margin: 0 em(-20,14) em(-20,14);
 	padding: em(20,14);
 	color: #666;

@@ -8,13 +8,13 @@
 // I added sectional prefixes. They seem like a good idea, but could be 
 // improved upon.
 //
-// syntax == style--section--part
-// Example: .wpcom--header--title
+// syntax == style_section_part
+// Example: .wpcom_header_title
 // wpcom  == style
 // header == current section
 // title  == part
 
-.wpcom--header {
+.wpcom_header {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -43,14 +43,14 @@
 		text-decoration: none;
 		@include transition(all 0.15s ease-in-out);
 	}
-	.wpcom--logo {
+	.wpcom_logo {
 		top: 7px;
 	}
 }
-.wpcom--header--title {
+.wpcom_header_title {
 	float: left;
 }
-.wpcom--header--nav {
+.wpcom_header_nav {
 	h3 {
 		display: none;
 		// margin: 0;
@@ -169,14 +169,14 @@
 
 @media screen and (max-width: 768px) {
 	// A bit sloppy and could be refactored a bit.
-	.wpcom--header {
+	.wpcom_header {
 		position: fixed;
 		z-index: 10000;
 	}
-	.wpcom--header--title {
+	.wpcom_header_title {
 		margin-left: 6px;
 	}
-	.wpcom--header--nav {
+	.wpcom_header_nav {
 		background: #fafafa;
 		border-left: 1px solid #e7e7e7;
 		@include box-shadow(

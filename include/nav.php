@@ -1,10 +1,10 @@
 <input class="checkbox-off-canvas" type="checkbox" id="menu">
 <label class="label-off-canvas" for="menu" onclick></label>
-<header class="wpcom--header">
+<header class="wpcom_header">
 	<div>
-		<a class="wpcom--header--title wpcom--logo" href="#">WordPress.com</a>
-		<nav class="wpcom--header--nav nav-off-canvas" role="navigation">
-			<h3 class="wpcom--logo"><span class="menu-toggle">Menu</span></h3>
+		<a class="wpcom_header_title wpcom_logo" href="#">WordPress.com</a>
+		<nav class="wpcom_header_nav nav-off-canvas" role="navigation">
+			<h3 class="wpcom_logo"><span class="menu-toggle">Menu</span></h3>
 			<ul>
 				<!-- Let's figure out some content sections! -->
 				<li><a href="#">Typography</a></li>
