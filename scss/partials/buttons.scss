@@ -37,7 +37,7 @@
 		);
 	}
 }
-%button--disabled {
+%button_disabled {
 	color: #94cde7;
 	background: #298cba;
 	@include box-shadow(none);
@@ -58,7 +58,7 @@ input[type="submit"] {
 button[disabled],
 input[disabled],
 input[disabled]:hover {
-	@extend %button--disabled;
+	@extend %button_disabled;
 }
 
 
@@ -67,17 +67,17 @@ input[disabled]:hover {
 // ==========================================================================
 
 
-.button--primary,
-.button--secondary {
+.button_primary,
+.button_secondary {
 	@extend %button;
 }
-.button--primary[disabled],
+.button_primary[disabled],
 // .button--primary.disabled, Maybe?
-.button--primary:disabled {
-	@extend %button--disabled;
+.button_primary:disabled {
+	@extend %button_disabled;
 	cursor: default;
 }
-.button--secondary {
+.button_secondary {
 	color: #555;
 	text-shadow: 0 1px 0 rgba(255,255,255,.7);
 	@include gradient(#f5f5f5, #ddd);
@@ -107,9 +107,9 @@ input[disabled]:hover {
 		);
 	}
 }
-.button--secondary[disabled],
+.button_secondary[disabled],
 // .button--secondary.disabled, Maybe?
-.button--secondary:disabled {
+.button_secondary:disabled {
 	color: #999;
 	background: #e3e3e3;
 	cursor: default;

@@ -709,8 +709,8 @@ hr {
 button,
 html input[type="button"],
 input[type="reset"],
-input[type="submit"], .button--primary,
-.button--secondary {
+input[type="submit"], .button_primary,
+.button_secondary {
   display: inline-block;
   padding: 0.69231em 1.15385em;
   font-size: 0.8125em;
@@ -738,8 +738,8 @@ input[type="submit"], .button--primary,
   button:hover,
   html input[type="button"]:hover,
   input[type="reset"]:hover,
-  input[type="submit"]:hover, .button--primary:hover,
-  .button--secondary:hover {
+  input[type="submit"]:hover, .button_primary:hover,
+  .button_secondary:hover {
     color: #fff;
     text-shadow: 0 -1px 0 #0074a2;
     background-color: #0074a2;
@@ -753,8 +753,8 @@ input[type="submit"], .button--primary,
   button:active,
   html input[type="button"]:active,
   input[type="reset"]:active,
-  input[type="submit"]:active, .button--primary:active,
-  .button--secondary:active {
+  input[type="submit"]:active, .button_primary:active,
+  .button_secondary:active {
     color: rgba(255, 255, 255, 0.9);
     background: #3089b0;
     background-color: #0074a2;
@@ -768,18 +768,18 @@ input[type="submit"], .button--primary,
 
 button[disabled],
 input[disabled],
-input[disabled]:hover, .button--primary[disabled],
-.button--primary:disabled {
+input[disabled]:hover, .button_primary[disabled],
+.button_primary:disabled {
   color: #94cde7;
   background: #298cba;
   -webkit-box-shadow: none;
   box-shadow: none; }
 
-.button--primary[disabled],
-.button--primary:disabled {
+.button_primary[disabled],
+.button_primary:disabled {
   cursor: default; }
 
-.button--secondary {
+.button_secondary {
   color: #555;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
   background-color: #dddddd;
@@ -790,7 +790,7 @@ input[disabled]:hover, .button--primary[disabled],
   background-image: linear-gradient(top, whitesmoke, #dddddd);
   -webkit-box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.05), inset 0 2px 0 rgba(255, 255, 255, 0.4), inset 0 -1px 1px rgba(0, 0, 0, 0.1);
   box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.05), inset 0 2px 0 rgba(255, 255, 255, 0.4), inset 0 -1px 1px rgba(0, 0, 0, 0.1); }
-  .button--secondary:hover {
+  .button_secondary:hover {
     color: #222;
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
     background-color: #dddddd;
@@ -801,7 +801,7 @@ input[disabled]:hover, .button--primary[disabled],
     background-image: linear-gradient(top, white, #dddddd);
     -webkit-box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.05), inset 0 2px 0 rgba(255, 255, 255, 0.5), inset 0 -1px 1px rgba(0, 0, 0, 0.1);
     box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.05), inset 0 2px 0 rgba(255, 255, 255, 0.5), inset 0 -1px 1px rgba(0, 0, 0, 0.1); }
-  .button--secondary:active {
+  .button_secondary:active {
     color: #555;
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
     background-color: #dddddd;
@@ -813,8 +813,8 @@ input[disabled]:hover, .button--primary[disabled],
     -webkit-box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.3), inset 0 -1px 0 rgba(255, 255, 255, 0.5);
     box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.3), inset 0 -1px 0 rgba(255, 255, 255, 0.5); }
 
-.button--secondary[disabled],
-.button--secondary:disabled {
+.button_secondary[disabled],
+.button_secondary:disabled {
   color: #999;
   background: #e3e3e3;
   cursor: default;
