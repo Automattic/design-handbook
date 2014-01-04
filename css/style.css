@@ -10,7 +10,8 @@ WordPress.com Styles
   margin-right: 0.25em;
   font-family: "automatticons", "genericons", "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: normal;
-  font-size: 1.375em; }
+  font-size: 1.375em;
+  -webkit-font-smoothing: antialiased; }
 
 .wpcom_logo {
   display: inline-block;
@@ -29,7 +30,8 @@ WordPress.com Styles
     line-height: 1;
     font-family: "automatticons", "genericons", "Open Sans", Helvetica, Arial, sans-serif;
     font-weight: normal;
-    text-indent: 0; }
+    text-indent: 0;
+    -webkit-font-smoothing: antialiased; }
 
 @font-face {
   font-family: 'Genericons';
@@ -615,8 +617,12 @@ table {
 *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased; }
+  box-sizing: border-box; }
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {
+    *,
+    *:before,
+    *:after {
+      -webkit-font-smoothing: antialiased; } }
 
 html,
 button,
@@ -944,8 +950,8 @@ textarea {
   line-height: 1.4;
   border: 1px solid #dfdfdf;
   background: #f9f9f9;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out; }
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out; }
   input[type="text"]::-webkit-input-placeholder,
   input[type="email"]::-webkit-input-placeholder,
   input[type="password"]::-webkit-input-placeholder,
@@ -1334,9 +1340,9 @@ textarea {
 .demo {
   margin: 0 -20px;
   padding: 20px;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
-  background: #fafafa; }
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  background: #f9f9f9; }
 
 .demo .wpcom_logo {
   color: #1e8cbe;
@@ -1344,6 +1350,47 @@ textarea {
   height: 50px; }
   .demo .wpcom_logo:after {
     font-size: 50px; }
+
+.color {
+  padding: 20px;
+  color: #fff; }
+  .color.base-lighter-blue {
+    background: #1e8cbe; }
+  .color.base-darker-blue {
+    background: #0074a2; }
+  .color.light-blue {
+    background: #78c8e6; }
+  .color.nkotb-blue {
+    background: #2ea2cc; }
+  .color.midnight-blue {
+    background: #005684; }
+  .color.jazzy-orange {
+    background: #f1831e; }
+  .color.fire-orange {
+    background: #d54e21; }
+  .color[class*="gray"] {
+    color: #333; }
+  .color.ultra-light-gray {
+    background: #f9f9f9; }
+  .color.light-gray {
+    background: #f1f1f1; }
+  .color.gravy-gray {
+    background: #e5e5e5; }
+  .color.shadow-gray {
+    background: #dfdfdf; }
+  .color.coal-grey {
+    background: #464646; }
+  .color.alert-red {
+    background: #dd3d36; }
+  .color.alert-green {
+    background: #4cb420; }
+  .color.alert-yellow {
+    color: #333;
+    background: #ffba00; }
+  .color h3 {
+    margin-top: 0; }
+  .color span {
+    display: block; }
 
 .title_page {
   margin: 0 0.58333em 0.83333em -1px;

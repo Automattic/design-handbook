@@ -1,5 +1,8 @@
 // ==========================================================================
 // Base icons rules
+//
+// Make sure you apply -webkit-font-smoothing: antialiased; to your icons
+//
 // ==========================================================================
 
 .icon {
@@ -11,6 +14,7 @@
 		font-family: $icon; // Automatticons & Genericons
 		font-weight: normal;
 		font-size: 1.375em;
+		-webkit-font-smoothing: antialiased;
 	}
 }
 
@@ -35,6 +39,7 @@
 		font-family: $icon; // Automatticons & Genericons
 		font-weight: normal;
 		text-indent: 0;
+		-webkit-font-smoothing: antialiased;
 	}
 }
 // If you want to reuse/resize do something like:

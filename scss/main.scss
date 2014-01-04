@@ -29,9 +29,9 @@
 	@extend .clearfix;
 	margin: 0 -20px;
 	padding: 20px;
-	border-top: 1px solid #eee;
-	border-bottom: 1px solid #eee;
-	background: #fafafa;
+	border-top: 1px solid $gravy-gray;
+	border-bottom: 1px solid $gravy-gray;
+	background: $ultra-light-gray;
 }
 
 .demo .wpcom_logo {
@@ -43,6 +43,78 @@
 
 	&:after {
 		font-size: $size;
+	}
+}
+
+.color {
+	padding: 20px;
+	color: #fff;
+
+	// Base Blues
+	&.base-lighter-blue {
+		background: $base-lighter-blue;
+	}
+	&.base-darker-blue {
+		background: $base-darker-blue;
+	}
+
+	// Complimentary Blues
+	&.light-blue {
+		background: $light-blue;
+	}
+	&.nkotb-blue {
+		background: $nkotb-blue;
+	}
+	&.midnight-blue {
+		background: $midnight-blue;
+	}
+
+	// Oranges
+	&.jazzy-orange {
+		background: $jazzy-orange;
+	}
+	&.fire-orange {
+		background: $fire-orange;
+	}
+
+	// Greys
+	&[class*="gray"] {
+		color: #333;
+	}
+	&.ultra-light-gray {
+		background: $ultra-light-gray;
+	}
+	&.light-gray {
+		background: $light-gray;
+	}
+	&.gravy-gray {
+		background: $gravy-gray;
+	}
+	&.shadow-gray {
+		background: $shadow-gray;
+	}
+	&.coal-grey { // See what I did there? ;)
+		background: $coal-gray;
+	}
+
+	// Validation and Alerts
+	&.alert-red {
+		background: $alert-red;
+	}
+	&.alert-green {
+		background: $alert-green;
+	}
+	&.alert-yellow {
+		color: #333;
+		background: $alert-yellow;
+	}
+
+
+	h3 {
+		margin-top: 0;
+	}
+	span {
+		display: block;
 	}
 }
 

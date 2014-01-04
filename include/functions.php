@@ -8,4 +8,11 @@
 		}
 		echo $page_title;
 	}
+	function is_current($page, $nav_item) {
+		if(isset($page)) {
+			if($page == $nav_item) {
+				echo "class='current'";
+			}
+		}
+	}
 ?>

@@ -6,26 +6,34 @@
 *,
 *:before,
 *:after {
-    // Paul Irish box sizing!!!
-    // http://www.paulirish.com/2012/box-sizing-border-box-ftw/
-    @include box-sizing();
-    -webkit-font-smoothing: antialiased;
+	// Paul Irish box sizing!!!
+	// http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+	@include box-sizing();
+
+	@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+	only screen and (min-resolution: 144dpi) {
+		// Style adjustments for high resolution devices
+
+		// Only looks good on HiDPI and on icons
+		-webkit-font-smoothing: antialiased;
+
+	}
 }
 html,
 button,
 input,
 select,
 textarea {
-    color: #333;
+	color: #333;
 }
 html,
 body {
-    background: #f1f1f1;
+	background: $light-gray;
 }
 body {
-    font-size: $root-font-size * 1px; // See EM in _functions.scss for info
-    line-height: 1.4;
-    font-family: $open-sans;
+	font-size: $root-font-size * 1px; // See EM in _functions.scss for info
+	line-height: 1.4;
+	font-family: $open-sans;
 }
 
 // (highlight color, text color)
@@ -41,7 +49,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: $bold;
+	font-weight: $bold;
 }
 
 // ==========================================================================
@@ -49,18 +57,18 @@ h6 {
 // ==========================================================================
 
 a {
-    color: #0d72b2;
-    text-decoration: none;
+	color: #0d72b2;
+	text-decoration: none;
 
-    &:visited {
-        color: #0d72b2;
-    }
-    &:hover {
-        color: #0f92e5;
-    }
-    &:focus {
-        outline: thin dotted;
-    }
+	&:visited {
+		color: #0d72b2;
+	}
+	&:hover {
+		color: #0f92e5;
+	}
+	&:focus {
+		outline: thin dotted;
+	}
 }
 
 // ==========================================================================
@@ -68,7 +76,7 @@ a {
 // ==========================================================================
 
 address {
-    margin: 0 0 1.5em;
+	margin: 0 0 1.5em;
 }
 
 // ==========================================================================
@@ -77,12 +85,12 @@ address {
 
 abbr[title],
 acronym {
-    cursor: help;
+	cursor: help;
 }
 
 ins {
-    background: #eee;
-    text-decoration: none;
+	background: #eee;
+	text-decoration: none;
 }
 
 // ==========================================================================
@@ -91,7 +99,7 @@ ins {
 
 // Remove the gap between images and the bottom of their containers: h5bp.com/i/440
 img {
-    vertical-align: middle;
+	vertical-align: middle;
 }
 
 // ==========================================================================
@@ -99,7 +107,7 @@ img {
 // ==========================================================================
 
 dt {
-    font-weight: $bold;
+	font-weight: $bold;
 }
 
 // ==========================================================================
@@ -108,22 +116,22 @@ dt {
 
 // Remove default fieldset styles.
 fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
+	border: 0;
+	margin: 0;
+	padding: 0;
 }
 
 // Allow only vertical resizing of textareas.
 textarea {
-    resize: vertical;
+	resize: vertical;
 }
 
 // A better looking default horizontal rule
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
 }
