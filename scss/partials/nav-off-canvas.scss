@@ -12,14 +12,14 @@
 //    [lines 5-6 of hamburger.kit]
 // 2. Add the class .nav-off-canvas to the menu container (nav or div).
 //    [line 8 of hamburger.kit]
-// 3. Add the class .content-wrapper to the element containing all elements on the
+// 3. Add the class .site-content__wrapper to the element containing all elements on the
 //    website below the menu.
 //    [line 32 of hamburger.kit]
 // ==========================================================================
 
 
 // Main content goes in this container to behave properly on small screens
-.content-wrapper {
+.site-content__wrapper {
 	position: relative;
 	width: 100%;
 	overflow-x: hidden;
@@ -53,7 +53,7 @@
 @media screen and (max-width: 768px) {
 	$menu_width: 260px;
 
-	.content-wrapper {
+	.site-content__wrapper {
 		position: fixed;
 		top: 46px;
 		left: 0;
@@ -61,9 +61,9 @@
 		padding: 0 10px;
 	}
 	.nav-off-canvas,
-	.content-wrapper {
-		@include transition(all .3s ease-in-out);
-		@include transform(translate3d(0px, 0px, 0px));
+	.site-content__wrapper {
+		transition: all .3s ease-in-out;
+		transform: translate3d(0px, 0px, 0px);
 	}
 	.nav-off-canvas {
 		position: fixed;
@@ -105,8 +105,8 @@
 	.checkbox-off-canvas:checked ~ .label-off-canvas {
 		color: #fff;
 	}
-	.checkbox-off-canvas:checked ~ .wpcom--header .nav-off-canvas,
-	.checkbox-off-canvas:checked ~ .content-wrapper {
-		@include transform(translate3d(-$menu-width, 0px, 0px));
+	.checkbox-off-canvas:checked ~ .wpcom-header .nav-off-canvas,
+	.checkbox-off-canvas:checked ~ .site-content__wrapper {
+		transform: translate3d(-$menu-width, 0px, 0px);
 	}
 }

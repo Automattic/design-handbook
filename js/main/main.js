@@ -5,5 +5,6 @@
     //    $('.view.show').removeClass('show');
         $(this).toggleClass('show');
         return false;
+        console.log('test');
     });
 })(jQuery);

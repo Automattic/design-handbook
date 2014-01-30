@@ -2,6 +2,13 @@
 // Main author styles
 // ==========================================================================
 
+// Utility class to make sure major content sections are the same max-width.
+.wrapper {
+	margin: 0 auto;
+	max-width: $site--max-width;
+}
+
+
 .main {
 	position: relative;
 	margin: 61px auto 0;
@@ -14,18 +21,18 @@
 	}
 }
 .primary {
-	// margin-left: 32%; (Will need a side nav probably)
+	// margin-left: 32%; (Will need a side nav maybe)
 }
-.sub {
+.section {
 	margin-bottom: em(30);
 	padding: 0 em(20) em(20);
 	background: #fff;
 	overflow: hidden;
-	@include box-shadow(0 1px 2px rgba(0,0,0,0.075));
+	box-shadow: 0 1px 2px rgba(0,0,0,0.075);
 }
 
 // Demo section
-.demo {
+.preview {
 	@extend .clearfix;
 	margin: 0 -20px;
 	padding: 20px;
@@ -33,8 +40,14 @@
 	border-bottom: 1px solid $gravy-gray;
 	background: $ultra-light-gray;
 }
+.preview__row {
+	margin-top: 10px;
 
-.demo .wpcom_logo {
+	&:first-of-type {
+		margin-top: 0;
+	}
+}
+.preview .wpcom-logo {
 	$size: 50px;
 
 	color: $base-lighter-blue;
@@ -46,6 +59,29 @@
 	}
 }
 
+// Title styles
+.page__title {
+	margin: 0 em(14,24) em(20,24) -1px;
+	font-size: em(24);
+	font-weight: 300;
+	line-height: 1;
+}
+.section__title {
+	margin: 32px 0 0;
+	font: 700 1.9375em/1.318 $merriweather; // 31/16
+}
+
+// Pre styling
+.code-block {
+	margin: 0 em(-20,14) em(-20,14);
+	padding: em(20,14);
+	color: #666;
+	font-size: em(14);
+}
+
+
+
+// Color Page
 .color {
 	padding: 20px;
 	color: #fff;
@@ -116,24 +152,4 @@
 	span {
 		display: block;
 	}
-}
-
-// Title styles
-.title_page { // .title--reader might be a better name for this
-	margin: 0 em(14,24) em(20,24) -1px;
-	font-size: em(24);
-	font-weight: 300;
-	line-height: 1;
-}
-.title_sub {
-	margin: 32px 0 0;
-	font: 700 1.9375em/1.318 $merriweather; // 31/16
-}
-
-// Pre styling
-.pre_sub {
-	margin: 0 em(-20,14) em(-20,14);
-	padding: em(20,14);
-	color: #666;
-	font-size: em(14);
 }

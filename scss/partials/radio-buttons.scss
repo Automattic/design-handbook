@@ -13,12 +13,12 @@ input[type=radio] {
 	line-height: 0;
 	text-align: center;
 	border: 1px solid #bbb;
+	border-radius: 50%;
 	background: #fff;
 	outline: 0;
 	cursor: pointer;
 	vertical-align: middle;
 	-webkit-appearance: none;
-	border-radius: 50%;
 
 	&:checked:before {
 		float: left;
@@ -31,7 +31,7 @@ input[type=radio] {
 		background: $base-lighter-blue;
 		vertical-align: middle;
 		border-radius: 50%;
-		@include animation(grow .2s ease-in-out);
+		animation: grow .2s ease-in-out;
 	}
 	+ label {
 		margin-right: 15px;
@@ -40,21 +40,15 @@ input[type=radio] {
 		cursor: pointer;
 	}
 }
-.radio_row {
-	margin-top: 10px;
 
-	&:first-of-type {
-		margin-top: 0;
-	}
-}
-@include keyframes(grow) { // Needs to be rewritten if used
+@keyframes grow { // Needs to be rewritten if used
 	0% {
-		@include transform(scale(.3));
+		transform: scale(.3);
 	}
 	60% {
-		@include transform(scale(1.15));
+		transform: scale(1.15);
 	}
 	100% {
-		@include transform(scale(1));
+		transform: scale(1);
 	}
 };

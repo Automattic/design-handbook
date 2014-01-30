@@ -3,6 +3,12 @@
 WordPress.com Styles
 
 */
+body {
+  -webkit-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+}
+
 .icon:before {
   display: inline-block;
   position: relative;
@@ -14,7 +20,7 @@ WordPress.com Styles
   -webkit-font-smoothing: antialiased;
 }
 
-.wpcom-logo {
+.wpcom_logo {
   display: inline-block;
   position: relative;
   width: 32px;
@@ -22,7 +28,7 @@ WordPress.com Styles
   text-indent: -9999px;
   margin-right: 10px;
 }
-.wpcom-logo:after {
+.wpcom_logo:after {
   content: 'W';
   position: absolute;
   top: 0;
@@ -811,13 +817,13 @@ body {
 
 ::-moz-selection {
   background: #0074c2;
-  color: #fff;
+  color: white;
   text-shadow: none;
 }
 
 ::selection {
   background: #0074c2;
-  color: #fff;
+  color: white;
   text-shadow: none;
 }
 
@@ -885,13 +891,15 @@ hr {
   padding: 0;
 }
 
-.avatar, .avatar--rounded {
+.avatar {
   float: left;
   margin-right: 15px;
 }
 
-.avatar--rounded img {
+.rounded {
   border-radius: 50%;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
 
 button,
@@ -907,16 +915,18 @@ input[type="submit"], .button_primary,
   color: #dcedf5;
   text-shadow: 0 -1px 0 rgba(0, 116, 162, 0.8);
   border: none;
-  border-radius: 3px;
   background: #54b2de;
-  -webkit-box-shadow: inset 0 1px 0 rgba(120, 200, 230, 0.5);
-  box-shadow: inset 0 1px 0 rgba(120, 200, 230, 0.5);
   cursor: pointer;
   outline: none;
+  border-radius: 3px;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
   background-color: #0074a2;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#278dbc), to(#0074a2));
   background-image: -webkit-linear-gradient(top, #278dbc, #0074a2);
   background-image: linear-gradient(top, #278dbc, #0074a2);
+  -webkit-box-shadow: inset 0 1px 0 rgba(120, 200, 230, 0.5);
+  box-shadow: inset 0 1px 0 rgba(120, 200, 230, 0.5);
 }
 button:hover,
 html input[type="button"]:hover,
@@ -925,12 +935,12 @@ input[type="submit"]:hover, .button_primary:hover,
 .button_secondary:hover {
   color: #fff;
   text-shadow: 0 -1px 0 #0074a2;
-  -webkit-box-shadow: inset 0 1px 0 #2ea2cc, inset 0 2px 0 rgba(120, 200, 230, 0.7);
-  box-shadow: inset 0 1px 0 #2ea2cc, inset 0 2px 0 rgba(120, 200, 230, 0.7);
   background-color: #0074a2;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#2ea2cc), to(#0074a2));
   background-image: -webkit-linear-gradient(top, #2ea2cc, #0074a2);
   background-image: linear-gradient(top, #2ea2cc, #0074a2);
+  -webkit-box-shadow: inset 0 1px 0 #2ea2cc, inset 0 2px 0 rgba(120, 200, 230, 0.7);
+  box-shadow: inset 0 1px 0 #2ea2cc, inset 0 2px 0 rgba(120, 200, 230, 0.7);
 }
 button:active,
 html input[type="button"]:active,
@@ -939,12 +949,12 @@ input[type="submit"]:active, .button_primary:active,
 .button_secondary:active {
   color: rgba(255, 255, 255, 0.9);
   background: #3089b0;
-  -webkit-box-shadow: inset 0 1px 5px #005684, inset 0 -1px 0 #278dbc;
-  box-shadow: inset 0 1px 5px #005684, inset 0 -1px 0 #278dbc;
   background-color: #0074a2;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#278dbc), to(#0074a2));
   background-image: -webkit-linear-gradient(top, #278dbc, #0074a2);
   background-image: linear-gradient(top, #278dbc, #0074a2);
+  -webkit-box-shadow: inset 0 1px 5px #005684, inset 0 -1px 0 #278dbc;
+  box-shadow: inset 0 1px 5px #005684, inset 0 -1px 0 #278dbc;
 }
 
 button[disabled],
@@ -952,9 +962,9 @@ input[disabled],
 input[disabled]:hover, .button_primary[disabled],
 .button_primary:disabled {
   color: #94cde7;
+  background: #298cba;
   -webkit-box-shadow: none;
   box-shadow: none;
-  background: #298cba;
 }
 
 .button_primary[disabled],
@@ -965,41 +975,41 @@ input[disabled]:hover, .button_primary[disabled],
 .button_secondary {
   color: #555;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
-  -webkit-box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.05), inset 0 2px 0 rgba(255, 255, 255, 0.4), inset 0 -1px 1px rgba(0, 0, 0, 0.1);
-  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.05), inset 0 2px 0 rgba(255, 255, 255, 0.4), inset 0 -1px 1px rgba(0, 0, 0, 0.1);
   background-color: #dddddd;
   background-image: -webkit-gradient(linear, left top, left bottom, from(whitesmoke), to(#dddddd));
   background-image: -webkit-linear-gradient(top, whitesmoke, #dddddd);
   background-image: linear-gradient(top, whitesmoke, #dddddd);
+  -webkit-box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.05), inset 0 2px 0 rgba(255, 255, 255, 0.4), inset 0 -1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.05), inset 0 2px 0 rgba(255, 255, 255, 0.4), inset 0 -1px 1px rgba(0, 0, 0, 0.1);
 }
 .button_secondary:hover {
   color: #222;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
-  -webkit-box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.05), inset 0 2px 0 rgba(255, 255, 255, 0.5), inset 0 -1px 1px rgba(0, 0, 0, 0.1);
-  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.05), inset 0 2px 0 rgba(255, 255, 255, 0.5), inset 0 -1px 1px rgba(0, 0, 0, 0.1);
   background-color: #dddddd;
   background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#dddddd));
   background-image: -webkit-linear-gradient(top, white, #dddddd);
   background-image: linear-gradient(top, white, #dddddd);
+  -webkit-box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.05), inset 0 2px 0 rgba(255, 255, 255, 0.5), inset 0 -1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.05), inset 0 2px 0 rgba(255, 255, 255, 0.5), inset 0 -1px 1px rgba(0, 0, 0, 0.1);
 }
 .button_secondary:active {
   color: #555;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
-  -webkit-box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.3), inset 0 -1px 0 rgba(255, 255, 255, 0.5);
-  box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.3), inset 0 -1px 0 rgba(255, 255, 255, 0.5);
   background-color: #dddddd;
   background-image: -webkit-gradient(linear, left top, left bottom, from(whitesmoke), to(#dddddd));
   background-image: -webkit-linear-gradient(top, whitesmoke, #dddddd);
   background-image: linear-gradient(top, whitesmoke, #dddddd);
+  -webkit-box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.3), inset 0 -1px 0 rgba(255, 255, 255, 0.5);
+  box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.3), inset 0 -1px 0 rgba(255, 255, 255, 0.5);
 }
 
 .button_secondary[disabled],
 .button_secondary:disabled {
   color: #999;
-  -webkit-box-shadow: none;
-  box-shadow: none;
   background: #e3e3e3;
   cursor: default;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 input[type=radio] {
@@ -1012,12 +1022,12 @@ input[type=radio] {
   line-height: 0;
   text-align: center;
   border: 1px solid #bbb;
-  border-radius: 50%;
   background: #fff;
   outline: 0;
   cursor: pointer;
   vertical-align: middle;
   -webkit-appearance: none;
+  border-radius: 50%;
 }
 input[type=radio]:checked:before {
   float: left;
@@ -1030,8 +1040,8 @@ input[type=radio]:checked:before {
   background: #1e8cbe;
   vertical-align: middle;
   border-radius: 50%;
-  -webkit-animation: grow .2s ease-in-out;
-  animation: grow .2s ease-in-out;
+  -webkit-animation: grow 0.2s ease-in-out;
+  animation: grow 0.2s ease-in-out;
 }
 input[type=radio] + label {
   margin-right: 15px;
@@ -1040,19 +1050,29 @@ input[type=radio] + label {
   cursor: pointer;
 }
 
+.radio_row {
+  margin-top: 10px;
+}
+.radio_row:first-of-type {
+  margin-top: 0;
+}
+
 @-webkit-keyframes grow {
   0% {
     -webkit-transform: scale(0.3);
+    -ms-transform: scale(0.3);
     transform: scale(0.3);
   }
 
   60% {
     -webkit-transform: scale(1.15);
+    -ms-transform: scale(1.15);
     transform: scale(1.15);
   }
 
   100% {
     -webkit-transform: scale(1);
+    -ms-transform: scale(1);
     transform: scale(1);
   }
 }
@@ -1095,19 +1115,13 @@ textarea {
   line-height: 1.4;
   border: 1px solid #dfdfdf;
   background: #f9f9f9;
-  -webkit-transition: all .15s ease-in-out;
-  transition: all .15s ease-in-out;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
 }
 input[type="text"]::-webkit-input-placeholder,
 input[type="email"]::-webkit-input-placeholder,
 input[type="password"]::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
-  color: #aaa;
-}
-input[type="text"]:-moz-placeholder,
-input[type="email"]:-moz-placeholder,
-input[type="password"]:-moz-placeholder,
-textarea:-moz-placeholder {
   color: #aaa;
 }
 input[type="text"]::-moz-placeholder,
@@ -1139,12 +1153,6 @@ input[type="text"]:hover::-webkit-input-placeholder,
 input[type="email"]:hover::-webkit-input-placeholder,
 input[type="password"]:hover::-webkit-input-placeholder,
 textarea:hover::-webkit-input-placeholder {
-  color: #888;
-}
-input[type="text"]:hover:-moz-placeholder,
-input[type="email"]:hover:-moz-placeholder,
-input[type="password"]:hover:-moz-placeholder,
-textarea:hover:-moz-placeholder {
   color: #888;
 }
 input[type="text"]:hover::-moz-placeholder,
@@ -1180,12 +1188,6 @@ input[type="text"]:focus::-webkit-input-placeholder,
 input[type="email"]:focus::-webkit-input-placeholder,
 input[type="password"]:focus::-webkit-input-placeholder,
 textarea:focus::-webkit-input-placeholder {
-  color: #888;
-}
-input[type="text"]:focus:-moz-placeholder,
-input[type="email"]:focus:-moz-placeholder,
-input[type="password"]:focus:-moz-placeholder,
-textarea:focus:-moz-placeholder {
   color: #888;
 }
 input[type="text"]:focus::-moz-placeholder,
@@ -1260,7 +1262,7 @@ textarea {
   text-decoration: none;
 }
 
-.site-content__wrapper {
+.content-wrapper {
   position: relative;
   width: 100%;
   overflow-x: hidden;
@@ -1294,7 +1296,7 @@ textarea {
 }
 
 @media screen and (max-width: 768px) {
-  .site-content__wrapper {
+  .content-wrapper {
     position: fixed;
     top: 46px;
     left: 0;
@@ -1303,9 +1305,9 @@ textarea {
   }
 
   .nav-off-canvas,
-  .site-content__wrapper {
-    -webkit-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
+  .content-wrapper {
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     -webkit-transform: translate3d(0px, 0px, 0px);
     -ms-transform: translate3d(0px, 0px, 0px);
     transform: translate3d(0px, 0px, 0px);
@@ -1351,30 +1353,34 @@ textarea {
     color: #fff;
   }
 
-  .checkbox-off-canvas:checked ~ .wpcom-header .nav-off-canvas,
-  .checkbox-off-canvas:checked ~ .site-content__wrapper {
+  .checkbox-off-canvas:checked ~ .wpcom--header .nav-off-canvas,
+  .checkbox-off-canvas:checked ~ .content-wrapper {
     -webkit-transform: translate3d(-260px, 0px, 0px);
     -ms-transform: translate3d(-260px, 0px, 0px);
     transform: translate3d(-260px, 0px, 0px);
   }
 }
-.wpcom-header {
+.wpcom_header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 46px;
   background: #1e8cbe;
+  z-index: 9999;
   -webkit-box-shadow: inset 0 -1px 0 rgba(0, 86, 132, 0.8), 0 1px 3px rgba(0, 86, 132, 0.4);
   box-shadow: inset 0 -1px 0 rgba(0, 86, 132, 0.8), 0 1px 3px rgba(0, 86, 132, 0.4);
-  z-index: 9999;
 }
-.wpcom-header ul {
+.wpcom_header div {
+  margin: 0 auto;
+  max-width: 956px;
+}
+.wpcom_header ul {
   border: 0;
   padding: 0;
   margin: 0;
 }
-.wpcom-header a {
+.wpcom_header a {
   color: #fff;
   font-size: 0.875em;
   font-weight: 400;
@@ -1382,25 +1388,25 @@ textarea {
   -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
-.wpcom-header .wpcom-logo {
+.wpcom_header .wpcom_logo {
   top: 7px;
 }
 
-.wpcom-header__site-title {
+.wpcom_header_title {
   float: left;
 }
 
-.wpcom-nav h3 {
+.wpcom_header_nav h3 {
   display: none;
 }
-.wpcom-nav > ul {
+.wpcom_header_nav > ul {
   display: inline-block;
   height: 46px;
   line-height: 46px;
   margin: 0;
   outline: 0;
 }
-.wpcom-nav > ul ul {
+.wpcom_header_nav > ul ul {
   display: none;
   position: absolute;
   top: 45px;
@@ -1410,26 +1416,26 @@ textarea {
   line-height: 46px;
   background: #fff;
   background: rgba(255, 255, 255, 0.99);
+  z-index: 9999;
   -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.15), 0 3px 8px rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.15), 0 3px 8px rgba(0, 0, 0, 0.1);
-  z-index: 9999;
 }
-.wpcom-nav > ul ul ul {
+.wpcom_header_nav > ul ul ul {
   top: 0;
   left: 100%;
 }
-.wpcom-nav > ul ul li {
+.wpcom_header_nav > ul ul li {
   float: none;
   display: block;
   margin: 0;
   height: auto;
   color: #1e8cbe;
 }
-.wpcom-nav > ul ul li:hover > a {
+.wpcom_header_nav > ul ul li:hover > a {
   color: #fff;
   background: #1e8cbe;
 }
-.wpcom-nav > ul ul a {
+.wpcom_header_nav > ul ul a {
   float: none;
   display: block;
   margin: 0;
@@ -1441,7 +1447,7 @@ textarea {
   border-bottom: 1px solid #dfdfdf;
   border-color: rgba(0, 0, 0, 0.1);
 }
-.wpcom-nav > ul > li > ul:after {
+.wpcom_header_nav > ul > li > ul:after {
   content: '';
   position: absolute;
   bottom: 100%;
@@ -1451,7 +1457,7 @@ textarea {
   border: 6px solid transparent;
   border-bottom-color: #fff;
 }
-.wpcom-nav li {
+.wpcom_header_nav li {
   float: left;
   position: relative;
   display: inline-block;
@@ -1460,13 +1466,13 @@ textarea {
   line-height: 46px;
   outline: 0;
 }
-.wpcom-nav li:hover > a {
+.wpcom_header_nav li:hover > a {
   color: #78c8e6;
 }
-.wpcom-nav li:hover > ul {
+.wpcom_header_nav li:hover > ul {
   display: block;
 }
-.wpcom-nav a {
+.wpcom_header_nav a {
   display: inline-block;
   margin: 0;
   padding: 0 12px;
@@ -1478,45 +1484,45 @@ textarea {
   overflow: hidden;
   outline: 0;
 }
-.wpcom-nav .current a {
+.wpcom_header_nav .current a {
   background: #36a3ca;
   color: #fff;
+  cursor: default;
   -webkit-box-shadow: inset 0 -1px 0 rgba(0, 86, 132, 0.5);
   box-shadow: inset 0 -1px 0 rgba(0, 86, 132, 0.5);
-  cursor: default;
 }
 
 @media screen and (max-width: 768px) {
-  .wpcom-header {
+  .wpcom_header {
     position: fixed;
     z-index: 10000;
   }
 
-  .wpcom-header__site-title {
+  .wpcom_header_title {
     margin-left: 6px;
   }
 
-  .wpcom-nav {
+  .wpcom_header_nav {
     background: #fafafa;
     border-left: 1px solid #e7e7e7;
     -webkit-box-shadow: inset 0 2px 2px -2px rgba(0, 0, 0, 0.15), inset 0 11px 8px -8px rgba(0, 0, 0, 0.1);
     box-shadow: inset 0 2px 2px -2px rgba(0, 0, 0, 0.15), inset 0 11px 8px -8px rgba(0, 0, 0, 0.1);
   }
-  .wpcom-nav a {
+  .wpcom_header_nav a {
     display: block;
     color: #278dbc;
     line-height: 44px;
     border-bottom: 1px solid #f0f0f0;
     overflow: visible;
   }
-  .wpcom-nav a:hover {
+  .wpcom_header_nav a:hover {
     color: #78c8e6;
   }
-  .wpcom-nav .current a {
+  .wpcom_header_nav .current a {
     -webkit-box-shadow: none;
     box-shadow: none;
   }
-  .wpcom-nav li > ul {
+  .wpcom_header_nav li > ul {
     position: static;
     display: block;
     width: 100%;
@@ -1525,28 +1531,23 @@ textarea {
     -webkit-box-shadow: none;
     box-shadow: none;
   }
-  .wpcom-nav li > ul a {
+  .wpcom_header_nav li > ul a {
     border-bottom: 1px solid #f0f0f0;
   }
-  .wpcom-nav li > ul:after {
+  .wpcom_header_nav li > ul:after {
     display: none;
   }
-  .wpcom-nav li > ul ul {
+  .wpcom_header_nav li > ul ul {
     border-left: 5px solid #e7e7e7;
   }
-  .wpcom-nav li > ul li:hover a {
+  .wpcom_header_nav li > ul li:hover a {
     color: #78c8e6;
     background: transparent;
   }
-  .wpcom-nav:after {
+  .wpcom_header_nav:after {
     display: none;
   }
 }
-.wrapper {
-  margin: 0 auto;
-  max-width: 960px;
-}
-
 .main {
   position: relative;
   margin: 61px auto 0;
@@ -1560,7 +1561,7 @@ textarea {
   }
 }
 
-.section {
+.sub {
   margin-bottom: 1.875em;
   padding: 0 1.25em 1.25em;
   background: #fff;
@@ -1569,7 +1570,7 @@ textarea {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
 }
 
-.preview {
+.demo {
   margin: 0 -20px;
   padding: 20px;
   border-top: 1px solid #e5e5e5;
@@ -1577,39 +1578,13 @@ textarea {
   background: #f9f9f9;
 }
 
-.preview__row {
-  margin-top: 10px;
-}
-.preview__row:first-of-type {
-  margin-top: 0;
-}
-
-.preview .wpcom-logo {
+.demo .wpcom_logo {
   color: #1e8cbe;
   width: 50px;
   height: 50px;
 }
-.preview .wpcom-logo:after {
+.demo .wpcom_logo:after {
   font-size: 50px;
-}
-
-.page__title {
-  margin: 0 0.58333em 0.83333em -1px;
-  font-size: 1.5em;
-  font-weight: 300;
-  line-height: 1;
-}
-
-.section__title {
-  margin: 32px 0 0;
-  font: 700 1.9375em/1.318 "Merriweather", Georgia, "Times New Roman", Times, serif;
-}
-
-.code-block {
-  margin: 0 -1.42857em -1.42857em;
-  padding: 1.42857em;
-  color: #666;
-  font-size: 0.875em;
 }
 
 .color {
@@ -1672,6 +1647,25 @@ textarea {
   display: block;
 }
 
+.title_page {
+  margin: 0 0.58333em 0.83333em -1px;
+  font-size: 1.5em;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.title_sub {
+  margin: 32px 0 0;
+  font: 700 1.9375em/1.318 "Merriweather", Georgia, "Times New Roman", Times, serif;
+}
+
+.pre_sub {
+  margin: 0 -1.42857em -1.42857em;
+  padding: 1.42857em;
+  color: #666;
+  font-size: 0.875em;
+}
+
 .ir {
   background-color: transparent;
   border: 0;
@@ -1716,18 +1710,18 @@ textarea {
   visibility: hidden;
 }
 
-.clearfix:before, .preview:before,
+.clearfix:before, .demo:before,
 .clearfix:after,
-.preview:after {
+.demo:after {
   content: " ";
   display: table;
 }
 
-.clearfix:after, .preview:after {
+.clearfix:after, .demo:after {
   clear: both;
 }
 
-.clearfix, .preview {
+.clearfix, .demo {
   *zoom: 1;
 }
 

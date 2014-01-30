@@ -123,6 +123,15 @@
     }
 }
 
+@mixin gradient($start, $end){
+    background-color: $end;
+    background-image: -webkit-gradient(linear, left top, left bottom, from($start),to($end)); // Chrome, Safari 4+
+    background-image: -webkit-linear-gradient(top, $start, $end); // Chrome 10-25, iOS 5+, Safari 5.1+
+    background-image: -moz-linear-gradient(top, $start, $end); // Firefox 3.6-15
+    background-image: -o-linear-gradient(top, $start, $end); // Opera 11.10-12.00
+    background-image: linear-gradient(top, $start, $end); // Chrome 26, Firefox 16+, IE 10+, Opera 12.10+
+}
+
 @mixin replace-image($url, $width, $height) {
     // I totally stole this idea from Marcel Shields.
     // Read his article: http://css-tricks.com/replace-the-image-in-an-img-with-css/
@@ -145,4 +154,17 @@
         background: url($url + $suffix + "." + $file-type);
         background-size: $width auto;
     }
+}
+
+// ==========================================================================
+// IE Mixins
+// ==========================================================================
+
+@mixin ie-gradient($start, $end){
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#{$start}', EndColorStr='#{$end}');
+}
+
+@mixin ie-opacity($opacity: 1){
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$opacity*100})";
+    filter: alpha(opacity=$opacity*100);
 }

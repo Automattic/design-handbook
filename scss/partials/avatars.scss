@@ -6,6 +6,10 @@
 	float: left;
 	margin-right: 15px;
 }
-.rounded {
-	@include border-radius(50%);
+.avatar--rounded {
+	@extend .avatar;
+
+	img {
+		border-radius: 50%;
+	}
 }

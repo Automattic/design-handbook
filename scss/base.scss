@@ -8,7 +8,7 @@
 *:after {
 	// Paul Irish box sizing!!!
 	// http://www.paulirish.com/2012/box-sizing-border-box-ftw/
-	@include box-sizing();
+	box-sizing: border-box;
 
 	@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
 	only screen and (min-resolution: 144dpi) {
@@ -37,7 +37,11 @@ body {
 }
 
 // (highlight color, text color)
-@include selection();
+::selection {
+	background: #0074c2;
+	color: #fff;
+	text-shadow: none;
+}
 
 // ==========================================================================
 // Headings

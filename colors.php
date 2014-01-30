@@ -8,17 +8,17 @@
 <div class="content-wrapper">
 	<div class="main">
 		<div class="primary">
-			<h1 class="title_page"><?php echo $page; ?></h1>
+			<h1 class="page__title"><?php echo $page; ?></h1>
 
-			<article class="sub">
-				<h2 class="title_sub">WordPress.com Color Guide</h2>
+			<article class="section">
+				<h2 class="section__title">WordPress.com Color Guide</h2>
 				<p>For the sake of brand consistency across all of our user facing pages, here are some useful references and examples for the correct use of the official WordPress.com colors. For web projects, use the hex value unless you’re using RGBA with alpha transparency. For print projects, you will have the best results by using the Pantone spot color, or PMS, values listed below. If Pantone matching is not available, use the CMYK process equivalent specific to the paper stock on which you’ll be printing (coated or uncoated).</p>
-			</article><!-- .sub-->
+			</article><!-- .section-->
 
-			<article class="sub">
-				<h2 class="title_sub">Base Blues</h2>
+			<article class="section">
+				<h2 class="section__title">Base Blues</h2>
 				<p>These are the basic blues used on the WordPress.com logo icon (simple linear gradiant, <code>#1e8cbe</code> at the top, <code>#0074a2</code> at the bottom) and are the staple of our brand.</p>
-				<div class="demo">
+				<div class="preview">
 					<div class="color base-lighter-blue">
 						<h3>Base Lighter Blue</h3>
 						<span>#1e8cbe</span>
@@ -37,7 +37,7 @@
 						<span>CMYK (Coated) 100, 48, 6, 3</span>
 						<span>CMYK (Uncoated) 77, 33, 9, 11</span>
 					</div>
-				</div><!-- .demo -->
+				</div><!-- .preview -->
 				<pre class="pre_sub">a {
 &nbsp;&nbsp;color: $base-lighter-blue;
 
@@ -45,12 +45,12 @@
 &nbsp;&nbsp;&nbsp;&nbsp;color: $base-darker-blue;
 &nbsp;&nbsp;}
 }</pre>
-			</article><!-- .sub-->
+			</article><!-- .section-->
 
-			<article class="sub">
-				<h2 class="title_sub">Complimentary Blues</h2>
+			<article class="section">
+				<h2 class="section__title">Complimentary Blues</h2>
 				<p>These are extra blues for use in situations where the base blues are not a good fit. They work especially well for large blocks of color or other accents.</p>
-				<div class="demo">
+				<div class="preview">
 					<div class="color light-blue">
 						<h3>Light Blue</h3>
 						<span>#78c8e6</span>
@@ -78,14 +78,14 @@
 						<span>CMYK (Coated) 96, 54, 5, 27</span>
 						<span>CMYK (Uncoated) 80, 46, 11, 8</span>
 					</div>
-				</div><!-- .demo -->
+				</div><!-- .preview -->
 				<pre class="pre_sub">:)</pre>
-			</article><!-- .sub-->
+			</article><!-- .section-->
 
-			<article class="sub">
-				<h2 class="title_sub">Oranges</h2>
+			<article class="section">
+				<h2 class="section__title">Oranges</h2>
 				<p>Should be used for hovers in links and other accents (TBA).</p>
-				<div class="demo">
+				<div class="preview">
 					<div class="color jazzy-orange">
 						<h3>Jazzy Orange (For all that Jazz)</h3>
 						<span>#f1831e</span>
@@ -101,16 +101,16 @@
 						<span>rgb(215, 77, 17)</span>
 						<span>$fire-orange</span>
 					</div>
-				</div><!-- .demo -->
+				</div><!-- .preview -->
 				<pre class="pre_sub">a:hover {
 &nbsp;&nbsp;color: $jazzy-orange;
 }</pre>
-			</article><!-- .sub-->
+			</article><!-- .section-->
 
-			<article class="sub">
-				<h2 class="title_sub">Grey, Gray, Cinza, Gris, Nezumi-iro – it blends</h2>
+			<article class="section">
+				<h2 class="section__title">Grey, Gray, Cinza, Gris, Nezumi-iro – it blends</h2>
 				<p>Grey.</p>
-				<div class="demo">
+				<div class="preview">
 					<div class="color ultra-light-gray">
 						<h3>Ultra Light Gray (Content Area Sidebar)</h3>
 						<span>#f9f9f9</span>
@@ -150,14 +150,14 @@
 						<span>CMYK (Coated) 44, 34, 22, 77</span>
 						<span>CMYK (Uncoated) 30, 17, 8, 51</span>
 					</div>
-				</div><!-- .demo -->
+				</div><!-- .preview -->
 				<pre class="pre_sub">:)</pre>
-			</article><!-- .sub-->
+			</article><!-- .section-->
 
-			<article class="sub">
-				<h2 class="title_sub">Validation and Alerts</h2>
+			<article class="section">
+				<h2 class="section__title">Validation and Alerts</h2>
 				<p>These colors are useful for form field validation, alerts, warnings, and pats on the back. Not intended for large blocks of color. Works great with Noticons! Optimized for color blindness.</p>
-				<div class="demo">
+				<div class="preview">
 					<div class="color alert-red">
 						<h3>Alert Red</h3>
 						<span>#dd3d36</span>
@@ -173,35 +173,35 @@
 						<span>#ffba00</span>
 						<span>$alert-yellow</span>
 					</div>
-				</div><!-- .demo -->
+				</div><!-- .preview -->
 				<pre class="pre_sub">:)</pre>
-			</article><!-- .sub-->
+			</article><!-- .section-->
 
-			<article class="sub">
-				<h2 class="title_sub">Adobe Stack Exchange File</h2>
+			<article class="section">
+				<h2 class="section__title">Adobe Stack Exchange File</h2>
 				<p>If you work with WordPress.com colors on a daily basis, it can be helpful to load all of the colors as swatches in Photoshop, Illustrator, or InDesign. Grab a .ase file for the RGB colors <a href="https://mc.a8c.com/includes/img-uploader/files/1359763197-wpcom-colors.ase" target="_blank">here</a>.</p>
 
 				<h3>Instructions</h3>
 				<p>In Illustrator, from the Swatches palette pop-up menu, select Open Swatch Libraries > Other Libraries and select your saved .ase file. The file will open in a separate palette labeled with the name. To move these swatches to the Swatches palette, select the swatches you wish to move and from the pop-up menu, select Add to Swatches.</p>
 
 				<p>In Photoshop or InDesign, from the Swatches palette pop-up menu, go to Load Swatches and navigate to your .ase file. Open the .ase file — your colors should appear in the Swatches palette.</p>
-			</article><!-- .sub-->
+			</article><!-- .section-->
 
-			<article class="sub">
-				<h2 class="title_sub">Use in Compass</h2>
+			<article class="section">
+				<h2 class="section__title">Use in Compass</h2>
 				<p>Put the following at the top of your .scss file:</p>
 				<pre>@import "wpcom/colors";</pre>
 				<p>And then use the variable names listed in the swatches.</p>
-			</article><!-- .sub-->
+			</article><!-- .section-->
 
-			<article class="sub">
-				<h2 class="title_sub">Template</h2>
+			<article class="section">
+				<h2 class="section__title">Template</h2>
 				<p>Description</p>
-				<div class="demo">
-					demo
-				</div><!-- .demo -->
+				<div class="preview">
+					preview
+				</div><!-- .preview -->
 				<pre class="pre_sub">pre</pre>
-			</article><!-- .sub-->
+			</article><!-- .section-->
 
 		</div>
 	</div>
