@@ -33,8 +33,8 @@
 &nbsp;&nbsp;&lt;img height="50" width="50" alt="Blavatar" src="#" rel="#"&gt;
 &lt;/div&gt;
 
-&lt;div class="avatar"&gt;
-&nbsp;&nbsp;&lt;img class="rounded" height="50" width="50" alt="Blavatar" src="#" rel="#"&gt;
+&lt;div class="avatar--rounded"&gt;
+&nbsp;&nbsp;&lt;img height="50" width="50" alt="Blavatar" src="#" rel="#"&gt;
 &lt;/div&gt;</pre>
 		</article><!-- .section -->
 
@@ -42,28 +42,28 @@
 			<h2 class="section__title">Button: Primary</h2>
 			<p>Aenean lacinia bibendum nulla sed consectetur.</p>
 			<div class="preview">
-				<a class="button_primary">I'm a BUTTON!!!</a>
-				<a class="button_primary">Me too!</a>
-				<a class="button_primary" disabled>Disabled</a>
-				<a class="button_primary" disabled>*sniff*</a>
+				<a class="button--primary">I'm a BUTTON!!!</a>
+				<a class="button--primary">Me too!</a>
+				<a class="button--primary" disabled>Disabled</a>
+				<a class="button--primary" disabled>*sniff*</a>
 			</div><!-- .preview -->
-			<pre class="code-block">&lt;a class="button_primary"&gt;Active button&lt;/a&gt;
+			<pre class="code-block">&lt;a class="button--primary"&gt;Active button&lt;/a&gt;
 
-&lt;a class="button_primary" disabled&gt;Disabled button&lt;/a&gt;</pre>
+&lt;a class="button--primary" disabled&gt;Disabled button&lt;/a&gt;</pre>
 		</article><!-- .section -->
 
 		<article class="section">
 			<h2 class="section__title">Button: secondary</h2>
 			<p>Etiam porta sem malesuada magna mollis euismod. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
 			<div class="preview">
-				<a class="button_secondary">I'm a BUTTON!!!</a>
-				<a class="button_secondary">Me too!</a>
-				<a class="button_secondary" disabled>Disabled :(</a>
-				<a class="button_secondary" disabled>*sniff*</a>
+				<a class="button--secondary">I'm a BUTTON!!!</a>
+				<a class="button--secondary">Me too!</a>
+				<a class="button--secondary" disabled>Disabled :(</a>
+				<a class="button--secondary" disabled>*sniff*</a>
 			</div><!-- .preview -->
-			<pre class="code-block">&lt;a class="button_secondary"&gt;Active button&lt;/a&gt;
+			<pre class="code-block">&lt;a class="button--secondary"&gt;Active button&lt;/a&gt;
 
-&lt;a class="button_secondary" disabled&gt;Disabled button&lt;/a&gt;</pre>
+&lt;a class="button--secondary" disabled&gt;Disabled button&lt;/a&gt;</pre>
 		</article><!-- .section -->
 
 		<article class="section">
