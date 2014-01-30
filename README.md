@@ -3,7 +3,7 @@
 Initial work for what may become a handy dandy style guide full of all sorts of goodies.
 
 ## CSS
-	### BEM
+### BEM
 Let's try this BEM thing. Initially, I tried block_element-modifier, but I like the ability to hyphen separate words in an element.
 
 Syntax:  ``.block__element--modifier``
