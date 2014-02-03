@@ -5,7 +5,7 @@
 // Utility class to make sure major content sections are the same max-width.
 .wrapper {
 	margin: 0 auto;
-	max-width: $site--max-width;
+	max-width: $site--max-width; // variables/variables.scss
 }
 
 
@@ -13,8 +13,7 @@
 	position: relative;
 	margin: 61px auto 0;
 	padding: 0;
-	min-width: 320px;
-	max-width: 960px;
+	max-width: $site--max-width;
 
 	@media screen and (max-width: 768px) {
 		margin-top: 15px;
@@ -81,7 +80,7 @@
 
 
 
-// Color Page
+// Color Page A
 .color {
 	padding: 20px;
 	color: #fff;
@@ -129,7 +128,7 @@
 	&.shadow-gray {
 		background: $shadow-gray;
 	}
-	&.coal-grey { // See what I did there? ;)
+	&.coal-gray {
 		background: $coal-gray;
 	}
 
@@ -151,5 +150,150 @@
 	}
 	span {
 		display: block;
+	}
+}
+
+// Color Page B
+.colors {
+	// background: #222;
+
+	h1,
+	h2 {
+		text-align: center;
+	}
+	.main {
+		max-width: 100%;
+	}
+	.section,
+	.section--light {
+		// margin: 0;
+		padding: 10px;
+		// color: $gravy-gray;
+		// background: $coal-gray;
+		background: transparent;
+		box-shadow: none;
+
+		&:nth-of-type(even) {
+			background: $ultra-light-gray;
+		}
+	}
+	.section--light {
+		margin: 60px auto;
+		padding: em(35) em(20) em(5);
+		max-width: 620px;
+		background: #fff;
+		box-shadow: 0 1px 2px rgba(0,0,0,0.075);
+
+		&:first-of-type {
+			margin: 180px auto;
+			background: transparent;
+			box-shadow: none;
+		}
+	}
+	// .section__information {
+	// 	margin: 0;
+	// 	padding: 0;
+	// 	color: #333;
+	// 	background: $gravy-gray;
+	// 	overflow: hidden;
+	// }
+	.section__information {
+		margin: 60px auto;
+		max-width: 620px;
+	}
+	.section__title {
+		margin: 0;
+		padding: 0 15px 10px;
+		// font-family: $open-sans;
+		// font-weight: 700;
+		// font-size: 20px;
+		// text-align: center;
+		// text-transform: uppercase;
+	}
+	.colors-navigation {
+		font-size: 0;
+		text-align: center;
+		// background: lighten($coal-gray, 5%);
+		background: $gravy-gray;
+	}
+	.colors-navigation__link {
+		display: inline-block;
+		padding: 10px;
+		// background: darken($coal-gray, 15%);
+
+		&:nth-child(even) {
+			// background: darken($coal-gray, 10%);
+		}
+		&:hover {
+			background: lighten($coal-gray, 5%);
+			background: #222;
+		}
+	}
+	.color {
+		display: inline-block;
+		// margin: 0 2px;
+		padding: 0;
+		width: 20px;
+		height: 20px;
+	}
+	.preview {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		background: transparent;
+		text-align: center;
+
+		.color {
+			vertical-align: top;
+			position: relative;
+			margin: 0 3px 10px;
+			min-height: 600px;
+			width: 240px;
+			box-shadow: 0 1px 2px rgba(0,0,0,0.075);
+
+			&:first-of-type {
+				margin-left: 0;
+			}
+
+			&:nth-of-type(odd):last-of-type {
+				// width: 100%;
+			}
+			@media (max-height: 700px) {
+				min-height: 500px;
+			}
+		}
+	}
+	.color__information {
+		$margin: 0;
+
+		position: absolute;
+		bottom: $margin;
+		left: $margin;
+		right: $margin;
+		padding: 20px;
+		color: #444;
+		font-size: 14px;
+		text-align: left;
+		background: #fff;
+
+		h3 {
+			margin: 0;
+			font-size: 14px;
+		}
+	}
+	.color__description { // fix this
+		color: #888;
+		font-size: 12px;
+	}
+	.color__screen,
+	.color__print {
+		margin: 10px 0 0;
+	}
+	.color__screen {
+		font-family: $monospace;
+		font-weight: normal;
+	}
+	.color__print {
+		// margin: 10px 0 0;
 	}
 }

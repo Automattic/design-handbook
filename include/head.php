@@ -20,4 +20,4 @@
     </head>
 
     <!-- I'd love a a function to add to the body class based on page or page type. EX: typography, colors, cheat-sheet -->
-    <body class="default">
+    <body class="<?php body_class($body_class); ?>">

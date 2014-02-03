@@ -1551,7 +1551,6 @@ textarea {
   position: relative;
   margin: 61px auto 0;
   padding: 0;
-  min-width: 320px;
   max-width: 960px;
 }
 @media screen and (max-width: 768px) {
@@ -1652,7 +1651,7 @@ textarea {
 .color.shadow-gray {
   background: #dfdfdf;
 }
-.color.coal-grey {
+.color.coal-gray {
   background: #464646;
 }
 .color.alert-red {
@@ -1670,6 +1669,117 @@ textarea {
 }
 .color span {
   display: block;
+}
+
+.colors h1,
+.colors h2 {
+  text-align: center;
+}
+.colors .main {
+  max-width: 100%;
+}
+.colors .section,
+.colors .section--light {
+  padding: 10px;
+  background: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.colors .section:nth-of-type(even),
+.colors .section--light:nth-of-type(even) {
+  background: #f9f9f9;
+}
+.colors .section--light {
+  margin: 60px auto;
+  padding: 2.1875em 1.25em 0.3125em;
+  max-width: 620px;
+  background: #fff;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
+}
+.colors .section--light:first-of-type {
+  margin: 180px auto;
+  background: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.colors .section__information {
+  margin: 60px auto;
+  max-width: 620px;
+}
+.colors .section__title {
+  margin: 0;
+  padding: 0 15px 10px;
+}
+.colors .colors-navigation {
+  font-size: 0;
+  text-align: center;
+  background: #e5e5e5;
+}
+.colors .colors-navigation__link {
+  display: inline-block;
+  padding: 10px;
+}
+.colors .colors-navigation__link:hover {
+  background: #535353;
+  background: #222;
+}
+.colors .color {
+  display: inline-block;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+}
+.colors .preview {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  text-align: center;
+}
+.colors .preview .color {
+  vertical-align: top;
+  position: relative;
+  margin: 0 3px 10px;
+  min-height: 600px;
+  width: 240px;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
+}
+.colors .preview .color:first-of-type {
+  margin-left: 0;
+}
+@media (max-height: 700px) {
+  .colors .preview .color {
+    min-height: 500px;
+  }
+}
+.colors .color__information {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  color: #444;
+  font-size: 14px;
+  text-align: left;
+  background: #fff;
+}
+.colors .color__information h3 {
+  margin: 0;
+  font-size: 14px;
+}
+.colors .color__description {
+  color: #888;
+  font-size: 12px;
+}
+.colors .color__screen,
+.colors .color__print {
+  margin: 10px 0 0;
+}
+.colors .color__screen {
+  font-family: "courier new", monospace;
+  font-weight: normal;
 }
 
 .ir {

@@ -15,4 +15,13 @@
 			}
 		}
 	}
+	// Sets the body class to whatever
+	function body_class($body_class) {
+		if (isset($body_class)) {
+			$body_class = $body_class;
+		} else {
+			$body_class = "default";
+		}
+		echo $body_class;
+	}
 ?>
