@@ -10,7 +10,7 @@
 				<li <?php is_current( $page, 'Typography' ); ?> ><a href="#">Typography</a></li>
 				<li <?php is_current( $page, 'Colors' ); ?> ><a href="colors.php">Colors</a>
 					<ul>
-						<li <?php is_current( $page, 'Colors-Alt' ); ?> ><a href="colors.php">Colors-Alt</a></li>
+						<li <?php is_current( $page, 'Colors-Alt' ); ?> ><a href="colors-b.php">Colors-Alt</a></li>
 					</ul>
 				</li>
 				<li <?php is_current( $page, 'Components' ); ?> ><a href="index.php">Components</a></li>
