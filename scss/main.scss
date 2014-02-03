@@ -189,6 +189,10 @@
 			background: transparent;
 			box-shadow: none;
 		}
+
+		.section__title {
+			padding: 0px 15px 10px;
+		}
 	}
 	// .section__information {
 	// 	margin: 0;
@@ -198,12 +202,12 @@
 	// 	overflow: hidden;
 	// }
 	.section__information {
-		margin: 60px auto;
+		margin: 0px auto 60px;
 		max-width: 620px;
 	}
 	.section__title {
 		margin: 0;
-		padding: 0 15px 10px;
+		padding: 60px 15px 10px;
 		// font-family: $open-sans;
 		// font-weight: 700;
 		// font-size: 20px;

@@ -1703,13 +1703,16 @@ textarea {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
+.colors .section--light .section__title {
+  padding: 0px 15px 10px;
+}
 .colors .section__information {
-  margin: 60px auto;
+  margin: 0px auto 60px;
   max-width: 620px;
 }
 .colors .section__title {
   margin: 0;
-  padding: 0 15px 10px;
+  padding: 60px 15px 10px;
 }
 .colors .colors-navigation {
   font-size: 0;
