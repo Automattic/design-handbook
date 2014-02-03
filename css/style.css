@@ -1680,6 +1680,7 @@ textarea {
 }
 .colors .section,
 .colors .section--light {
+  margin: 0;
   padding: 10px;
   background: transparent;
   -webkit-box-shadow: none;
@@ -1735,7 +1736,7 @@ textarea {
 }
 .colors .preview {
   margin: 0;
-  padding: 0;
+  padding: 0 0 30px;
   border: 0;
   background: transparent;
   text-align: center;
