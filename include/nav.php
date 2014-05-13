@@ -7,8 +7,8 @@
 			<h3 class="wpcom-logo"><span class="menu-toggle">Menu</span></h3>
 			<ul>
 				<!-- Let's figure out some content sections! -->
-				<li <?php is_current( $page, 'Colors' ); ?> ><a href="colors.php">Colors</a></li>
-				<li <?php is_current( $page, 'Components' ); ?> ><a href="index.php">Components</a></li>
+				<li <?php is_current( $page, 'Colors' ); ?> ><a href="index.php">Colors</a></li>
+				<li <?php is_current( $page, 'Components' ); ?> ><a href="components.php">Components</a></li>
 			</ul>
 		</nav>
 	</div>
