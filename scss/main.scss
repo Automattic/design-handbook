@@ -58,23 +58,36 @@ a {
 	top: 0;
 	right: 0;
 	left: 0;
+	padding-left: 15px;
+	padding-right: 15px;
 	height: 50px;
 	z-index: 1;
 	background: rgba(255,255,255,0.95);
 	border-bottom: 1px solid rgba(0,0,0,0.1);
+
+	.library-logo {
+		color: $wpcom-blue;
+		display: block;
+		line-height: 50px;
+		float: left;
+		span {
+			text-indent: -5000px;
+			display: inline-block;
+			padding-left: 40px;
+			&:after {
+				top: 10px;
+			}
+		}
+	}
+
 	ul {
 		@include centered;
 		list-style: none;
 		margin: 0 auto;
-		padding: 0;
+		padding: 0 30px;
 	}
 	li {
 		display: inline-block;
-		&.wpcom-logo {
-			color: $wpcom-blue;
-			position: relative;
-			top: -4px;
-		}
 		&.current a,
 		&.current a:hover {
 			background: rgba( $light-gray, 0.4 );
@@ -91,6 +104,72 @@ a {
 				color: $fire-orange;
 			}
 		}
+	}
+
+	@media screen and ( max-width: 600px ) {
+		.library-logo {
+			span {
+				text-indent: 0;
+			}
+		}
+		ul {
+			position: fixed;
+			top: 50px;
+			right: -10px;
+			bottom: -10px;
+			left: -10px;
+			width: auto;
+			background: rgba( $dark-gray, 0.9 );
+			color: #fff;
+			padding: 0;
+			opacity: 0;
+			transition: all 0.2s ease-in-out;
+			pointer-events: none;
+		}
+		li {
+			opacity: 0;
+			display: block;
+			font-size: 1.1em;
+			font-weight: 300;
+			transition: opacity 0.2s ease-in-out;
+			&.current a,
+			&.current a:hover {
+				background: rgba( #000, 0.2 );
+				color: #fff;
+				border: none;
+			}
+
+			a {
+				color: #fff;
+				line-height: 1.2;
+				padding: 25px 20px;
+			}
+		}
+
+		body.sidebar-open & {
+			ul {
+				right: 0;
+				bottom: 0;
+				left: 0;
+				opacity: 1;
+				pointer-events: auto;
+			}
+			li {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+/* Small Screen Navigation */
+@media screen and ( max-width: 600px ) {
+	body {
+		position: relative;
+		filter: blur(0px);
+		transition: all 0.2s ease-in-out;
+	}
+	body.sidebar-open .library-navigation ~ * {
+		filter: blur(3px);
 	}
 }
 
@@ -113,6 +192,11 @@ a {
 		font-family: $open-sans;
 		margin-top: 0;
 		margin-bottom: 20px;
+		@media screen and ( max-width: 780px ) {
+			& {
+				font-size: 3em;
+			}
+		}
 	}
 	p {
 		@include centered;
@@ -158,7 +242,7 @@ a {
 	}
 	a {
 		float: left;
-		padding: 10px 20px;
+		padding: 10px 8px;
 		position: relative;
 		color: lighten( $dark-gray, 20% );
 		&:hover {
@@ -228,6 +312,14 @@ a {
 	img {
 		display: block;
 		max-width: 100%;
+	}
+	@media screen and ( max-width: 780px ) {
+		& {
+			float: none;
+			width: 100%;
+			max-width: 100%;
+			margin: 40px 0;
+		}
 	}
 }
 

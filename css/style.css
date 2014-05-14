@@ -1614,10 +1614,26 @@ a:hover {
   top: 0;
   right: 0;
   left: 0;
+  padding-left: 15px;
+  padding-right: 15px;
   height: 50px;
   z-index: 1;
   background: rgba(255, 255, 255, 0.95);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.library-navigation .library-logo {
+  color: #0087be;
+  display: block;
+  line-height: 50px;
+  float: left;
+}
+.library-navigation .library-logo span {
+  text-indent: -5000px;
+  display: inline-block;
+  padding-left: 40px;
+}
+.library-navigation .library-logo span:after {
+  top: 10px;
 }
 .library-navigation ul {
   max-width: 900px;
@@ -1625,15 +1641,10 @@ a:hover {
   margin-right: auto;
   list-style: none;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 30px;
 }
 .library-navigation li {
   display: inline-block;
-}
-.library-navigation li.wpcom-logo {
-  color: #0087be;
-  position: relative;
-  top: -4px;
 }
 .library-navigation li.current a, .library-navigation li.current a:hover {
   background: rgba(232, 240, 245, 0.4);
@@ -1649,7 +1660,70 @@ a:hover {
 .library-navigation li a:hover {
   color: #d54e21;
 }
+@media screen and (max-width: 600px) {
+  .library-navigation .library-logo span {
+    text-indent: 0;
+  }
+  .library-navigation ul {
+    position: fixed;
+    top: 50px;
+    right: -10px;
+    bottom: -10px;
+    left: -10px;
+    width: auto;
+    background: rgba(50, 65, 85, 0.9);
+    color: #fff;
+    padding: 0;
+    opacity: 0;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    pointer-events: none;
+  }
+  .library-navigation li {
+    opacity: 0;
+    display: block;
+    font-size: 1.1em;
+    font-weight: 300;
+    -webkit-transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
+  }
+  .library-navigation li.current a, .library-navigation li.current a:hover {
+    background: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    border: none;
+  }
+  .library-navigation li a {
+    color: #fff;
+    line-height: 1.2;
+    padding: 25px 20px;
+  }
+  body.sidebar-open .library-navigation ul {
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  body.sidebar-open .library-navigation li {
+    opacity: 1;
+  }
+}
 
+/* Small Screen Navigation */
+@media screen and (max-width: 600px) {
+  body {
+    position: relative;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+
+  body.sidebar-open .library-navigation ~ * {
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+  }
+}
 /* Library Header */
 .library-header {
   background: #0087be;
@@ -1670,6 +1744,11 @@ a:hover {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   margin-top: 0;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 780px) {
+  .library-header h1 {
+    font-size: 3em;
+  }
 }
 .library-header p {
   max-width: 900px;
@@ -1716,7 +1795,7 @@ a:hover {
 }
 .color-toc a {
   float: left;
-  padding: 10px 20px;
+  padding: 10px 8px;
   position: relative;
   color: #587295;
 }
@@ -1784,6 +1863,14 @@ a:hover {
 .diagram img {
   display: block;
   max-width: 100%;
+}
+@media screen and (max-width: 780px) {
+  .diagram {
+    float: none;
+    width: 100%;
+    max-width: 100%;
+    margin: 40px 0;
+  }
 }
 
 /* Design and Code Samples */
