@@ -1949,11 +1949,11 @@ a:hover {
 }
 
 /* Color Swatch */
-.color-swatches {
+.swatches {
   padding: 2% 0;
   margin: 0 -2%;
 }
-.color-swatches:after {
+.swatches:after {
   visibility: hidden;
   display: block;
   font-size: 0;
@@ -1961,7 +1961,7 @@ a:hover {
   clear: both;
   height: 0;
 }
-.color-swatches .swatch {
+.swatches .swatch {
   width: 100%;
   height: 300px;
   position: relative;
@@ -1970,10 +1970,11 @@ a:hover {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   margin: 20px 0;
+  border: 1px solid rgba(0, 0, 0, 0.05);
   -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05);
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05);
 }
-.color-swatches .swatch ul {
+.swatches .swatch ul {
   position: absolute;
   bottom: -1px;
   left: -1px;
@@ -1981,25 +1982,25 @@ a:hover {
   background: rgba(255, 255, 255, 0.95);
   margin: 0;
   padding: 20px;
-  -webkit-box-shadow: 0 -10px 0 rgba(0, 0, 0, 0.1);
-  box-shadow: 0 -10px 0 rgba(0, 0, 0, 0.1);
-  font-size: 1rem;
+  -webkit-box-shadow: 0 -10px 0 rgba(0, 0, 0, 0.025);
+  box-shadow: 0 -10px 0 rgba(0, 0, 0, 0.025);
+  font-size: 0.8rem;
   list-style: none;
 }
-.color-swatches .swatch li {
+.swatches .swatch li {
   padding: 3px 0;
   line-height: 1;
   font-family: monospace;
   color: rgba(0, 0, 0, 0.6);
 }
-.color-swatches .swatch strong {
+.swatches .swatch strong {
   font-size: 1rem;
   display: block;
   margin-bottom: 8px;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   color: rgba(0, 0, 0, 0.8);
 }
-.color-swatches .swatch small {
+.swatches .swatch small {
   font-size: 0.6rem;
   opacity: 0.7;
   display: block;
@@ -2007,24 +2008,56 @@ a:hover {
   margin-bottom: 8px;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
+.swatches .swatch .type-demo {
+  line-height: 200px;
+  width: 100%;
+  text-align: center;
+}
+.swatches .swatch.open-sans-300 .type-demo {
+  font-family: 'Open Sans', arial, verdana, sans-serif;
+  font-weight: 300;
+  font-size: 100px;
+}
+.swatches .swatch.open-sans-500 .type-demo {
+  font-family: 'Open Sans', arial, verdana, sans-serif;
+  font-weight: 500;
+  font-size: 100px;
+}
+.swatches .swatch.open-sans-title .type-demo {
+  font-family: 'Open Sans', arial, verdana, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.swatches .swatch.merriweather-700 .type-demo {
+  font-family: 'Merriweather';
+  font-weight: 700;
+  font-size: 100px;
+}
+.swatches .swatch.merriweather-900 .type-demo {
+  font-family: 'Merriweather';
+  font-weight: 900;
+  font-size: 100px;
+}
 @media screen and (min-width: 800px) {
-  .color-swatches .swatch {
+  .swatches .swatch {
     margin: 0 1%;
   }
-  .color-swatches.col-1 .swatch {
+  .swatches.col-1 .swatch {
     width: 96%;
   }
-  .color-swatches.col-2 .swatch {
+  .swatches.col-2 .swatch {
     width: 48%;
   }
-  .color-swatches.col-3 .swatch {
+  .swatches.col-3 .swatch {
     width: 31.33%;
   }
-  .color-swatches.col-4 .swatch {
+  .swatches.col-4 .swatch {
     width: 23%;
   }
 }
 
+/* Type Swatch */
 .main {
   position: relative;
   margin: 0 auto;

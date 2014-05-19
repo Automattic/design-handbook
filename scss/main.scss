@@ -409,7 +409,7 @@ a {
 
 
 /* Color Swatch */
-.color-swatches {
+.swatches {
 	padding: 2% 0;
 	margin: 0 -2%;
 	&:after {
@@ -428,7 +428,7 @@ a {
 		float: left;
 		box-sizing: border-box;
 		margin: 20px 0;
-		//border: 1px solid rgba(0,0,0,0.2);
+		border: 1px solid rgba(0,0,0,0.05);
 		box-shadow: 0 1px 1px 0 rgba(0,0,0,0.05);
 		ul {
 			position: absolute;
@@ -438,8 +438,8 @@ a {
 			background: rgba(255,255,255,0.95);
 			margin: 0;
 			padding: 20px;
-			box-shadow: 0 -10px 0 rgba(0,0,0,0.1);
-			font-size: 1rem;
+			box-shadow: 0 -10px 0 rgba(0,0,0,0.025);
+			font-size: 0.8rem;
 			list-style: none;
 		}
 		li {
@@ -463,6 +463,43 @@ a {
 			margin-bottom: 8px;
 			font-family: $open-sans;
 		}
+
+		.type-demo {
+			line-height: 200px;
+			width: 100%;
+			text-align: center;
+		}
+
+		&.open-sans-300 .type-demo {
+			font-family: 'Open Sans', arial, verdana, sans-serif;
+			font-weight: 300;
+			font-size: 100px;
+		}
+
+		&.open-sans-500 .type-demo {
+			font-family: 'Open Sans', arial, verdana, sans-serif;
+			font-weight: 500;
+			font-size: 100px;
+		}
+
+		&.open-sans-title .type-demo {
+			font-family: 'Open Sans', arial, verdana, sans-serif;
+			font-weight: 700;
+			text-transform: uppercase;
+			font-size: 18px;
+		}
+
+		&.merriweather-700 .type-demo {
+			font-family: 'Merriweather';
+			font-weight: 700;
+			font-size: 100px;
+		}
+
+		&.merriweather-900 .type-demo {
+			font-family: 'Merriweather';
+			font-weight: 900;
+			font-size: 100px;
+		}
 	}
 
 	@media screen and ( min-width: 800px ) {
@@ -477,6 +514,7 @@ a {
 }
 
 
+/* Type Swatch */
 
 
 // Component styles
