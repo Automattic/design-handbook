@@ -565,6 +565,58 @@ a {
 
 
 
+/* Icon List */
+.icon-list {
+	div {
+		margin: 10px;
+		overflow: hidden;
+		white-space: nowrap;
+		font-size: 32px;
+		line-height: 1;
+		position: relative;
+		width: 32px;
+		height: 32px;
+		color: $dark-gray;
+	}
+	div:hover,
+	div.selected {
+		cursor: pointer;
+		color: $wpcom-blue;
+		background: #fff;
+		outline: 1px solid rgba( $dark-gray, 0.2 );
+	}
+}
+
+.icon-details {
+	overflow: hidden;
+	position: relative;
+	height: 0;
+	transition: height 0.3s ease-in-out;
+	list-style-type: none;
+	margin: 0;
+	padding: 0 0 0 200px;
+	background: rgba(0,0,0,0.1);
+	&.open {
+		height: 200px;
+	}
+
+	.glyph {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		width: 200px;
+		font-size: 128px;
+	}
+
+	.name {
+		font-size: 22px;
+		font-weight: bold;
+	}
+}
+
+
+
 /* Syntax Highlighter (rainbow.js) Styles */
 /* Modified version of the "GitHub theme," by Craig Campbell (v1.0.4) */
 pre {
