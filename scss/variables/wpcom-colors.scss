@@ -2,27 +2,28 @@
 // WordPress.com COLORS
 // ==========================================================================
 
-// Base WordPress.com blues
-$base-lighter-blue: #1e8cbe;
-$base-darker-blue: #0074a2;
-
-// Complementary blues
-$light-blue: #78c8e6;
-$nkotb-blue: #2ea2cc;
-$midnight-blue: #005684;
+// Blues
+$wordpress-blue:         #0087be;
+$light-blue:             #78dcfa;
+$medium-blue:            #00aadc;
+$dark-blue:              #005082;
 
 // Oranges
-$jazzy-orange: #f1831e;
-$fire-orange: #d54e21;
+$fire-orange:            #f0821e;
+$jazzy-orange:           #d54e21;
 
-// Grays
-$ultra-light-gray: #f9f9f9;
-$light-gray: #f1f1f1;
-$gravy-gray: #e5e5e5;
-$shadow-gray: #dfdfdf;
-$coal-gray: #464646;
+// Primary Grays
+$ultra-light-gray:       #f4f8fA;
+$light-gray:             #e8f0f5;
+$medium-gray:            #d2dee6;
+$dark-gray:              #324155;
 
-// Validation and Alerts
-$alert-red: #dd3d36;
-$alert-green: #4cb420;
-$alert-yellow: #ffba00;
+// Secondary Grays
+$white:                  #ffffff;
+$medium-gray-dark:       darken($medium-gray, 10%);
+$medium-gray-darker:     darken($medium-gray, 20%);
+
+// Alerts
+$alert-yellow:           #ffba00;
+$alert-red:              #dd3d36;
+$alert-green:            #4cb420;
