@@ -4,7 +4,9 @@
 // ==========================================================================
 
 .main-navigation {
-
+	li {
+		padding: 0.382em 0;
+	}
 	// Mobile menu trigger
 	.menu-toggle {
 		display: none; 

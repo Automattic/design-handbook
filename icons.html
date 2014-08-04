@@ -3,396 +3,436 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title>WordPress.com Iconography</title>
-		<meta name="description" content="">
+		<title>Iconography | WordPress.com Design Handbook</title>
+		<meta name="description" content="WordPress.com Design Handbook">
 		<meta name="viewport" content="width=device-width">
 		<link rel='stylesheet' href='css/style.css'>
 		<script src='js/vendor/modernizr-2.6.2.min.js'></script>
 
-		<link href='http://fonts.googleapis.com/css?family=Merriweather:700,900|Open+Sans:300italic,400italic,600italic,400,300,600|Source+Code+Pro:400,500,600' rel='stylesheet' type='text/css'>
+		<link rel="icon" type="image/x-icon" href="https://s2.wp.com/i/favicon.ico" sizes="16x16" />
+
+		<link href='http://fonts.googleapis.com/css?family=Merriweather:700,900|Open+Sans:400italic,700italic,400,700,300' rel='stylesheet' type='text/css'>
 	</head>
 
 	<body>
-		<header class="library-navigation">
-			<div class="library-logo"><span class="wpcom-logo">Menu</span></div>
-			<ul>
-				<li><a href="index.html">Colors</a></li>
-				<li><a href="typography.html">Typography</a></li>
-				<li class="current"><a href="icons.html">Icons</a></li>
-				<li><a href="components.html">Components</a></li>
-			</ul>
-		</header>
 
-		<header class="library-header">
-			<h1>Icons</h1>
-			<p>Beautiful icons that are quick to use, and easy to create.</p>
-		</header>
+		<header id="masthead" class="site-header" role="banner">
+			<div class="site-branding">
+				<h1 class="site-title"><a href="index.html" rel="home">WordPress.com Design Handbook</a></h1>
+			</div>
+		</header><!-- #masthead -->
 
-		<section class="pattern-group">
-			<article class="pattern">
-				<h3><a href="http://wordpress.com/i/noticons/example.html">Noticons</a></h3>
-				<p>Noticons (note-icons, or not-icons) is our WordPress.com icon font. It contains every icon &ldquo;Genericons&rdquo; has, plus a couple of WordPress.com specific ones. You can use Genericons for themes and other projects.</p>
-				<p><strong>Please do not use Noticons outside of their intended 16px font-size or 2x multiples thereof (32px, 64px). Even fonts look fuzzy outside of their pixel grid.</strong></p>
-			</article>
+		<div id="content" class="site-content">
 
-			<article class="icons">
-				<ul class="icon-details">
-					<li class="glyph"></li>
-					<li class="name"></li>
-					<li class="actions">
-						<a class="action-copy-css" href="#">Copy CSS</a>
-						<a class="action-copy-html" href="#">Copy HTML</a>
-						<a class="action-copy-glyph" href="#">Copy Glyph</a>
+			<nav id="site-navigation" class="main-navigation" role="navigation">
+				<button class="menu-toggle">Navigation</button>
+				<ul>
+					<li><a href="index.html">Introduction</a></li>
+					<li><a href="logo.html">Logotype</a></li>
+					<li><a href="colors.html">Colors</a></li>
+					<li><a href="typography.html">Typography</a></li>
+					<li class="current"><a href="icons.html">Iconography</a></li>
+					<li><a href="metrics.html">Metrics</a></li>
+					<li><a href="components.html">Components</a>
+						<ul>
+							<li><a href="atoms.html">Atoms</a></li>
+							<li><a href="molecules.html">Molecules</a></li>
+							<li><a href="organisms.html">Organisms</a></li>
+							<li><a href="templates.html">Templates</a></li>
+						</ul>
 					</li>
+					<li><a href="sass.html">Sass Reference</a></li>
 				</ul>
+			</nav><!-- #site-navigation -->
 
-				<div class="icon-list">
-					<div alt="f423" class="noticon noticon-404">404</div>
-					
-					<div alt="f8b3" class="noticon noticon-add">add</div>
-					
-					<div alt="f8d2" class="noticon noticon-akismet">akismet</div>
-					
-					<div alt="f8b4" class="noticon noticon-art">art</div>
-					
-					<div alt="f101" class="noticon noticon-aside">aside</div>
-					
-					<div alt="f814" class="noticon noticon-atsign">atsign</div>
-					
-					<div alt="f416" class="noticon noticon-attachment">attachment</div>
-					
-					<div alt="f109" class="noticon noticon-audio">audio</div>
-					
-					<div alt="f815" class="noticon noticon-automattic">automattic</div>
-					
-					<div alt="f817" class="noticon noticon-automattic-blip">automattic-blip</div>
-					
-					<div alt="f816" class="noticon noticon-automattic-ring">automattic-ring</div>
-					
-					<div alt="f471" class="noticon noticon-bold">bold</div>
-					
-					<div alt="f444" class="noticon noticon-book">book</div>
-					
-					<div alt="f8a5" class="noticon noticon-bullhorn">bullhorn</div>
-					
-					<div alt="f8a0" class="noticon noticon-bullseye">bullseye</div>
-					
-					<div alt="f447" class="noticon noticon-cart">cart</div>
-					
-					<div alt="f301" class="noticon noticon-category">category</div>
-					
-					<div alt="f108" class="noticon noticon-chat">chat</div>
-					
-					<div alt="f418" class="noticon noticon-checkmark">checkmark</div>
-					
-					<div alt="f405" class="noticon noticon-close">close</div>
-					
-					<div alt="f406" class="noticon noticon-close-alt">close-alt</div>
-					
-					<div alt="f426" class="noticon noticon-cloud">cloud</div>
-					
-					<div alt="f440" class="noticon noticon-cloud-download">cloud-download</div>
-					
-					<div alt="f441" class="noticon noticon-cloud-upload">cloud-upload</div>
-					
-					<div alt="f462" class="noticon noticon-code">code</div>
-					
-					<div alt="f216" class="noticon noticon-codepen">codepen</div>
-					
-					<div alt="f445" class="noticon noticon-cog">cog</div>
-					
-					<div alt="f432" class="noticon noticon-collapse">collapse</div>
-					
-					<div alt="f8a7" class="noticon noticon-colors">colors</div>
-					
-					<div alt="f300" class="noticon noticon-comment">comment</div>
-					
-					<div alt="f807" class="noticon noticon-compact">compact</div>
-					
-					<div alt="f305" class="noticon noticon-day">day</div>
-					
-					<div alt="f221" class="noticon noticon-digg">digg</div>
-					
-					<div alt="f443" class="noticon noticon-document">document</div>
-					
-					<div alt="f428" class="noticon noticon-dot">dot</div>
-					
-					<div alt="f502" class="noticon noticon-downarrow">downarrow</div>
-					
-					<div alt="f436" class="noticon noticon-draggable">draggable</div>
-					
-					<div alt="f201" class="noticon noticon-dribbble">dribbble</div>
-					
-					<div alt="f225" class="noticon noticon-dropbox">dropbox</div>
-					
-					<div alt="f433" class="noticon noticon-dropdown">dropdown</div>
-					
-					<div alt="f434" class="noticon noticon-dropdown-left">dropdown-left</div>
-					
-					<div alt="f411" class="noticon noticon-edit">edit</div>
-					
-					<div alt="f476" class="noticon noticon-ellipsis">ellipsis</div>
-					
-					<div alt="f8a6" class="noticon noticon-eventbrite">eventbrite</div>
-					
-					<div alt="f431" class="noticon noticon-expand">expand</div>
-					
-					<div alt="f442" class="noticon noticon-external">external</div>
-					
-					<div alt="f203" class="noticon noticon-facebook">facebook</div>
-					
-					<div alt="f204" class="noticon noticon-facebook-alt">facebook-alt</div>
-					
-					<div alt="f458" class="noticon noticon-fastforward">fastforward</div>
-					
-					<div alt="f8a8" class="noticon noticon-features">features</div>
-					
-					<div alt="f413" class="noticon noticon-feed">feed</div>
-					
-					<div alt="f468" class="noticon noticon-flag">flag</div>
-					
-					<div alt="f211" class="noticon noticon-flickr">flickr</div>
-					
-					<div alt="f801" class="noticon noticon-follow">follow</div>
-					
-					<div alt="f803" class="noticon noticon-following">following</div>
-					
-					<div alt="f8b5" class="noticon noticon-fonts">fonts</div>
-					
-					<div alt="f226" class="noticon noticon-foursquare">foursquare</div>
-					
-					<div alt="f474" class="noticon noticon-fullscreen">fullscreen</div>
-					
-					<div alt="f103" class="noticon noticon-gallery">gallery</div>
-					
-					<div alt="f8a4" class="noticon noticon-gift">gift</div>
-					
-					<div alt="f200" class="noticon noticon-github">github</div>
-					
-					<div alt="f206" class="noticon noticon-googleplus">googleplus</div>
-					
-					<div alt="f218" class="noticon noticon-googleplus-alt">googleplus-alt</div>
-					
-					<div alt="f8d0" class="noticon noticon-gravatar">gravatar</div>
-					
-					<div alt="f808" class="noticon noticon-gridview">gridview</div>
-					
-					<div alt="f461" class="noticon noticon-heart">heart</div>
-					
-					<div alt="f457" class="noticon noticon-help">help</div>
-					
-					<div alt="f404" class="noticon noticon-hide">hide</div>
-					
-					<div alt="f409" class="noticon noticon-home">home</div>
-					
-					<div alt="f102" class="noticon noticon-image">image</div>
-					
-					<div alt="f455" class="noticon noticon-info">info</div>
-					
-					<div alt="f215" class="noticon noticon-instagram">instagram</div>
-					
-					<div alt="f472" class="noticon noticon-italic">italic</div>
-					
-					<div alt="f8d3" class="noticon noticon-jetpack">jetpack</div>
-					
-					<div alt="f427" class="noticon noticon-key">key</div>
-					
-					<div alt="f8a9" class="noticon noticon-layouts">layouts</div>
-					
-					<div alt="f503" class="noticon noticon-leftarrow">leftarrow</div>
-					
-					<div alt="f8a1" class="noticon noticon-lightbulb">lightbulb</div>
-					
-					<div alt="f107" class="noticon noticon-link">link</div>
-					
-					<div alt="f207" class="noticon noticon-linkedin">linkedin</div>
-					
-					<div alt="f208" class="noticon noticon-linkedin-alt">linkedin-alt</div>
-					
-					<div alt="f8b2" class="noticon noticon-localization">localization</div>
-					
-					<div alt="f417" class="noticon noticon-location">location</div>
-					
-					<div alt="f470" class="noticon noticon-lock">lock</div>
-					
-					<div alt="f410" class="noticon noticon-mail">mail</div>
-					
-					<div alt="f422" class="noticon noticon-maximize">maximize</div>
-					
-					<div alt="f419" class="noticon noticon-menu">menu</div>
-					
-					<div alt="f806" class="noticon noticon-milestone">milestone</div>
-					
-					<div alt="f421" class="noticon noticon-minimize">minimize</div>
-					
-					<div alt="f307" class="noticon noticon-month">month</div>
-					
-					<div alt="f429" class="noticon noticon-next">next</div>
-					
-					<div alt="f456" class="noticon noticon-notice">notice</div>
-					
-					<div alt="f800" class="noticon noticon-notification">notification</div>
-					
-					<div alt="f219" class="noticon noticon-path">path</div>
-					
-					<div alt="f448" class="noticon noticon-pause">pause</div>
-					
-					<div alt="f437" class="noticon noticon-phone">phone</div>
-					
-					<div alt="f473" class="noticon noticon-picture">picture</div>
-					
-					<div alt="f308" class="noticon noticon-pinned">pinned</div>
-					
-					<div alt="f209" class="noticon noticon-pinterest">pinterest</div>
-					
-					<div alt="f210" class="noticon noticon-pinterest-alt">pinterest-alt</div>
-					
-					<div alt="f452" class="noticon noticon-play">play</div>
-					
-					<div alt="f439" class="noticon noticon-plugin">plugin</div>
-					
-					<div alt="f224" class="noticon noticon-pocket">pocket</div>
-					
-					<div alt="f217" class="noticon noticon-polldaddy">polldaddy</div>
-					
-					<div alt="f460" class="noticon noticon-portfolio">portfolio</div>
-					
-					<div alt="f430" class="noticon noticon-previous">previous</div>
-					
-					<div alt="f8b0" class="noticon noticon-price">price</div>
-					
-					<div alt="f469" class="noticon noticon-print">print</div>
-					
-					<div alt="f812" class="noticon noticon-promoted">promoted</div>
-					
-					<div alt="f106" class="noticon noticon-quote">quote</div>
-					
-					<div alt="f8a2" class="noticon noticon-reader">reader</div>
-					
-					<div alt="f8a3" class="noticon noticon-reader-alt">reader-alt</div>
-					
-					<div alt="f805" class="noticon noticon-reblog">reblog</div>
-					
-					<div alt="f222" class="noticon noticon-reddit">reddit</div>
-					
-					<div alt="f420" class="noticon noticon-refresh">refresh</div>
-					
-					<div alt="f412" class="noticon noticon-reply">reply</div>
-					
-					<div alt="f466" class="noticon noticon-reply-alt">reply-alt</div>
-					
-					<div alt="f467" class="noticon noticon-reply-single">reply-single</div>
-					
-					<div alt="f459" class="noticon noticon-rewind">rewind</div>
-					
-					<div alt="f501" class="noticon noticon-rightarrow">rightarrow</div>
-					
-					<div alt="f400" class="noticon noticon-search">search</div>
-					
-					<div alt="f438" class="noticon noticon-send-to-phone">send-to-phone</div>
-					
-					<div alt="f454" class="noticon noticon-send-to-tablet">send-to-tablet</div>
-					
-					<div alt="f415" class="noticon noticon-share">share</div>
-					
-					<div alt="f403" class="noticon noticon-show">show</div>
-					
-					<div alt="f451" class="noticon noticon-skip-ahead">skip-ahead</div>
-					
-					<div alt="f450" class="noticon noticon-skip-back">skip-back</div>
-					
-					<div alt="f220" class="noticon noticon-skype">skype</div>
-					
-					<div alt="f424" class="noticon noticon-spam">spam</div>
-					
-					<div alt="f811" class="noticon noticon-spike">spike</div>
-					
-					<div alt="f100" class="noticon noticon-standard">standard</div>
-					
-					<div alt="f408" class="noticon noticon-star">star</div>
-					
-					<div alt="f105" class="noticon noticon-status">status</div>
-					
-					<div alt="f449" class="noticon noticon-stop">stop</div>
-					
-					<div alt="f223" class="noticon noticon-stumbleupon">stumbleupon</div>
-					
-					<div alt="f463" class="noticon noticon-subscribe">subscribe</div>
-					
-					<div alt="f465" class="noticon noticon-subscribed">subscribed</div>
-					
-					<div alt="f425" class="noticon noticon-summary">summary</div>
-					
-					<div alt="f453" class="noticon noticon-tablet">tablet</div>
-					
-					<div alt="f302" class="noticon noticon-tag">tag</div>
-					
-					<div alt="f303" class="noticon noticon-time">time</div>
-					
-					<div alt="f8b6" class="noticon noticon-title">title</div>
-					
-					<div alt="f435" class="noticon noticon-top">top</div>
-					
-					<div alt="f810" class="noticon noticon-trapper">trapper</div>
-					
-					<div alt="f407" class="noticon noticon-trash">trash</div>
-					
-					<div alt="f804" class="noticon noticon-trophy">trophy</div>
-					
-					<div alt="f214" class="noticon noticon-tumblr">tumblr</div>
-					
-					<div alt="f202" class="noticon noticon-twitter">twitter</div>
-					
-					<div alt="f8b1" class="noticon noticon-types">types</div>
-					
-					<div alt="f446" class="noticon noticon-unapprove">unapprove</div>
-					
-					<div alt="f802" class="noticon noticon-unfollow">unfollow</div>
-					
-					<div alt="f464" class="noticon noticon-unsubscribe">unsubscribe</div>
-					
-					<div alt="f401" class="noticon noticon-unzoom">unzoom</div>
-					
-					<div alt="f500" class="noticon noticon-uparrow">uparrow</div>
-					
-					<div alt="f304" class="noticon noticon-user">user</div>
-					
-					<div alt="f8d1" class="noticon noticon-vaultpress">vaultpress</div>
-					
-					<div alt="f104" class="noticon noticon-video">video</div>
-					
-					<div alt="f212" class="noticon noticon-vimeo">vimeo</div>
-					
-					<div alt="f414" class="noticon noticon-warning">warning</div>
-					
-					<div alt="f475" class="noticon noticon-website">website</div>
-					
-					<div alt="f306" class="noticon noticon-week">week</div>
-					
-					<div alt="f813" class="noticon noticon-wordads">wordads</div>
-					
-					<div alt="f205" class="noticon noticon-wordpress">wordpress</div>
-					
-					<div alt="f213" class="noticon noticon-youtube">youtube</div>
-					
-					<div alt="f402" class="noticon noticon-zoom">zoom</div>
-				</div>
-			</article>
-		</section>
+			<main id="main" class="site-main" role="main">
+				<article id="handbook-intro" class="page">
 
-		<section class="pattern-group">
-			<article class="pattern">
-				<h3><a href="http://genericons.com">Genericons</a></h3>
-				<p>Genericons is an open-source icon font. Most of it is included in Noticons. Useful for themes and non-WordPress.com stuff.</p>
-			</article>
-		</section>
+					<header class="section-header">
+						<h1>Icons</h1>
+						<p>Beautiful icons that are quick to use, and easy to create.</p>
+					</header>
 
-		<section class="pattern-group">
-			<article class="pattern">
-				<h3><a href="http://melchoyce.github.io/dashicons/">Dashicons</a></h3>
-				<p>Dashicons is the official icon font of the WordPress admin as of 3.8.</p>
-			</article>
-		</section>
+					<section class="pattern-group">
+						<article class="pattern">
+							<h3><a href="http://wordpress.com/i/noticons/example.html">Noticons</a></h3>
+							<p>Noticons (note-icons, or not-icons) is our WordPress.com icon font. It contains every icon &ldquo;Genericons&rdquo; has, plus a couple of WordPress.com specific ones. You can use Genericons for themes and other projects.</p>
+							<p><strong>Please do not use Noticons outside of their intended 16px font-size or 2x multiples thereof (32px, 64px). Even fonts look fuzzy outside of their pixel grid.</strong></p>
+						</article>
+
+						<article class="icons">
+							<ul class="icon-details">
+								<li class="glyph"></li>
+								<li class="name"></li>
+								<li class="actions">
+									<a class="action-copy-css" href="#">Copy CSS</a>
+									<a class="action-copy-html" href="#">Copy HTML</a>
+									<a class="action-copy-glyph" href="#">Copy Glyph</a>
+								</li>
+							</ul>
+
+							<div class="icon-list">
+								<div alt="f423" class="noticon noticon-404">404</div>
+								
+								<div alt="f8b3" class="noticon noticon-add">add</div>
+								
+								<div alt="f8d2" class="noticon noticon-akismet">akismet</div>
+								
+								<div alt="f8b4" class="noticon noticon-art">art</div>
+								
+								<div alt="f101" class="noticon noticon-aside">aside</div>
+								
+								<div alt="f814" class="noticon noticon-atsign">atsign</div>
+								
+								<div alt="f416" class="noticon noticon-attachment">attachment</div>
+								
+								<div alt="f109" class="noticon noticon-audio">audio</div>
+								
+								<div alt="f815" class="noticon noticon-automattic">automattic</div>
+								
+								<div alt="f817" class="noticon noticon-automattic-blip">automattic-blip</div>
+								
+								<div alt="f816" class="noticon noticon-automattic-ring">automattic-ring</div>
+								
+								<div alt="f471" class="noticon noticon-bold">bold</div>
+								
+								<div alt="f444" class="noticon noticon-book">book</div>
+								
+								<div alt="f8a5" class="noticon noticon-bullhorn">bullhorn</div>
+								
+								<div alt="f8a0" class="noticon noticon-bullseye">bullseye</div>
+								
+								<div alt="f447" class="noticon noticon-cart">cart</div>
+								
+								<div alt="f301" class="noticon noticon-category">category</div>
+								
+								<div alt="f108" class="noticon noticon-chat">chat</div>
+								
+								<div alt="f418" class="noticon noticon-checkmark">checkmark</div>
+								
+								<div alt="f405" class="noticon noticon-close">close</div>
+								
+								<div alt="f406" class="noticon noticon-close-alt">close-alt</div>
+								
+								<div alt="f426" class="noticon noticon-cloud">cloud</div>
+								
+								<div alt="f440" class="noticon noticon-cloud-download">cloud-download</div>
+								
+								<div alt="f441" class="noticon noticon-cloud-upload">cloud-upload</div>
+								
+								<div alt="f462" class="noticon noticon-code">code</div>
+								
+								<div alt="f216" class="noticon noticon-codepen">codepen</div>
+								
+								<div alt="f445" class="noticon noticon-cog">cog</div>
+								
+								<div alt="f432" class="noticon noticon-collapse">collapse</div>
+								
+								<div alt="f8a7" class="noticon noticon-colors">colors</div>
+								
+								<div alt="f300" class="noticon noticon-comment">comment</div>
+								
+								<div alt="f807" class="noticon noticon-compact">compact</div>
+								
+								<div alt="f305" class="noticon noticon-day">day</div>
+								
+								<div alt="f221" class="noticon noticon-digg">digg</div>
+								
+								<div alt="f443" class="noticon noticon-document">document</div>
+								
+								<div alt="f428" class="noticon noticon-dot">dot</div>
+								
+								<div alt="f502" class="noticon noticon-downarrow">downarrow</div>
+								
+								<div alt="f436" class="noticon noticon-draggable">draggable</div>
+								
+								<div alt="f201" class="noticon noticon-dribbble">dribbble</div>
+								
+								<div alt="f225" class="noticon noticon-dropbox">dropbox</div>
+								
+								<div alt="f433" class="noticon noticon-dropdown">dropdown</div>
+								
+								<div alt="f434" class="noticon noticon-dropdown-left">dropdown-left</div>
+								
+								<div alt="f411" class="noticon noticon-edit">edit</div>
+								
+								<div alt="f476" class="noticon noticon-ellipsis">ellipsis</div>
+								
+								<div alt="f8a6" class="noticon noticon-eventbrite">eventbrite</div>
+								
+								<div alt="f431" class="noticon noticon-expand">expand</div>
+								
+								<div alt="f442" class="noticon noticon-external">external</div>
+								
+								<div alt="f203" class="noticon noticon-facebook">facebook</div>
+								
+								<div alt="f204" class="noticon noticon-facebook-alt">facebook-alt</div>
+								
+								<div alt="f458" class="noticon noticon-fastforward">fastforward</div>
+								
+								<div alt="f8a8" class="noticon noticon-features">features</div>
+								
+								<div alt="f413" class="noticon noticon-feed">feed</div>
+								
+								<div alt="f468" class="noticon noticon-flag">flag</div>
+								
+								<div alt="f211" class="noticon noticon-flickr">flickr</div>
+								
+								<div alt="f801" class="noticon noticon-follow">follow</div>
+								
+								<div alt="f803" class="noticon noticon-following">following</div>
+								
+								<div alt="f8b5" class="noticon noticon-fonts">fonts</div>
+								
+								<div alt="f226" class="noticon noticon-foursquare">foursquare</div>
+								
+								<div alt="f474" class="noticon noticon-fullscreen">fullscreen</div>
+								
+								<div alt="f103" class="noticon noticon-gallery">gallery</div>
+								
+								<div alt="f8a4" class="noticon noticon-gift">gift</div>
+								
+								<div alt="f200" class="noticon noticon-github">github</div>
+								
+								<div alt="f206" class="noticon noticon-googleplus">googleplus</div>
+								
+								<div alt="f218" class="noticon noticon-googleplus-alt">googleplus-alt</div>
+								
+								<div alt="f8d0" class="noticon noticon-gravatar">gravatar</div>
+								
+								<div alt="f808" class="noticon noticon-gridview">gridview</div>
+								
+								<div alt="f461" class="noticon noticon-heart">heart</div>
+								
+								<div alt="f457" class="noticon noticon-help">help</div>
+								
+								<div alt="f404" class="noticon noticon-hide">hide</div>
+								
+								<div alt="f409" class="noticon noticon-home">home</div>
+								
+								<div alt="f102" class="noticon noticon-image">image</div>
+								
+								<div alt="f455" class="noticon noticon-info">info</div>
+								
+								<div alt="f215" class="noticon noticon-instagram">instagram</div>
+								
+								<div alt="f472" class="noticon noticon-italic">italic</div>
+								
+								<div alt="f8d3" class="noticon noticon-jetpack">jetpack</div>
+								
+								<div alt="f427" class="noticon noticon-key">key</div>
+								
+								<div alt="f8a9" class="noticon noticon-layouts">layouts</div>
+								
+								<div alt="f503" class="noticon noticon-leftarrow">leftarrow</div>
+								
+								<div alt="f8a1" class="noticon noticon-lightbulb">lightbulb</div>
+								
+								<div alt="f107" class="noticon noticon-link">link</div>
+								
+								<div alt="f207" class="noticon noticon-linkedin">linkedin</div>
+								
+								<div alt="f208" class="noticon noticon-linkedin-alt">linkedin-alt</div>
+								
+								<div alt="f8b2" class="noticon noticon-localization">localization</div>
+								
+								<div alt="f417" class="noticon noticon-location">location</div>
+								
+								<div alt="f470" class="noticon noticon-lock">lock</div>
+								
+								<div alt="f410" class="noticon noticon-mail">mail</div>
+								
+								<div alt="f422" class="noticon noticon-maximize">maximize</div>
+								
+								<div alt="f419" class="noticon noticon-menu">menu</div>
+								
+								<div alt="f806" class="noticon noticon-milestone">milestone</div>
+								
+								<div alt="f421" class="noticon noticon-minimize">minimize</div>
+								
+								<div alt="f307" class="noticon noticon-month">month</div>
+								
+								<div alt="f429" class="noticon noticon-next">next</div>
+								
+								<div alt="f456" class="noticon noticon-notice">notice</div>
+								
+								<div alt="f800" class="noticon noticon-notification">notification</div>
+								
+								<div alt="f219" class="noticon noticon-path">path</div>
+								
+								<div alt="f448" class="noticon noticon-pause">pause</div>
+								
+								<div alt="f437" class="noticon noticon-phone">phone</div>
+								
+								<div alt="f473" class="noticon noticon-picture">picture</div>
+								
+								<div alt="f308" class="noticon noticon-pinned">pinned</div>
+								
+								<div alt="f209" class="noticon noticon-pinterest">pinterest</div>
+								
+								<div alt="f210" class="noticon noticon-pinterest-alt">pinterest-alt</div>
+								
+								<div alt="f452" class="noticon noticon-play">play</div>
+								
+								<div alt="f439" class="noticon noticon-plugin">plugin</div>
+								
+								<div alt="f224" class="noticon noticon-pocket">pocket</div>
+								
+								<div alt="f217" class="noticon noticon-polldaddy">polldaddy</div>
+								
+								<div alt="f460" class="noticon noticon-portfolio">portfolio</div>
+								
+								<div alt="f430" class="noticon noticon-previous">previous</div>
+								
+								<div alt="f8b0" class="noticon noticon-price">price</div>
+								
+								<div alt="f469" class="noticon noticon-print">print</div>
+								
+								<div alt="f812" class="noticon noticon-promoted">promoted</div>
+								
+								<div alt="f106" class="noticon noticon-quote">quote</div>
+								
+								<div alt="f8a2" class="noticon noticon-reader">reader</div>
+								
+								<div alt="f8a3" class="noticon noticon-reader-alt">reader-alt</div>
+								
+								<div alt="f805" class="noticon noticon-reblog">reblog</div>
+								
+								<div alt="f222" class="noticon noticon-reddit">reddit</div>
+								
+								<div alt="f420" class="noticon noticon-refresh">refresh</div>
+								
+								<div alt="f412" class="noticon noticon-reply">reply</div>
+								
+								<div alt="f466" class="noticon noticon-reply-alt">reply-alt</div>
+								
+								<div alt="f467" class="noticon noticon-reply-single">reply-single</div>
+								
+								<div alt="f459" class="noticon noticon-rewind">rewind</div>
+								
+								<div alt="f501" class="noticon noticon-rightarrow">rightarrow</div>
+								
+								<div alt="f400" class="noticon noticon-search">search</div>
+								
+								<div alt="f438" class="noticon noticon-send-to-phone">send-to-phone</div>
+								
+								<div alt="f454" class="noticon noticon-send-to-tablet">send-to-tablet</div>
+								
+								<div alt="f415" class="noticon noticon-share">share</div>
+								
+								<div alt="f403" class="noticon noticon-show">show</div>
+								
+								<div alt="f451" class="noticon noticon-skip-ahead">skip-ahead</div>
+								
+								<div alt="f450" class="noticon noticon-skip-back">skip-back</div>
+								
+								<div alt="f220" class="noticon noticon-skype">skype</div>
+								
+								<div alt="f424" class="noticon noticon-spam">spam</div>
+								
+								<div alt="f811" class="noticon noticon-spike">spike</div>
+								
+								<div alt="f100" class="noticon noticon-standard">standard</div>
+								
+								<div alt="f408" class="noticon noticon-star">star</div>
+								
+								<div alt="f105" class="noticon noticon-status">status</div>
+								
+								<div alt="f449" class="noticon noticon-stop">stop</div>
+								
+								<div alt="f223" class="noticon noticon-stumbleupon">stumbleupon</div>
+								
+								<div alt="f463" class="noticon noticon-subscribe">subscribe</div>
+								
+								<div alt="f465" class="noticon noticon-subscribed">subscribed</div>
+								
+								<div alt="f425" class="noticon noticon-summary">summary</div>
+								
+								<div alt="f453" class="noticon noticon-tablet">tablet</div>
+								
+								<div alt="f302" class="noticon noticon-tag">tag</div>
+								
+								<div alt="f303" class="noticon noticon-time">time</div>
+								
+								<div alt="f8b6" class="noticon noticon-title">title</div>
+								
+								<div alt="f435" class="noticon noticon-top">top</div>
+								
+								<div alt="f810" class="noticon noticon-trapper">trapper</div>
+								
+								<div alt="f407" class="noticon noticon-trash">trash</div>
+								
+								<div alt="f804" class="noticon noticon-trophy">trophy</div>
+								
+								<div alt="f214" class="noticon noticon-tumblr">tumblr</div>
+								
+								<div alt="f202" class="noticon noticon-twitter">twitter</div>
+								
+								<div alt="f8b1" class="noticon noticon-types">types</div>
+								
+								<div alt="f446" class="noticon noticon-unapprove">unapprove</div>
+								
+								<div alt="f802" class="noticon noticon-unfollow">unfollow</div>
+								
+								<div alt="f464" class="noticon noticon-unsubscribe">unsubscribe</div>
+								
+								<div alt="f401" class="noticon noticon-unzoom">unzoom</div>
+								
+								<div alt="f500" class="noticon noticon-uparrow">uparrow</div>
+								
+								<div alt="f304" class="noticon noticon-user">user</div>
+								
+								<div alt="f8d1" class="noticon noticon-vaultpress">vaultpress</div>
+								
+								<div alt="f104" class="noticon noticon-video">video</div>
+								
+								<div alt="f212" class="noticon noticon-vimeo">vimeo</div>
+								
+								<div alt="f414" class="noticon noticon-warning">warning</div>
+								
+								<div alt="f475" class="noticon noticon-website">website</div>
+								
+								<div alt="f306" class="noticon noticon-week">week</div>
+								
+								<div alt="f813" class="noticon noticon-wordads">wordads</div>
+								
+								<div alt="f205" class="noticon noticon-wordpress">wordpress</div>
+								
+								<div alt="f213" class="noticon noticon-youtube">youtube</div>
+								
+								<div alt="f402" class="noticon noticon-zoom">zoom</div>
+							</div>
+						</article>
+					</section>
+
+					<section class="pattern-group">
+						<article class="pattern">
+							<h3><a href="http://genericons.com">Genericons</a></h3>
+							<p>Genericons is an open-source icon font. Most of it is included in Noticons. Useful for themes and non-WordPress.com stuff.</p>
+						</article>
+					</section>
+
+					<section class="pattern-group">
+						<article class="pattern">
+							<h3><a href="http://melchoyce.github.io/dashicons/">Dashicons</a></h3>
+							<p>Dashicons is the official icon font of the WordPress admin as of 3.8.</p>
+						</article>
+					</section>
+					
+					<p>Lorem ipsum dolor sit amet, consectetur adipisici<strong style="color:green;">n</strong>g elit, <strong style="color:yellow;">s</strong>ed do eiusmod <strong style="color:red;">t</strong>empor incididunt ut labore et dolore magna aliqua.</p>
+
+				</article>
+				<nav id="page-navigation" class="page-links">
+					<ul>
+						<li class="page-links-previous"><a href="typography.html">Typography</a></li>
+						<li class="page-links-next"><a href="metrics.html">Metrics</a></li>
+					</ul>
+				</nav><!-- #page-navigation -->
+			</main><!-- #main -->
+
+		</div><!-- #content -->
+
+
 
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script>

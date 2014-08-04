@@ -3,224 +3,221 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title>WordPress.com Colors</title>
+		<title>Colors | WordPress.com Design Handbook</title>
 		<meta name="description" content="WordPress.com Design Handbook">
 		<meta name="viewport" content="width=device-width">
 		<link rel='stylesheet' href='css/style.css'>
 		<script src='js/vendor/modernizr-2.6.2.min.js'></script>
 
+		<link rel="icon" type="image/x-icon" href="https://s2.wp.com/i/favicon.ico" sizes="16x16" />
+
 		<link href='http://fonts.googleapis.com/css?family=Merriweather:700,900|Open+Sans:400italic,700italic,400,700,300' rel='stylesheet' type='text/css'>
 	</head>
 
 	<body>
-		<header class="library-navigation">
-			<div class="library-logo"><span class="wpcom-logo">Menu</span></div>
-			<ul>
-				<li class="current"><a href="index.html">Colors</a></li>
-				<li><a href="typography.html">Typography</a></li>
-				<li><a href="icons.html">Icons</a></li>
-				<li><a href="components.html">Components</a></li>
-			</ul>
-		</header>
 
-		<header class="library-header">
-			<h1>Color Guide</h1>
-			<p>Colors. You want &rsquo;em. We&rsquo;ve got &rsquo;em.</p>
-		</header>
+		<header id="masthead" class="site-header" role="banner">
+			<div class="site-branding">
+				<h1 class="site-title"><a href="index.html" rel="home">WordPress.com Design Handbook</a></h1>
+			</div>
+		</header><!-- #masthead -->
 
-		<nav class="library-contents" id="library-contents">
-			<ul class="color-toc">
-				<li class="color-2">
-					<a href="#colors-wpcom-blue">
-						<span>WordPress.com Blue</span>
-						<div class="color wpcom-blue"></div>
-					</a>
-				</li>
-				<li>
-					<a href="#colors-complimentary-blues">
-						<span>Complimentary Blues</span>
-						<div class="color light-blue"></div>
-						<div class="color medium-blue"></div>
-						<div class="color dark-blue"></div>
-					</a>
-				</li>
-				<li>
-					<a href="#colors-grays">
-						<span>Grays</span>
-						<div class="color ultra-light-gray"></div>
-						<div class="color light-gray"></div>
-						<div class="color medium-gray"></div>
-						<div class="color dark-gray"></div>
-					</a>
-				</li>
-				<li>
-					<a href="#colors-oranges">
-						<span>Oranges</span>
-						<div class="color jazzy-orange"></div>
-						<div class="color fire-orange"></div>
-					</a>
-				</li>
-				<li>
-					<a href="#colors-alerts">
-						<span>Validations and Alerts</span>
-						<div class="color valid-green"></div>
-						<div class="color warning-yellow"></div>
-						<div class="color error-red"></div>
-					</a>
-				</li>
-			</ul>
-		</nav>
+		<div id="content" class="site-content">
 
-		<section class="pattern-group">
-			<article class="pattern">
-				<h3 id="colors-wpcom-blue">"Baeta&rsquo;s" Blue</h3>
-				<p>Lonvingly named after Hugo Baeta, this is the primary WordPress.com blue.</p>
-
-				<section class="swatches col-1">
-					<div class="swatch wpcom-blue">
-						<ul class="swatch-details">
-							<li><strong>WordPress.com Blue</strong></li>
-							<li>#0087be</li>
-							<li>rgb(0,135,190)</li>
-							<!--
-							<li>$wordpress-blue</li>
-							<li>PMS 7460</li>
-							<li>CMYK (Coated) 100, 6, 2, 10</li>
-							<li>CMYK (Uncoated) 100, 0, 10, 0</li>
-							-->
+			<nav id="site-navigation" class="main-navigation" role="navigation">
+				<button class="menu-toggle">Navigation</button>
+				<ul>
+					<li><a href="index.html">Introduction</a></li>
+					<li><a href="logo.html">Logotype</a></li>
+					<li class="current"><a href="colors.html">Colors</a></li>
+					<li><a href="typography.html">Typography</a></li>
+					<li><a href="icons.html">Iconography</a></li>
+					<li><a href="metrics.html">Metrics</a></li>
+					<li><a href="components.html">Components</a>
+						<ul>
+							<li><a href="atoms.html">Atoms</a></li>
+							<li><a href="molecules.html">Molecules</a></li>
+							<li><a href="organisms.html">Organisms</a></li>
+							<li><a href="templates.html">Templates</a></li>
 						</ul>
-					</div>
-				</section>
-			</article>
+					</li>
+					<li><a href="sass.html">Sass Reference</a></li>
+				</ul>
+			</nav><!-- #site-navigation -->
 
-			<article class="pattern">
-				<h3 id="colors-complimentary-blues">Complimentary Blues</h3>
-				<p>These are extra blues for use in situations where the base blues are not a good fit. They work especially well for large blocks of color or other accents.</p>
+			<main id="main" class="site-main" role="main">
+				<article id="handbook-intro" class="page">
 
-				<section class="swatches col-3">
-					<div class="swatch light-blue">
-						<ul class="swatch-details">
-							<li><strong>Light Blue</strong></li>
-							<li>#78dcfa</li>
-							<li>rgb(120,220,250)</li>
-						</ul>
-					</div>
+					<header class="section-header">
+						<h1>Color Guide</h1>
+						<p>Because the world is better in technicolor</p>
+					</header>
 
-					<div class="swatch medium-blue">
-						<ul class="swatch-details">
-							<li><strong>Medium Blue</strong></li>
-							<li>#00aadc</li>
-							<li>rgba(0,170,220)</li>
-						</ul>
-					</div>
+					<section class="pattern-group">
+						<article class="pattern">
+							<h3 id="colors-wpcom-blue">"Baeta&rsquo;s" Blue</h3>
+							<p>Lonvingly named after Hugo Baeta, this is the primary WordPress.com blue.</p>
 
-					<div class="swatch dark-blue">
-						<ul class="swatch-details">
-							<li><strong>Dark Blue</strong></li>
-							<li>#005082</li>
-							<li>rgb(0,80,130)</li>
-						</ul>
-					</div>
-				</section>
-			</article>
+							<section class="swatches col-1">
+								<div class="swatch wpcom-blue">
+									<ul class="swatch-details">
+										<li><strong>WordPress.com Blue</strong></li>
+										<li>#0087be</li>
+										<li>rgb(0,135,190)</li>
+										<!--
+										<li>$wordpress-blue</li>
+										<li>PMS 7460</li>
+										<li>CMYK (Coated) 100, 6, 2, 10</li>
+										<li>CMYK (Uncoated) 100, 0, 10, 0</li>
+										-->
+									</ul>
+								</div>
+							</section>
+						</article>
 
-			<article class="pattern">
-				<h3 id="colors-grays">Grays</h3>
-				<p>Grey, Gray, Cinza, Gris, Nezumi-iro &mdash; it blends.</p>
+						<article class="pattern">
+							<h3 id="colors-complimentary-blues">Complimentary Blues</h3>
+							<p>These are extra blues for use in situations where the base blues are not a good fit. They work especially well for large blocks of color or other accents.</p>
 
-				<section class="swatches col-4">
-					<div class="swatch ultra-light-gray">
-						<ul class="swatch-details">
-							<li><strong>Ultra Light Gray</strong></li>
-							<li><small>sidebar background</small></li>
-							<li>#f4f8fa</li>
-							<li>rgb(244,248,250)</li>
-						</ul>
-					</div>
+							<section class="swatches col-3">
+								<div class="swatch light-blue">
+									<ul class="swatch-details">
+										<li><strong>Light Blue</strong></li>
+										<li>#78dcfa</li>
+										<li>rgb(120,220,250)</li>
+									</ul>
+								</div>
 
-					<div class="swatch light-gray">
-						<ul class="swatch-details">
-							<li><strong>Light Gray</strong></li>
-							<li><small>body background</small></li>
-							<li>#e8f0f5</li>
-							<li>rgb(232,240,247)</li>
-						</ul>
-					</div>
+								<div class="swatch medium-blue">
+									<ul class="swatch-details">
+										<li><strong>Medium Blue</strong></li>
+										<li>#00aadc</li>
+										<li>rgba(0,170,220)</li>
+									</ul>
+								</div>
 
-					<div class="swatch medium-gray">
-						<ul class="swatch-details">
-							<li><strong>Medium Gray</strong></li>
-							<li><small>shadows and rules</small></li>
-							<li>#d2dee6</li>
-							<li>rgb(210,222,230)</li>
-						</ul>
-					</div>
+								<div class="swatch dark-blue">
+									<ul class="swatch-details">
+										<li><strong>Dark Blue</strong></li>
+										<li>#005082</li>
+										<li>rgb(0,80,130)</li>
+									</ul>
+								</div>
+							</section>
+						</article>
 
-					<div class="swatch dark-gray">
-						<ul class="swatch-details">
-							<li><strong>Dark Gray</strong></li>
-							<li><small>007</small></li>
-							<li>#324155</li>
-							<li>rgb(50,65,85)</li>
-						</ul>
-					</div>
-				</section>
-			</article>
+						<article class="pattern">
+							<h3 id="colors-grays">Grays</h3>
+							<p>Grey, Gray, Cinza, Gris, Nezumi-iro &mdash; it blends.</p>
 
-			<article class="pattern">
-				<h3 id="colors-oranges">Oranges</h3>
-				<p>Useful for hovers and interactions.</p>
+							<section class="swatches col-4">
+								<div class="swatch ultra-light-gray">
+									<ul class="swatch-details">
+										<li><strong>Ultra Light Gray</strong></li>
+										<li><small>sidebar background</small></li>
+										<li>#f4f8fa</li>
+										<li>rgb(244,248,250)</li>
+									</ul>
+								</div>
 
-				<section class="swatches col-2">
-					<div class="swatch fire-orange">
-						<ul class="swatch-details">
-							<li><strong>Fire Orange</strong></li>
-							<li>#d54e21</li>
-							<li>rgb(213,78,33)</li>
-						</ul>
-					</div>
+								<div class="swatch light-gray">
+									<ul class="swatch-details">
+										<li><strong>Light Gray</strong></li>
+										<li><small>body background</small></li>
+										<li>#e8f0f5</li>
+										<li>rgb(232,240,247)</li>
+									</ul>
+								</div>
 
-					<div class="swatch jazzy-orange">
-						<ul class="swatch-details">
-							<li><strong>Jazzy Orange</strong></li>
-							<li>#f0821e</li>
-							<li>rgb(240,130,30)</li>
-						</ul>
-					</div>
-				</section>
-			</article>
+								<div class="swatch medium-gray">
+									<ul class="swatch-details">
+										<li><strong>Medium Gray</strong></li>
+										<li><small>shadows and rules</small></li>
+										<li>#d2dee6</li>
+										<li>rgb(210,222,230)</li>
+									</ul>
+								</div>
 
-			<article class="pattern">
-				<h3 id="colors-alerts">Validations and Alerts</h3>
-				<p>These colors are useful for form field validation, alerts, warnings, and pats on the back. Not intended for large blocks of color. Works great with Noticons! Optimized for color blindness.</p>
+								<div class="swatch dark-gray">
+									<ul class="swatch-details">
+										<li><strong>Dark Gray</strong></li>
+										<li><small>007</small></li>
+										<li>#324155</li>
+										<li>rgb(50,65,85)</li>
+									</ul>
+								</div>
+							</section>
+						</article>
 
-				<section class="swatches col-3">
-					<div class="swatch valid-green">
-						<ul class="swatch-details">
-							<li><strong>Valid Green</strong></li>
-							<li>#4cb420</li>
-							<li>rgb(76,180,32)</li>
-						</ul>
-					</div>
+						<article class="pattern">
+							<h3 id="colors-oranges">Oranges</h3>
+							<p>Useful for hovers and interactions.</p>
 
-					<div class="swatch warning-yellow">
-						<ul class="swatch-details">
-							<li><strong>Warning Yellow</strong></li>
-							<li>#ffba00</li>
-							<li>rgb(255,186,0)</li>
-						</ul>
-					</div>
+							<section class="swatches col-2">
+								<div class="swatch fire-orange">
+									<ul class="swatch-details">
+										<li><strong>Fire Orange</strong></li>
+										<li>#d54e21</li>
+										<li>rgb(213,78,33)</li>
+									</ul>
+								</div>
 
-					<div class="swatch error-red">
-						<ul class="swatch-details">
-							<li><strong>Error Red</strong></li>
-							<li>#dd3d36</li>
-							<li>rgb(221,61,54)</li>
-						</ul>
-					</div>
-				</section>
-			</article>
-		</section>
+								<div class="swatch jazzy-orange">
+									<ul class="swatch-details">
+										<li><strong>Jazzy Orange</strong></li>
+										<li>#f0821e</li>
+										<li>rgb(240,130,30)</li>
+									</ul>
+								</div>
+							</section>
+						</article>
+
+						<article class="pattern">
+							<h3 id="colors-alerts">Validations and Alerts</h3>
+							<p>These colors are useful for form field validation, alerts, warnings, and pats on the back. Not intended for large blocks of color. Works great with Noticons! Optimized for color blindness.</p>
+
+							<section class="swatches col-3">
+								<div class="swatch valid-green">
+									<ul class="swatch-details">
+										<li><strong>Valid Green</strong></li>
+										<li>#4cb420</li>
+										<li>rgb(76,180,32)</li>
+									</ul>
+								</div>
+
+								<div class="swatch warning-yellow">
+									<ul class="swatch-details">
+										<li><strong>Warning Yellow</strong></li>
+										<li>#ffba00</li>
+										<li>rgb(255,186,0)</li>
+									</ul>
+								</div>
+
+								<div class="swatch error-red">
+									<ul class="swatch-details">
+										<li><strong>Error Red</strong></li>
+										<li>#dd3d36</li>
+										<li>rgb(221,61,54)</li>
+									</ul>
+								</div>
+							</section>
+						</article>
+					</section>
+					
+					<p>Lorem ipsum dolor sit amet, consectetur adipisici<strong style="color:green;">n</strong>g elit, <strong style="color:yellow;">s</strong>ed do eiusmod <strong style="color:red;">t</strong>empor incididunt ut labore et dolore magna aliqua.</p>
+
+				</article>
+				<nav id="page-navigation" class="page-links">
+					<ul>
+						<li class="page-links-previous"><a href="logo.html">Logotype</a></li>
+						<li class="page-links-next"><a href="typography.html">Typography</a></li>
+					</ul>
+				</nav><!-- #page-navigation -->
+			</main><!-- #main -->
+
+		</div><!-- #content -->
+
+
 
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script>

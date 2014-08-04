@@ -29,7 +29,8 @@ body {
 	padding-top: $masterbar-height;
 	overflow: auto;
 	min-height: 100%;
-	background: $light-gray;
+	background: $ultra-light-gray;
+	box-shadow: inset -1px 0 0 $medium-gray;
 	z-index: 200;
 }
 

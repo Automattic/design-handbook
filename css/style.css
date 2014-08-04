@@ -2024,7 +2024,6 @@ textarea {
 .site-header h1 {
   display: inline-block;
   font-size: 1em;
-  font-weight: 300;
   line-height: 46px;
   margin: 0;
 }
@@ -2062,6 +2061,9 @@ textarea {
   margin: 0 5px 0 0;
 }
 
+.main-navigation li {
+  padding: 0.382em 0;
+}
 .main-navigation .menu-toggle {
   display: none;
 }
@@ -2107,7 +2109,9 @@ body {
   padding-top: 46px;
   overflow: auto;
   min-height: 100%;
-  background: #e8f0f5;
+  background: #f4f8fa;
+  -webkit-box-shadow: inset -1px 0 0 #d2dee6;
+  box-shadow: inset -1px 0 0 #d2dee6;
   z-index: 200;
 }
 
