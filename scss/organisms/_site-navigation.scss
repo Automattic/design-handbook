@@ -1,6 +1,12 @@
 // ==========================================================================
-// Global variables
-// Use when creating a variable used through multiple sheets
+// SITE NAVIGATION
+// Sidebar/Drawer With the main Site Navigation
 // ==========================================================================
 
-$site--max-width: 960px;
+.main-navigation {
+
+	// Mobile menu trigger
+	.menu-toggle {
+		display: none; 
+	}
+}

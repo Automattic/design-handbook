@@ -14,20 +14,6 @@ body {
 	margin-right: auto;
 }
 
-$wpcom-blue: #0087be;
-$light-blue: #78dcfa;
-$medium-blue: #00aadc;
-$dark-blue: #005082;
-$ultra-light-gray: #f4f8fa;
-$light-gray: #e8f0f5;
-$medium-gray: #d2dee6;
-$dark-gray: #324155;
-$fire-orange: #d54e21;
-$jazzy-orange: #f0821e;
-$valid-green: #4cb420;
-$warning-yellow: #ffba00;
-$error-red: #dd3d36;
-
 .wpcom-blue { background-color: $wpcom-blue; }
 .light-blue { background-color: $light-blue; }
 .medium-blue { background-color: $medium-blue; }
@@ -189,7 +175,7 @@ a {
 		color: #fff;
 		font-size: 4em;
 		font-weight: 300;
-		font-family: $open-sans;
+		font-family: $sans;
 		margin-top: 0;
 		margin-bottom: 20px;
 		@media screen and ( max-width: 780px ) {
@@ -452,7 +438,7 @@ a {
 			font-size: 1rem;
 			display: block;
 			margin-bottom: 8px;
-			font-family: $open-sans;
+			font-family: $sans;
 			color: rgba(0,0,0,0.8);
 		}
 		small {
@@ -461,7 +447,7 @@ a {
 			display: block;
 			margin-top: -8px;
 			margin-bottom: 8px;
-			font-family: $open-sans;
+			font-family: $sans;
 		}
 
 		.type-demo {
@@ -554,7 +540,7 @@ a {
 .preview .wpcom-logo {
 	$size: 50px;
 
-	color: $base-lighter-blue;
+	color: $light-blue;
 	width: $size;
 	height: $size;
 

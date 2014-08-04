@@ -1,0 +1,59 @@
+// ==========================================================================
+// Typography
+// ==========================================================================
+
+$root-font-size: 18; // In pixels
+
+$normal: 400; // Change these values when using custom fonts
+$bold: 700; // For example, bold could change to 400;
+
+
+// Typeface Variables
+
+$monospace: 'Courier 10 Pitch', Courier, monospace;
+$code: Monaco, Consolas, 'Andale Mono', 'DejaVu Sans Mono', $monospace;
+
+$serif-fallback: Georgia, "Times New Roman", Times, serif;
+$serif: 'Merriweather', $serif-fallback;
+
+$sans-fallback: Helvetica, Arial, sans-serif;
+$sans: 'Open Sans', $sans-fallback; // 400 400i 600 700 700i
+
+$sans-rtl: Tahoma, $sans-fallback;
+
+
+// Icons
+
+$genericons: 'Genericons', Arial, sans-serif;
+$dashicons: 'Dashicons', Arial, sans-serif;
+$noticons: 'Noticons', Arial, sans-serif;
+$automatticons: 'automatticons', Arial, sans-serif;
+$icon: 'automatticons', 'genericons', $sans;
+
+@mixin noticon($char, $size) {
+	// This isn't very clean, but... we'll see ;)
+	font-size: $size;
+	content: $char;
+
+	// Copied verbatim
+	vertical-align: top;
+	text-align: center;
+	-moz-transition: color .1s ease-in 0;
+	-webkit-transition: color .1s ease-in 0;
+	display: inline-block;
+	font-family: "Noticons";
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	line-height: 1;
+	text-decoration: inherit;
+	text-transform: none;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	speak: none;
+}
+
+// NOTE:
+// If there are exceptions to these stacks, 
+// please mark them with a //typography-exception comment 
+// so we can easily search for them later.

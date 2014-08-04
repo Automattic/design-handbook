@@ -1,0 +1,47 @@
+// ==========================================================================
+// SITE LAYOUT
+// All the metrics and basic styling to make the layout
+// ==========================================================================
+
+// Variables
+
+$sidebar-width: 17.942em;
+
+
+// Styles
+
+body {
+	margin: 0;
+}
+
+.site-content {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	padding-top: $masterbar-height;
+}
+
+.main-navigation {
+	position: fixed;
+		top: 0;
+		left: 0;
+	width: $sidebar-width;
+	padding-top: $masterbar-height;
+	overflow: auto;
+	min-height: 100%;
+	background: $light-gray;
+	z-index: 200;
+}
+
+.site-main {
+	margin-left: $sidebar-width;
+	background: $ultra-light-gray;
+	min-height: 100%;
+}
+
+.page, 
+.page-links {
+	padding: 1.618em 3.295em;
+	max-width: 36.533em;
+	margin: auto;
+}

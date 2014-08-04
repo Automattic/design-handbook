@@ -1,0 +1,56 @@
+// ==========================================================================
+// HEADER
+// Masterbar styled Header
+// ==========================================================================
+
+$masterbar-height: 46px;
+
+/**
+ * The WordPress.com Masterbar
+ */
+
+.site-header {
+	display: block;
+	background: $wordpress-blue;
+	color: $white;
+	height: $masterbar-height;
+	position: fixed;
+		left: 0;
+		top: 0;
+	width: 100%;
+	z-index: 9998;
+	// -webkit-font-smoothing: subpixel-antialiased;
+	// box-shadow: inset 0 -2px rgba(0, 86, 132, 0.2);
+
+	@include breakpoint( large-screens ) {
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	h1 {
+		display: inline-block;
+		font-size: 1em;
+		font-weight: 300;
+		line-height: $masterbar-height;
+		margin: 0;
+	}
+
+	a {
+		color: $white;
+		text-decoration: none;
+	}
+
+	.site-branding {
+		padding: 0 10px;
+		@include breakpoint(mobile) {
+			padding: 0;
+		}
+
+		&:before {
+			@include noticon( "\f205", 32px);
+			line-height: $masterbar-height;
+			margin: 0 5px 0 0;
+		}
+	}
+
+}
