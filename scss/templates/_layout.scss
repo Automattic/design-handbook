@@ -3,9 +3,18 @@
 // All the metrics and basic styling to make the layout
 // ==========================================================================
 
-// Variables
+
+
+// Variables, Extends, and Mixins
 
 $sidebar-width: 17.942em;
+
+%negative-margins {
+	margin: auto -6.854em;
+	padding: 1.618em 6.854em;
+	max-width: 64.221em;
+}
+
 
 
 // Styles
@@ -42,7 +51,23 @@ body {
 
 .page, 
 .page-links {
-	padding: 1.618em 3.295em;
-	max-width: 36.533em;
+	padding: 1.618em 8.625em;
+	max-width: 46.971em; 
 	margin: auto;
+}
+
+.page {
+	.page-header {
+		@extend %negative-margins;	
+		border-bottom: 1px solid rgba($medium-gray,.5);
+		h1, p {
+			margin: 0
+		}
+	}
+	.wide {
+		@extend %negative-margins;		
+		background: white;
+		border-radius: 3px;
+		box-shadow: 0 1px 2px $light-gray;
+	}
 }

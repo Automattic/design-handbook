@@ -4,9 +4,27 @@
 // ==========================================================================
 
 .main-navigation {
-	li {
-		padding: 0.382em 0;
+	ul, li {
+		margin: 0;
+		padding: 0;
 	}
+	& > ul {
+		padding: 0.382em;
+	}
+	
+
+	a {
+		display: block;
+		padding: 0.618em 1em;
+		&:hover {
+			background: $light-gray;
+		}
+	}
+
+	li > ul a {
+		padding-left: 2.618em;
+	}
+	
 	// Mobile menu trigger
 	.menu-toggle {
 		display: none; 

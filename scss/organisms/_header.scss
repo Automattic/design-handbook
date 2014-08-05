@@ -3,7 +3,7 @@
 // Masterbar styled Header
 // ==========================================================================
 
-$masterbar-height: 46px;
+$masterbar-height: 2.625em; //47.250px on the modular scale
 
 /**
  * The WordPress.com Masterbar
@@ -12,14 +12,14 @@ $masterbar-height: 46px;
 .site-header {
 	display: block;
 	background: $wordpress-blue;
-	color: $white;
+	color: rgba(white,.95);
 	height: $masterbar-height;
 	position: fixed;
 		left: 0;
 		top: 0;
 	width: 100%;
 	z-index: 9998;
-	// -webkit-font-smoothing: subpixel-antialiased;
+	-webkit-font-smoothing: subpixel-antialiased;
 	// box-shadow: inset 0 -2px rgba(0, 86, 132, 0.2);
 
 	@include breakpoint( large-screens ) {
@@ -30,25 +30,29 @@ $masterbar-height: 46px;
 	h1 {
 		display: inline-block;
 		font-size: 1em;
+		font-family: $sans;
 		line-height: $masterbar-height;
 		margin: 0;
 	}
 
 	a {
-		color: $white;
+		color: rgba(white,.9);
 		text-decoration: none;
+		&:hover {
+			color: white;
+		}
 	}
 
 	.site-branding {
-		padding: 0 10px;
+		padding: 0 0.519em;
 		@include breakpoint(mobile) {
 			padding: 0;
 		}
 
 		&:before {
 			@include noticon( "\f205", 32px);
-			line-height: $masterbar-height;
-			margin: 0 5px 0 0;
+			line-height: 1.45;
+			margin: 0 0.23em 0 0;
 		}
 	}
 

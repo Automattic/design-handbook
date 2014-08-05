@@ -13,11 +13,6 @@ html,
 body {
 	background: $ultra-light-gray;
 }
-body {
-	font-size: $root-font-size * 1px; // See EM in _functions.scss for info
-	line-height: 1.618;
-	font-family: $sans;
-}
 
 // (highlight color, text color)
 ::selection {
@@ -26,18 +21,6 @@ body {
 	text-shadow: none;
 }
 
-// ==========================================================================
-// Headings
-// ==========================================================================
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-weight: $bold;
-}
 
 // ==========================================================================
 // Links
