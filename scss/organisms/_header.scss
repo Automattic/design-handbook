@@ -21,17 +21,19 @@
 
 	h1 {
 		display: inline;
-		font-size: 1.5em;
+		font-size: 1.75em;
 		font-family: $sans;
+		font-weight: 400;
 		line-height: 1.2;
 		margin: 0;
+		text-rendering: optimizeLegibility;
 
 		.design-handbook {
 			display: block;
 			font-size: 0.667em;
 			font-weight: $bold;
 			text-transform: uppercase;
-			color: rgba(white,.8)
+			color: rgba(white,.5)
 		}
 	}
 
@@ -51,7 +53,9 @@
 
 		&:before {
 			@include noticon( "\f205", 32px);
-			margin: 0 0 0 -1.2em;
+			margin: 0.102em 0 0 -1.2em;
+			position: absolute;
+			color: rgba(white,.9)
 		}
 	}
 }
