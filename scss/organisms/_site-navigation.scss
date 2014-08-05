@@ -16,8 +16,10 @@
 	a {
 		display: block;
 		padding: 0.618em 1em;
+		border-radius: 3px;
 		&:hover {
 			background: $light-gray;
+			color: $link-highlight;
 		}
 	}
 

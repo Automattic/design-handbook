@@ -17,6 +17,7 @@ h5,
 h6 {
   font-family: "Merriweather", Georgia, "Times New Roman", Times, serif;
   font-weight: 900;
+  text-rendering: optimizeLegibility;
 }
 
 .icon:before {
@@ -2077,15 +2078,25 @@ textarea {
 .main-navigation a {
   display: block;
   padding: 0.618em 1em;
+  border-radius: 3px;
 }
 .main-navigation a:hover {
   background: #e8f0f5;
+  color: tint(#00aadc, 20%);
 }
 .main-navigation li > ul a {
   padding-left: 2.618em;
 }
 .main-navigation .menu-toggle {
   display: none;
+}
+
+.page-header h1 {
+  font-size: 3.375em;
+  line-height: 1.167;
+}
+.page-header p {
+  font-size: 1.5em;
 }
 
 .page-links {
@@ -2111,9 +2122,8 @@ textarea {
 }
 
 .page .page-header, .page .wide {
-  margin: auto -6.854em;
-  padding: 1.618em 6.854em;
-  max-width: 64.221em;
+  margin: auto -7.594em;
+  padding: 1.75em 7.594em;
 }
 
 body {
@@ -2143,18 +2153,20 @@ body {
 
 .site-main {
   margin-left: 17.942em;
-  background: #f4f8fa;
+  background: #fbfcfd;
   min-height: 100%;
 }
 
 .page,
 .page-links {
-  padding: 1.618em 8.625em;
-  max-width: 46.971em;
+  padding: 1.75em 8.859em;
+  max-width: 52em;
   margin: auto;
 }
 
 .page .page-header {
+  margin-bottom: 2.25em;
+  padding-bottom: 3.375em;
   border-bottom: 1px solid rgba(210, 222, 230, 0.5);
 }
 .page .page-header h1, .page .page-header p {

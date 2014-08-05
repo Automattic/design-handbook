@@ -11,11 +11,12 @@ $medium-gray:            #d2dee6;
 $dark-gray:              #324155;
 
 // Secondary Grays
-$ultra-light-gray-light: lighten($ultra-light-gray, 2%);
+$ultra-light-light-gray: lighten($ultra-light-gray, 2%);
 $medium-gray-light:      lighten($medium-gray, 30%);
 $medium-gray-dark:       darken($medium-gray, 30%);
 $dark-gray-light:        lighten($dark-gray, 5%);
-$dark-gray-dark:         darken($dark-gray, 5%);
+$ultra-dark-gray: 	 	 rgb(30, 45, 65);
+
 $groups-bg:              lighten($light-blue, 30%);
 $text-gray:              lighten($dark-gray, 40%);
 $white:                  #ffffff;

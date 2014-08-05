@@ -10,9 +10,8 @@
 $sidebar-width: 17.942em;
 
 %negative-margins {
-	margin: auto -6.854em;
-	padding: 1.618em 6.854em;
-	max-width: 64.221em;
+	margin: auto -7.594em;
+	padding: 1.75em 7.594em;
 }
 
 
@@ -45,23 +44,25 @@ body {
 
 .site-main {
 	margin-left: $sidebar-width;
-	background: $ultra-light-gray;
+	background: $ultra-light-light-gray;
 	min-height: 100%;
 }
 
 .page, 
 .page-links {
-	padding: 1.618em 8.625em;
-	max-width: 46.971em; 
+	padding: 1.75em 8.859em;
+	max-width: 52em; 
 	margin: auto;
 }
 
 .page {
 	.page-header {
-		@extend %negative-margins;	
+		@extend %negative-margins;
+		margin-bottom: 2.25em;
+		padding-bottom: 3.375em;
 		border-bottom: 1px solid rgba($medium-gray,.5);
 		h1, p {
-			margin: 0
+			margin: 0;
 		}
 	}
 	.wide {

@@ -87,4 +87,5 @@ h5,
 h6 {
 	font-family: $serif;
 	font-weight: $serif-bold;
+	text-rendering: optimizeLegibility; // voodoo to enable ligatures and kerning
 }
