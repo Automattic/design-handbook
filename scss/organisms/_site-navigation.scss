@@ -9,22 +9,30 @@
 		padding: 0;
 	}
 	& > ul {
-		padding: 0.382em;
+		padding: 0;
 	}
 	
 
 	a {
 		display: block;
-		padding: 0.618em 1em;
-		border-radius: 3px;
+		padding: 0.618em 2.625em;
+		color: rgba(white,.8);
 		&:hover {
-			background: $light-gray;
-			color: $link-highlight;
+			background: rgba($light-blue,0.1);
+			color: white;
 		}
 	}
 
-	li > ul a {
-		padding-left: 2.618em;
+	// second-level navigation
+	li > ul a { 
+		padding-left: 4.536em;
+	}
+
+	// Current item
+	li.current > a {
+		background: rgba($dark-blue,0.15);
+		font-weight: $bold;
+		color: rgba(white,.9);
 	}
 	
 	// Mobile menu trigger

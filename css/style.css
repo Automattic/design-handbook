@@ -20,6 +20,11 @@ h6 {
   text-rendering: optimizeLegibility;
 }
 
+.page .page-header, .page .wide {
+  margin: auto -7.594em;
+  padding: 1.75em 7.594em;
+}
+
 .icon:before {
   display: inline-block;
   position: relative;
@@ -2009,27 +2014,29 @@ textarea {
     transform: translate3d(-260px, 0px, 0px);
   }
 }
-/**
- * The WordPress.com Masterbar
- */
 .site-header {
   display: block;
   background: #0085be;
   color: rgba(255, 255, 255, 0.95);
-  height: 2.625em;
   position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
+  left: 0.519em;
+  top: 1.5em;
+  width: 16.904em;
   z-index: 9998;
-  -webkit-font-smoothing: subpixel-antialiased;
 }
 .site-header h1 {
-  display: inline-block;
-  font-size: 1em;
+  display: inline;
+  font-size: 1.5em;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  line-height: 2.625em;
+  line-height: 1.2;
   margin: 0;
+}
+.site-header h1 .design-handbook {
+  display: block;
+  font-size: 0.667em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
 }
 .site-header a {
   color: rgba(255, 255, 255, 0.9);
@@ -2039,7 +2046,7 @@ textarea {
   color: white;
 }
 .site-header .site-branding {
-  padding: 0 0.519em;
+  margin: 1.75em 0 2.625em 2.25em;
 }
 @media (max-width: 480px) {
   .site-header .site-branding {
@@ -2064,28 +2071,87 @@ textarea {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   speak: none;
-  line-height: 1.45;
-  margin: 0 0.23em 0 0;
+  margin: 0 0 0 -1.2em;
 }
 
+/**
+ * The WordPress.com Masterbar
+ */
+ /*
+
+.site-header {
+	display: block;
+	background: $wordpress-blue;
+	color: rgba(white,.95);
+	height: $masterbar-height;
+	position: fixed;
+		left: 0;
+		top: 0;
+	width: 100%;
+	
+	-webkit-font-smoothing: subpixel-antialiased;
+	// box-shadow: inset 0 -2px rgba(0, 86, 132, 0.2);
+
+	@include breakpoint( large-screens ) {
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	h1 {
+		display: inline-block;
+		font-size: 1em;
+		font-family: $sans;
+		line-height: $masterbar-height;
+		margin: 0;
+	}
+
+	a {
+		color: rgba(white,.9);
+		text-decoration: none;
+		&:hover {
+			color: white;
+		}
+	}
+
+	.site-branding {
+		padding: 0 0.519em;
+		@include breakpoint(mobile) {
+			padding: 0;
+		}
+
+		&:before {
+			@include noticon( "\f205", 32px);
+			line-height: 1.45;
+			margin: 0;
+		}
+	}
+
+}
+
+*/
 .main-navigation ul, .main-navigation li {
   margin: 0;
   padding: 0;
 }
 .main-navigation > ul {
-  padding: 0.382em;
+  padding: 0;
 }
 .main-navigation a {
   display: block;
-  padding: 0.618em 1em;
-  border-radius: 3px;
+  padding: 0.618em 2.625em;
+  color: rgba(255, 255, 255, 0.8);
 }
 .main-navigation a:hover {
-  background: #e8f0f5;
-  color: tint(#00aadc, 20%);
+  background: rgba(120, 220, 250, 0.1);
+  color: white;
 }
 .main-navigation li > ul a {
-  padding-left: 2.618em;
+  padding-left: 4.536em;
+}
+.main-navigation li.current > a {
+  background: rgba(0, 80, 130, 0.15);
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.9);
 }
 .main-navigation .menu-toggle {
   display: none;
@@ -2121,11 +2187,6 @@ textarea {
   padding: 1.618em 0;
 }
 
-.page .page-header, .page .wide {
-  margin: auto -7.594em;
-  padding: 1.75em 7.594em;
-}
-
 body {
   margin: 0;
 }
@@ -2134,7 +2195,6 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  padding-top: 2.625em;
 }
 
 .main-navigation {
@@ -2142,18 +2202,18 @@ body {
   top: 0;
   left: 0;
   width: 17.942em;
-  padding-top: 2.625em;
+  padding-top: 9.344em;
   overflow: auto;
   min-height: 100%;
-  background: #f4f8fa;
-  -webkit-box-shadow: inset -1px 0 0 #d2dee6;
-  box-shadow: inset -1px 0 0 #d2dee6;
+  background: #0085be;
+  -webkit-box-shadow: inset -0.296em 0 0 rgba(0, 80, 130, 0.2);
+  box-shadow: inset -0.296em 0 0 rgba(0, 80, 130, 0.2);
   z-index: 200;
 }
 
 .site-main {
   margin-left: 17.942em;
-  background: #fbfcfd;
+  background: #f4f8fa;
   min-height: 100%;
 }
 

@@ -1,13 +1,67 @@
 // ==========================================================================
 // HEADER
-// Masterbar styled Header
+// Site Header
 // ==========================================================================
 
-$masterbar-height: 2.625em; //47.250px on the modular scale
+
+
+// Styles
+
+.site-header {
+	display: block;
+	background: $wordpress-blue;
+	color: rgba(white,.95);
+	position: fixed;
+		left: 0.519em;
+		top: 1.5em;
+	width: $sidebar-width - ( 0.519em * 2 );
+	z-index: 9998;
+
+	//box-shadow: inset 0 -5px rgba(0, 86, 132, 0.1);
+
+	h1 {
+		display: inline;
+		font-size: 1.5em;
+		font-family: $sans;
+		line-height: 1.2;
+		margin: 0;
+
+		.design-handbook {
+			display: block;
+			font-size: 0.667em;
+			font-weight: $bold;
+			text-transform: uppercase;
+			color: rgba(white,.8)
+		}
+	}
+
+	a {
+		color: rgba(white,.9);
+		text-decoration: none;
+		&:hover {
+			color: white;
+		}
+	}
+
+	.site-branding {
+		margin: 1.75em 0 2.625em 2.25em;
+		@include breakpoint(mobile) {
+			padding: 0;
+		}
+
+		&:before {
+			@include noticon( "\f205", 32px);
+			margin: 0 0 0 -1.2em;
+		}
+	}
+}
+
 
 /**
  * The WordPress.com Masterbar
  */
+
+ /*
 
 .site-header {
 	display: block;
@@ -18,7 +72,7 @@ $masterbar-height: 2.625em; //47.250px on the modular scale
 		left: 0;
 		top: 0;
 	width: 100%;
-	z-index: 9998;
+	
 	-webkit-font-smoothing: subpixel-antialiased;
 	// box-shadow: inset 0 -2px rgba(0, 86, 132, 0.2);
 
@@ -52,8 +106,10 @@ $masterbar-height: 2.625em; //47.250px on the modular scale
 		&:before {
 			@include noticon( "\f205", 32px);
 			line-height: 1.45;
-			margin: 0 0.23em 0 0;
+			margin: 0;
 		}
 	}
 
 }
+
+*/

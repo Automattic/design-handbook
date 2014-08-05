@@ -5,17 +5,6 @@
 
 
 
-// Variables, Extends, and Mixins
-
-$sidebar-width: 17.942em;
-
-%negative-margins {
-	margin: auto -7.594em;
-	padding: 1.75em 7.594em;
-}
-
-
-
 // Styles
 
 body {
@@ -26,7 +15,7 @@ body {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	padding-top: $masterbar-height;
+	//padding-top: $masterbar-height;
 }
 
 .main-navigation {
@@ -34,17 +23,17 @@ body {
 		top: 0;
 		left: 0;
 	width: $sidebar-width;
-	padding-top: $masterbar-height;
+	padding-top: $header-height + 1.75em;
 	overflow: auto;
 	min-height: 100%;
-	background: $ultra-light-gray;
-	box-shadow: inset -1px 0 0 $medium-gray;
+	background: $wordpress-blue;
+	box-shadow: inset -0.296em 0 0 rgba($dark-blue, 0.2);
 	z-index: 200;
 }
 
 .site-main {
 	margin-left: $sidebar-width;
-	background: $ultra-light-light-gray;
+	background: $ultra-light-gray;
 	min-height: 100%;
 }
 

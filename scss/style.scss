@@ -10,6 +10,7 @@ WordPress.com Styles
 // Variables
 @import "atoms/colors/colors"; // Colors
 @import "atoms/typography/typography"; // Typography
+@import "atoms/metrics"; // Metrics Variables and Extends
 
 // Functions
 @import "atoms/functions.scss"; // Nifty functions. Take a look!
