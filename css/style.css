@@ -2023,6 +2023,8 @@ textarea {
   top: 1.5em;
   width: 16.904em;
   z-index: 9998;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 .site-header h1 {
   display: inline;
@@ -2031,7 +2033,6 @@ textarea {
   font-weight: 400;
   line-height: 1.2;
   margin: 0;
-  text-rendering: optimizeLegibility;
 }
 .site-header h1 .design-handbook {
   display: block;
@@ -2167,6 +2168,7 @@ textarea {
 }
 .page-header p {
   font-size: 1.5em;
+  text-rendering: optimizeLegibility;
 }
 
 .page-links {
