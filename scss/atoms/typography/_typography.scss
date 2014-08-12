@@ -5,7 +5,7 @@
 
 
 $root-font-size: 18; // In pixels
-$root-scale-ratio: 1.5; //used as global line-height as well
+$root-scale-ratio: 1.333; //used as global line-height as well
 
 
 
@@ -36,6 +36,16 @@ $sans-rtl: Tahoma, $sans-fallback;
 // so we can easily search for them later.
 
 
+// Sizes
+
+$size-tera: 	3.157em;
+$size-giga: 	2.592em;
+$size-alpha: 	2.369em;
+$size-beta: 	1.777em;
+$size-gamma: 	1.459em;
+$size-delta: 	1.333em;
+$size-epsilon: 	1.094em;
+$size-zeta: 	1em;
 
 // Icons
 
@@ -75,7 +85,7 @@ $icon: 'automatticons', 'genericons', $sans;
 
 body {
 	font-size: $root-font-size * 1px; // See EM in _functions.scss for info
-	line-height: $root-scale-ratio;
+	line-height: 1.618;
 	font-family: $sans;
 }
 
@@ -88,4 +98,21 @@ h6 {
 	font-family: $serif;
 	font-weight: $serif-bold;
 	text-rendering: optimizeLegibility; // voodoo to enable ligatures and kerning
+}
+
+.page h2 {
+	font-size: $size-beta;
+}
+
+.page h3 {
+	font-size: $size-gamma;
+}
+
+.page h4 {
+	font-size: $size-delta;
+}
+
+.page h5,
+.page h6 {
+	font-size: $size-epsilon;
 }

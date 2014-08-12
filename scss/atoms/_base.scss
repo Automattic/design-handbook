@@ -7,7 +7,7 @@ button,
 input,
 select,
 textarea {
-	color: rgba($dark-gray,.9);
+	color: rgba($dark-gray,.85);
 }
 html,
 body {
@@ -27,14 +27,14 @@ body {
 // ==========================================================================
 
 a {
-	color: #0d72b2;
+	color: $medium-blue;
 	text-decoration: none;
 
 	&:visited {
-		color: #0d72b2;
+		color: $medium-blue;
 	}
 	&:hover {
-		color: #0f92e5;
+		color: $wordpress-blue;
 	}
 	&:focus {
 		outline: thin dotted;

@@ -41,9 +41,10 @@ WordPress.com Styles
 //@import "molecules/wpcom-header"; // Blue WordPress.com Header
 
 //Templates Parts
-@import "organisms/header";
+@import "organisms/site-header";
 @import "organisms/site-navigation";
 @import "organisms/page-header"; 
+@import "organisms/page-article"; 
 @import "organisms/page-navigation"; 
 @import "templates/layout"; // Basic Layout build
 

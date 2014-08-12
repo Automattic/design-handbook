@@ -8,14 +8,8 @@
 // Styles
 
 .site-header {
-	display: block;
 	background: $wordpress-blue;
 	color: rgba(white,.95);
-	position: fixed;
-		left: 0.519em;
-		top: 1.5em;
-	width: $sidebar-width - ( 0.519em * 2 );
-	z-index: 9998;
 
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
@@ -50,8 +44,9 @@
 
 	.site-branding {
 		margin: 1.75em 0 2.625em 2.25em;
-		@include breakpoint(mobile) {
-			padding: 0;
+		@include breakpoint(narrow-desktop) {
+			margin: 0;
+			padding: $vertical-margin $vertical-margindouble;
 		}
 
 		&:before {

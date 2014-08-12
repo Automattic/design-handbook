@@ -5,7 +5,7 @@ WordPress.com Styles
 */
 body {
   font-size: 18px;
-  line-height: 1.5;
+  line-height: 1.618;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 
@@ -20,9 +20,26 @@ h6 {
   text-rendering: optimizeLegibility;
 }
 
+.page h2 {
+  font-size: 1.777em;
+}
+
+.page h3 {
+  font-size: 1.459em;
+}
+
+.page h4 {
+  font-size: 1.333em;
+}
+
+.page h5,
+.page h6 {
+  font-size: 1.094em;
+}
+
 .page .page-header, .page .wide {
-  margin: auto -7.594em;
-  padding: 1.75em 7.594em;
+  margin: auto -8.184em;
+  padding: 1.777em 8.184em;
 }
 
 .icon:before {
@@ -1541,7 +1558,7 @@ button,
 input,
 select,
 textarea {
-  color: rgba(50, 65, 85, 0.9);
+  color: rgba(50, 65, 85, 0.85);
 }
 
 html,
@@ -1562,14 +1579,14 @@ body {
 }
 
 a {
-  color: #0d72b2;
+  color: #00aadc;
   text-decoration: none;
 }
 a:visited {
-  color: #0d72b2;
+  color: #00aadc;
 }
 a:hover {
-  color: #0f92e5;
+  color: #0085be;
 }
 a:focus {
   outline: thin dotted;
@@ -2015,14 +2032,8 @@ textarea {
   }
 }
 .site-header {
-  display: block;
   background: #0085be;
   color: rgba(255, 255, 255, 0.95);
-  position: fixed;
-  left: 0.519em;
-  top: 1.5em;
-  width: 16.904em;
-  z-index: 9998;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
@@ -2051,9 +2062,10 @@ textarea {
 .site-header .site-branding {
   margin: 1.75em 0 2.625em 2.25em;
 }
-@media (max-width: 480px) {
+@media (max-width: 800px) {
   .site-header .site-branding {
-    padding: 0;
+    margin: 0;
+    padding: 1.777em 3.157em;
   }
 }
 .site-header .site-branding:before {
@@ -2163,12 +2175,47 @@ textarea {
 }
 
 .page-header h1 {
-  font-size: 3.375em;
-  line-height: 1.167;
+  font-size: 3.157em;
+  line-height: 1.333;
+  color: #0085be;
+}
+@media (max-width: 500px) {
+  .page-header h1 {
+    font-size: 2.369em;
+  }
 }
 .page-header p {
-  font-size: 1.5em;
+  font-size: 1.333em;
+  font-weight: 300;
   text-rendering: optimizeLegibility;
+  color: #7096af;
+}
+@media (max-width: 500px) {
+  .page-header p {
+    font-size: 1.094em;
+  }
+}
+
+.page-header h1 {
+  font-size: 3.157em;
+  line-height: 1.333;
+  color: #0085be;
+}
+@media (max-width: 500px) {
+  .page-header h1 {
+    font-size: 2.369em;
+  }
+}
+.page-header p {
+  font-size: 1.333em;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+  color: #7096af;
+}
+@media (max-width: 500px) {
+  .page-header p {
+    font-size: 1.094em;
+  }
 }
 
 .page-links {
@@ -2196,6 +2243,11 @@ textarea {
 body {
   margin: 0;
 }
+@media (max-width: 500px) {
+  body {
+    font-size: 100%;
+  }
+}
 
 .site-content {
   position: absolute;
@@ -2203,46 +2255,85 @@ body {
   height: 100%;
 }
 
+.site-header {
+  display: block;
+  position: fixed;
+  left: 0.519em;
+  top: 1.5em;
+  width: 16.675em;
+  z-index: 9998;
+}
+@media (max-width: 800px) {
+  .site-header {
+    position: static;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+}
+
 .main-navigation {
   position: fixed;
   top: 0;
   left: 0;
-  width: 17.942em;
-  padding-top: 9.344em;
-  overflow: auto;
+  width: 17.713em;
+  padding-top: 9.423em;
+  overflow-y: scroll;
   min-height: 100%;
   background: #0085be;
   -webkit-box-shadow: inset -0.296em 0 0 rgba(0, 80, 130, 0.2);
   box-shadow: inset -0.296em 0 0 rgba(0, 80, 130, 0.2);
   z-index: 200;
 }
+@media (max-width: 800px) {
+  .main-navigation {
+    display: none;
+  }
+}
 
 .site-main {
-  margin-left: 17.942em;
+  margin-left: 17.713em;
   background: #f4f8fa;
   min-height: 100%;
+}
+@media (max-width: 800px) {
+  .site-main {
+    margin-left: auto;
+  }
 }
 
 .page,
 .page-links {
-  padding: 1.75em 8.859em;
-  max-width: 52em;
+  max-width: 50.812em;
+  padding: 1.777em 8.184em;
   margin: auto;
+}
+@media (max-width: 1200px) {
+  .page,
+  .page-links {
+    max-width: 34.444em;
+    padding: 1.777em;
+  }
 }
 
 .page .page-header {
-  margin-bottom: 2.25em;
-  padding-bottom: 3.375em;
-  border-bottom: 5px solid rgba(210, 222, 230, 0.5);
+  margin-bottom: 3.157em;
+  padding-bottom: 3.157em;
+  border-bottom: 1px solid rgba(210, 222, 230, 0.5);
 }
 .page .page-header h1, .page .page-header p {
   margin: 0;
 }
 .page .wide {
+  margin-top: 3.157em;
+  margin-bottom: 3.157em;
   background: white;
   border-radius: 3px;
   -webkit-box-shadow: 0 1px 2px #e8f0f5;
   box-shadow: 0 1px 2px #e8f0f5;
+}
+.page p {
+  margin: 1.777em 0;
 }
 
 .ir {
