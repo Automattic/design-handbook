@@ -83,6 +83,12 @@ body {
 		h1, p {
 			margin: 0;
 		}
+		@include breakpoint(wide-desktop) {
+			margin-left: auto;
+			margin-right: auto;
+			padding-left: 0;
+			padding-right: 0;
+		}
 	}
 	.wide {
 		@extend %negative-margins;
@@ -92,6 +98,10 @@ body {
 		background: white;
 		border-radius: 3px;
 		box-shadow: 0 1px 2px $light-gray;
+		@include breakpoint(wide-desktop) {
+			margin-left: auto;
+			margin-right: auto;
+		}
 	}
 	p {
 		margin: $vertical-margin 0;

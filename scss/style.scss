@@ -40,7 +40,7 @@ WordPress.com Styles
 @import "molecules/nav-off-canvas"; // Slide-in "hamburger" or drawer menu for small screens
 //@import "molecules/wpcom-header"; // Blue WordPress.com Header
 
-//Templates Parts
+// Templates Parts
 @import "organisms/site-header";
 @import "organisms/site-navigation";
 @import "organisms/page-header"; 
@@ -48,6 +48,8 @@ WordPress.com Styles
 @import "organisms/page-navigation"; 
 @import "templates/layout"; // Basic Layout build
 
+// Pages
+@import "templates/page-colors";
 
 // Main styles
 //@import "templates/main"; // All of your .classy styles
