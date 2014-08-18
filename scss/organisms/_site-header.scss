@@ -8,7 +8,27 @@
 // Styles
 
 .site-header {
-	background: $wordpress-blue;
+	background: $wordpress-blue url('../images/handbook-logo.svg') no-repeat 50% 20%;
+	background-size: 90%;
+	.site-branding {
+		visibility: hidden;
+	}
+
+	@include breakpoint(narrow-desktop) {
+		background-image: url('../images/handbook-logo-horizontal.svg');
+		background-position: 50% 50%;
+		margin: 0;
+		padding: $vertical-margin / 2;
+	}
+
+	@include breakpoint(phablet) {
+		background-image: url('../images/handbook-logo.svg');
+		background-size: 60%;
+		padding: $vertical-margindouble;
+	}
+
+/*
+
 	color: rgba(white,.95);
 
 	-moz-osx-font-smoothing: grayscale;
@@ -56,6 +76,8 @@
 			color: rgba(white,.9)
 		}
 	}
+*/
+
 }
 
 

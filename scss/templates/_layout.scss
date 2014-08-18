@@ -24,7 +24,7 @@ body {
 	display: block;
 	position: fixed;
 		left: 0.519em;
-		top: 1.5em;
+		top: 1.945em;
 	width: $sidebar-width - ( 0.519em * 2 );
 	z-index: 9998;
 	@include breakpoint(narrow-desktop) {

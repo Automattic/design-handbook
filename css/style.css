@@ -2032,63 +2032,78 @@ textarea {
   }
 }
 .site-header {
-  background: #0085be;
-  color: rgba(255, 255, 255, 0.95);
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-}
-.site-header h1 {
-  display: inline;
-  font-size: 1.75em;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  line-height: 1.2;
-  margin: 0;
-}
-.site-header h1 .design-handbook {
-  display: block;
-  font-size: 0.667em;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.5);
-}
-.site-header a {
-  color: rgba(255, 255, 255, 0.9);
-  text-decoration: none;
-}
-.site-header a:hover {
-  color: white;
+  background: #0085be url("../images/handbook-logo.svg") no-repeat 50% 20%;
+  -webkit-background-size: 90%;
+  background-size: 90%;
+  /*
+  
+  	color: rgba(white,.95);
+  
+  	-moz-osx-font-smoothing: grayscale;
+  	-webkit-font-smoothing: antialiased;
+  
+  	//box-shadow: inset 0 -5px rgba(0, 86, 132, 0.1);
+  
+  	h1 {
+  		display: inline;
+  		font-size: 1.75em;
+  		font-family: $sans;
+  		font-weight: 400;
+  		line-height: 1.2;
+  		margin: 0;
+  		
+  
+  		.design-handbook {
+  			display: block;
+  			font-size: 0.667em;
+  			font-weight: $bold;
+  			text-transform: uppercase;
+  			color: rgba(white,.5)
+  		}
+  	}
+  
+  	a {
+  		color: rgba(white,.9);
+  		text-decoration: none;
+  		&:hover {
+  			color: white;
+  		}
+  	}
+  
+  	.site-branding {
+  		margin: 1.75em 0 2.625em 2.25em;
+  		@include breakpoint(narrow-desktop) {
+  			margin: 0;
+  			padding: $vertical-margin $vertical-margindouble;
+  		}
+  
+  		&:before {
+  			@include noticon( "\f205", 32px);
+  			margin: 0.102em 0 0 -1.2em;
+  			position: absolute;
+  			color: rgba(white,.9)
+  		}
+  	}
+  */
 }
 .site-header .site-branding {
-  margin: 1.75em 0 2.625em 2.25em;
+  visibility: hidden;
 }
 @media (max-width: 800px) {
-  .site-header .site-branding {
+  .site-header {
+    background-image: url("../images/handbook-logo-horizontal.svg");
+    background-position: 50% 50%;
     margin: 0;
-    padding: 1.777em 3.157em;
+    padding: 0.8885em;
   }
 }
-.site-header .site-branding:before {
-  font-size: 32px;
-  content: "\f205";
-  vertical-align: top;
-  text-align: center;
-  -moz-transition: color .1s ease-in 0;
-  -webkit-transition: color .1s ease-in 0;
-  display: inline-block;
-  font-family: "Noticons";
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  line-height: 1;
-  text-decoration: inherit;
-  text-transform: none;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  speak: none;
-  margin: 0.102em 0 0 -1.2em;
-  position: absolute;
-  color: rgba(255, 255, 255, 0.9);
+@media (max-width: 500px) {
+  .site-header {
+    background-image: url("../images/handbook-logo.svg");
+    -webkit-background-size: 60%;
+    background-size: 60%;
+    padding: 3.157em;
+  }
 }
 
 /**
@@ -2259,7 +2274,7 @@ body {
   display: block;
   position: fixed;
   left: 0.519em;
-  top: 1.5em;
+  top: 1.945em;
   width: 16.675em;
   z-index: 9998;
 }
@@ -2277,7 +2292,7 @@ body {
   top: 0;
   left: 0;
   width: 17.713em;
-  padding-top: 9.423em;
+  padding-top: 15.233em;
   overflow-y: scroll;
   min-height: 100%;
   background: #0085be;
