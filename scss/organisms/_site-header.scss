@@ -9,7 +9,7 @@
 
 .site-header {
 	background: $wordpress-blue url('../images/handbook-logo.svg') no-repeat 50% 20%;
-	background-size: 90%;
+	background-size: 80%;
 	.site-branding {
 		visibility: hidden;
 	}
@@ -17,6 +17,7 @@
 	@include breakpoint(narrow-desktop) {
 		background-image: url('../images/handbook-logo-horizontal.svg');
 		background-position: 50% 50%;
+		background-size: 90%;
 		margin: 0;
 		padding: $vertical-margin / 2;
 	}

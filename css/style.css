@@ -37,9 +37,10 @@ h6 {
   font-size: 1.094em;
 }
 
-.page .page-header, .page .wide {
+.page .page-header, .page .wide,
+.page .swatches, .page hr {
   margin: auto -8.184em;
-  padding: 1.777em 8.184em;
+  padding: 0;
 }
 
 .icon:before {
@@ -2033,8 +2034,8 @@ textarea {
 }
 .site-header {
   background: #0085be url("../images/handbook-logo.svg") no-repeat 50% 20%;
-  -webkit-background-size: 90%;
-  background-size: 90%;
+  -webkit-background-size: 80%;
+  background-size: 80%;
   /*
   
   	color: rgba(white,.95);
@@ -2093,6 +2094,8 @@ textarea {
   .site-header {
     background-image: url("../images/handbook-logo-horizontal.svg");
     background-position: 50% 50%;
+    -webkit-background-size: 90%;
+    background-size: 90%;
     margin: 0;
     padding: 0.8885em;
   }
@@ -2333,7 +2336,7 @@ body {
 
 .page .page-header {
   margin-bottom: 3.157em;
-  padding-bottom: 3.157em;
+  padding: 1.777em 8.184em 3.157em;
   border-bottom: 1px solid rgba(210, 222, 230, 0.5);
 }
 .page .page-header h1, .page .page-header p {
@@ -2347,16 +2350,14 @@ body {
     padding-right: 0;
   }
 }
-.page .wide {
+.page .wide,
+.page .swatches {
   margin-top: 3.157em;
   margin-bottom: 3.157em;
-  background: white;
-  border-radius: 3px;
-  -webkit-box-shadow: 0 1px 2px #e8f0f5;
-  box-shadow: 0 1px 2px #e8f0f5;
 }
 @media (max-width: 1200px) {
-  .page .wide {
+  .page .wide,
+  .page .swatches {
     margin-left: auto;
     margin-right: auto;
   }

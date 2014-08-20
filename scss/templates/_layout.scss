@@ -76,9 +76,8 @@ body {
 .page {
 	.page-header {
 		@extend %negative-margins;
-
 		margin-bottom: $vertical-margindouble;
-		padding-bottom: $vertical-margindouble;
+		padding: $vertical-margin $horizontal-padding $vertical-margindouble;
 		border-bottom: 1px solid rgba($medium-gray,.5);
 		h1, p {
 			margin: 0;
@@ -90,14 +89,11 @@ body {
 			padding-right: 0;
 		}
 	}
-	.wide {
+	.wide,
+	.swatches {
 		@extend %negative-margins;
 		margin-top: $vertical-margindouble;
 		margin-bottom: $vertical-margindouble;
-
-		background: white;
-		border-radius: 3px;
-		box-shadow: 0 1px 2px $light-gray;
 		@include breakpoint(wide-desktop) {
 			margin-left: auto;
 			margin-right: auto;
@@ -105,5 +101,8 @@ body {
 	}
 	p {
 		margin: $vertical-margin 0;
+	}
+	hr {
+		@extend %negative-margins;
 	}
 }
