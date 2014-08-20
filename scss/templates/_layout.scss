@@ -103,6 +103,6 @@ body {
 		margin: $vertical-margin 0;
 	}
 	hr {
-		@extend %negative-margins;
+		border-top-color: rgba($medium-gray,.8);
 	}
 }

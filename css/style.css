@@ -38,7 +38,7 @@ h6 {
 }
 
 .page .page-header, .page .wide,
-.page .swatches, .page hr {
+.page .swatches {
   margin: auto -8.184em;
   padding: 0;
 }
@@ -2364,6 +2364,9 @@ body {
 }
 .page p {
   margin: 1.777em 0;
+}
+.page hr {
+  border-top-color: rgba(210, 222, 230, 0.8);
 }
 
 .wpcom-blue {
