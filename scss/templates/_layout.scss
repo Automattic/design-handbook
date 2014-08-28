@@ -90,7 +90,8 @@ body {
 		}
 	}
 	.wide,
-	.swatches {
+	.swatches,
+	.sample {
 		@extend %negative-margins;
 		margin-top: $vertical-margindouble;
 		margin-bottom: $vertical-margindouble;
@@ -98,6 +99,9 @@ body {
 			margin-left: auto;
 			margin-right: auto;
 		}
+	}
+	figure img {
+		max-width: 100%;
 	}
 	p {
 		margin: $vertical-margin 0;

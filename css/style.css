@@ -38,7 +38,8 @@ h6 {
 }
 
 .page .page-header, .page .wide,
-.page .swatches {
+.page .swatches,
+.page .sample {
   margin: auto -8.184em;
   padding: 0;
 }
@@ -2351,16 +2352,21 @@ body {
   }
 }
 .page .wide,
-.page .swatches {
+.page .swatches,
+.page .sample {
   margin-top: 3.157em;
   margin-bottom: 3.157em;
 }
 @media (max-width: 1200px) {
   .page .wide,
-  .page .swatches {
+  .page .swatches,
+  .page .sample {
     margin-left: auto;
     margin-right: auto;
   }
+}
+.page figure img {
+  max-width: 100%;
 }
 .page p {
   margin: 1.777em 0;
