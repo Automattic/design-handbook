@@ -2427,50 +2427,72 @@ body {
   background-color: #dd3d36;
 }
 
-/* Library Header */
-.library-header {
-  background: #0085be;
-  color: #fff;
-  padding: 100px 0 50px 0;
-  font-size: 1em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.swatches:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
 }
-.library-header h1 {
-  padding: 0 50px;
-  color: #fff;
-  font-size: 4em;
-  font-weight: 300;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  margin-top: 0;
-  margin-bottom: 20px;
+.swatches .swatch {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  float: left;
+  margin: 20px 0;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05);
 }
-@media screen and (max-width: 780px) {
-  .library-header h1 {
-    font-size: 3em;
-  }
-}
-.library-header p {
-  padding: 0 50px;
-  font-size: 1em;
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 1.5;
-  opacity: 0.8;
-}
-
-/* Library Table of Contents */
-.library-contents {
-  background: #324155;
-}
-.library-contents ul {
-  padding: 0 30px;
-  margin-top: 0;
-  margin-bottom: 0;
+.swatches .swatch ul {
+  position: absolute;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  background: white;
+  margin: 0;
+  padding: 20px;
+  font-size: 0.8rem;
   list-style: none;
 }
-.library-contents a:hover {
-  background: rgba(255, 255, 255, 0.8);
+.swatches .swatch li {
+  padding: 3px 0;
+  line-height: 1;
+  font-family: monospace;
+  color: rgba(0, 0, 0, 0.6);
+}
+.swatches .swatch strong {
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 8px;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+}
+.swatches .swatch small {
+  font-size: 0.6rem;
+  opacity: 0.7;
+  display: block;
+  margin-top: -8px;
+  margin-bottom: 8px;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+@media screen and (min-width: 800px) {
+  .swatches .swatch {
+    margin: 0 1%;
+  }
+  .swatches.col-1 .swatch {
+    width: 96%;
+  }
+  .swatches.col-2 .swatch {
+    width: 48%;
+  }
+  .swatches.col-3 .swatch {
+    width: 31.33%;
+  }
+  .swatches.col-4 .swatch {
+    width: 23%;
+  }
 }
 
 /* Design and Code Samples */
@@ -2560,53 +2582,6 @@ body {
   content: " ";
   clear: both;
   height: 0;
-}
-.swatches .swatch {
-  width: 100%;
-  height: 300px;
-  position: relative;
-  float: left;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 20px 0;
-  border: 1px solid rgba(0, 0, 0, 0.05);
-  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05);
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05);
-}
-.swatches .swatch ul {
-  position: absolute;
-  bottom: -1px;
-  left: -1px;
-  right: -1px;
-  background: rgba(255, 255, 255, 0.95);
-  margin: 0;
-  padding: 20px;
-  -webkit-box-shadow: 0 -10px 0 rgba(0, 0, 0, 0.025);
-  box-shadow: 0 -10px 0 rgba(0, 0, 0, 0.025);
-  font-size: 0.8rem;
-  list-style: none;
-}
-.swatches .swatch li {
-  padding: 3px 0;
-  line-height: 1;
-  font-family: monospace;
-  color: rgba(0, 0, 0, 0.6);
-}
-.swatches .swatch strong {
-  font-size: 1rem;
-  display: block;
-  margin-bottom: 8px;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  color: rgba(0, 0, 0, 0.8);
-}
-.swatches .swatch small {
-  font-size: 0.6rem;
-  opacity: 0.7;
-  display: block;
-  margin-top: -8px;
-  margin-bottom: 8px;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 .swatches .swatch .type-demo {
   line-height: 200px;

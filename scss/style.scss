@@ -50,10 +50,11 @@ WordPress.com Styles
 
 // Pages
 @import "templates/page-colors";
+@import "templates/page-typography";
 
 // Main styles
 //@import "templates/main"; // All of your .classy styles
-// @import "media-queries"; // Media queries!
+//@import "media-queries"; // Media queries!
 
 // Support styles
 @import "atoms/helper"; // Some useful helper classes
