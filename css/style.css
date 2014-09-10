@@ -2249,14 +2249,28 @@ textarea {
 .page-links ul li.page-links-previous a {
   float: left;
 }
+.page-links ul li.page-links-previous a:before {
+  content: 'Previously';
+}
 .page-links ul li.page-links-next a {
   float: right;
   text-align: right;
+}
+.page-links ul li.page-links-next a:before {
+  content: 'Up next';
 }
 .page-links ul li a {
   display: block;
   width: 45%;
   padding: 1.618em 0;
+}
+.page-links ul li a:before {
+  display: block;
+  font-weight: bold;
+  font-size: 0.618em;
+  text-transform: uppercase;
+  letter-spacing: .03em;
+  color: rgba(112, 150, 175, 0.5);
 }
 
 body {

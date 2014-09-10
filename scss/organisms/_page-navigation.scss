@@ -14,15 +14,29 @@
 		li {
 			&.page-links-previous a {
 				float: left;
+				&:before {
+					content: 'Previously';
+				}
 			}
 			&.page-links-next a {
 				float: right;
 				text-align: right;
+				&:before {
+					content: 'Up next';
+				}
 			}
 			a {
 				display: block;
 				width: 45%;
 				padding: 1.618em 0;
+				&:before {
+					display: block;
+					font-weight: bold;
+					font-size: 0.618em;
+					text-transform: uppercase;
+					letter-spacing: .03em;
+					color: rgba($medium-gray-dark,.5);
+				}
 			}
 		}
 	}
