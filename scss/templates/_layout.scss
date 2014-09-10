@@ -41,7 +41,7 @@ body {
 		left: 0;
 	width: $sidebar-width;
 	padding-top: $header-height + 1.945em;
-	overflow-y: scroll;
+	overflow: auto;
 	min-height: 100%;
 	background: $wordpress-blue;
 	box-shadow: inset -0.296em 0 0 rgba($dark-blue, 0.2);
