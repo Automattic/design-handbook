@@ -1,0 +1,52 @@
+// ==========================================================================
+// Responsive
+// Breakpoint Mixin
+// ==========================================================================
+
+
+// Add or remove breakpoints as you desire
+
+$breakpoints:(
+    full-width: 960px,
+    one-col: 660px,
+    mobile: 480px,
+
+    phone: 320px,
+    phablet: 500px,
+    tablet: 768px,
+    narrow-desktop: 800px,
+    desktop: 960px,
+    wide-desktop: 1200px,
+    billboard: 10000px
+);
+
+
+// Mixin
+
+@mixin breakpoint($size){
+    @each $breakpoint, $value in $breakpoints {
+        @if $size == $breakpoint {
+            @media (max-width: map-get($breakpoints, $breakpoint)){
+                @content;
+            }
+        }
+    }
+}
+
+
+// Usage Example
+
+// body {
+//    @include breakpoint(tablet){
+//        font-size: 14px;
+//    };
+// }
+
+
+
+
+// Can't use the @extend in a media query, use this instead
+@mixin clear-text {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

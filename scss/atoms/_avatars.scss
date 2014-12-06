@@ -1,6 +1,15 @@
 // ==========================================================================
-// Global variables
-// Use when creating a variable used through multiple sheets
+// Avatars
 // ==========================================================================
 
-$site--max-width: 960px;
+.avatar {
+	float: left;
+	margin-right: 15px;
+}
+.avatar--rounded {
+	@extend .avatar;
+
+	img {
+		border-radius: 50%;
+	}
+}

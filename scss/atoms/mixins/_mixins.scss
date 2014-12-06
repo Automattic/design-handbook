@@ -1,8 +1,17 @@
 // ==========================================================================
-// FANCY MIXINS
-//
+// Mixins
 // These are custom mixins developed to implement common patterns quickly. 
-//
+// ==========================================================================
+
+@import "responsive"; // Responsive Mixin with breakpoints
+
+
+
+
+
+
+
+
 // Available Mixins
 //    arrow
 //    arrow-lazy
@@ -10,8 +19,6 @@
 //    full-width-bars
 //    replace-image
 //    retina-background
-//
-// ==========================================================================
 
 @mixin arrow($size: 10px, $color: #ccc, $direction: top){
     @if $direction == "right" {
@@ -155,6 +162,7 @@
         background-size: $width auto;
     }
 }
+
 
 // ==========================================================================
 // IE Mixins

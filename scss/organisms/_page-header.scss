@@ -1,0 +1,27 @@
+// ==========================================================================
+// ARTICLE HEADER
+// The top of each page
+// ==========================================================================
+
+
+
+.page-header {
+
+	h1 {
+		font-size: $size-tera;
+		line-height: 1.333;
+		color: $wordpress-blue;
+		@include breakpoint(phablet) {
+			font-size: $size-alpha;
+		}
+	}
+	p {
+		font-size: $size-delta;
+		font-weight: 300;
+		text-rendering: optimizeLegibility;
+		color: $medium-gray-darkerer;
+		@include breakpoint(phablet) {
+			font-size: $size-epsilon;
+		}
+	}
+}

@@ -7,42 +7,51 @@ WordPress.com Styles
 
 // Based loosely on HTML5 Boilerplate
 
+
 // Variables
-@import "variables/wpcom-colors"; // WordPress.com Colors
-@import "variables/typography"; // Typography
-@import "variables/variables"; // Other variables
+@import "atoms/colors/colors"; // Colors
+@import "atoms/typography/typography"; // Typography
+@import "atoms/metrics"; // Metrics Variables and Extends
 
 // Functions
-@import "functions.scss"; // Nifty functions. Take a look!
+@import "atoms/functions.scss"; // Nifty functions. Take a look!
 
 // Mixins
-@import "mixins/fancy"; // Fancy mixins full of nifty patterns
+@import "atoms/mixins/mixins"; // Fancy mixins full of nifty patterns
 
 // Fonts and Icon fonts
-@import "icons/icons"; // Base icon rules
-@import "icons/noticons"; // Noticons icon font
-@import "icons/genericons"; // Genericons icon font
-@import "icons/dashicons"; // Dashicons icon font
-@import "icons/automatticons"; // Automatticons icon font
+@import "atoms/icons/icons"; // Base icon rules
+@import "atoms/icons/noticons"; // Noticons icon font
+@import "atoms/icons/genericons"; // Genericons icon font
+@import "atoms/icons/dashicons"; // Dashicons icon font
+@import "atoms/icons/automatticons"; // Automatticons icon font
 
 // Normalize
-@import "normalize"; // Normalize.css + a goody or two
-@import "base"; // Style naked elements
+@import "atoms/normalize"; // Normalize.css + a goody or two
+@import "atoms/clearfix"; // Provides a clearfix extend
+@import "atoms/base"; // Style naked elements
 
-// Begin partials
-@import "partials/avatars"; // Avatar styles
-@import "partials/buttons"; // Button styles
-@import "partials/radio-buttons"; // Radio button styles
-@import "partials/form"; // Textarea and input styles
-@import "partials/nav-horizontal"; // Horizontal navigation
-@import "partials/nav-off-canvas"; // Slide-in "hamburger" or drawer menu for small screens
-@import "partials/wpcom-header"; // Blue WordPress.com Header
+// Partials
+@import "atoms/avatars"; // Avatar styles
+@import "atoms/buttons"; // Button styles
+//@import "atoms/radio-buttons"; // Radio button styles
+@import "molecules/form"; // Textarea and input styles
+@import "molecules/nav-horizontal"; // Horizontal navigation
+@import "molecules/nav-off-canvas"; // Slide-in "hamburger" or drawer menu for small screens
+//@import "molecules/wpcom-header"; // Blue WordPress.com Header
 
-// Main styles
-@import "main"; // All of your .classy styles
-// @import "media-queries"; // Media queries!
+// Templates Parts
+@import "organisms/site-header";
+@import "organisms/site-navigation";
+@import "organisms/page-header";
+@import "organisms/page-navigation";
+@import "templates/layout"; // Basic Layout build
+
+// Pages
+@import "templates/page-colors";
+@import "templates/page-typography";
 
 // Support styles
-@import "helper"; // Some useful helper classes
-@import "ie"; // IE-specific styling :D
-@import "print"; // Print styling
+@import "atoms/helper"; // Some useful helper classes
+@import "atoms/ie"; // IE-specific styling :D
+@import "atoms/print"; // Print styling

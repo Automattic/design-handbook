@@ -1,0 +1,26 @@
+// ==========================================================================
+// METRICS
+// Several Variables and extends for site dimensions
+// ==========================================================================
+
+
+// Variables
+
+$sidebar-width: 17.713em;
+
+$header-height: 13.288em;
+$masterbar-height: 2.625em; //47.250px on the modular scale
+
+
+$horizontal-linelenght: 34.444em;
+$horizontal-padding: 8.184em;
+
+$vertical-margin: 1.777em;
+$vertical-margindouble: 3.157em;
+
+// Extends
+
+%negative-margins {
+	margin: auto $horizontal-padding * -1;
+	padding: 0;
+}

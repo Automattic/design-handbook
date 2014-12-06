@@ -1,0 +1,118 @@
+// ==========================================================================
+// Typography
+// ==========================================================================
+
+
+
+$root-font-size: 18; // In pixels
+$root-scale-ratio: 1.333; //used as global line-height as well
+
+
+
+// Weights
+
+$normal: 400;
+$bold: 700;
+$serif-bold: 700;
+
+
+
+// Typeface Variables
+
+$monospace: 'Courier 10 Pitch', Courier, monospace;
+$code: Monaco, Consolas, 'Andale Mono', 'DejaVu Sans Mono', $monospace;
+
+$serif-fallback: Georgia, "Times New Roman", Times, serif;
+$serif: 'Merriweather', $serif-fallback;
+
+$sans-fallback: Helvetica, Arial, sans-serif;
+$sans: 'Open Sans', $sans-fallback; // 400 400i 600 700 700i
+
+$sans-rtl: Tahoma, $sans-fallback;
+
+// NOTE:
+// If there are exceptions to these stacks,
+// please mark them with a //typography-exception comment
+// so we can easily search for them later.
+
+
+// Sizes
+
+$size-tera: 	3.157em;
+$size-giga: 	2.592em;
+$size-alpha: 	2.369em;
+$size-beta: 	1.777em;
+$size-gamma: 	1.459em;
+$size-delta: 	1.333em;
+$size-epsilon: 	1.094em;
+$size-zeta: 	1em;
+
+// Icons
+
+$genericons: 'Genericons', Arial, sans-serif;
+$dashicons: 'Dashicons', Arial, sans-serif;
+$noticons: 'Noticons', Arial, sans-serif;
+$automatticons: 'automatticons', Arial, sans-serif;
+$icon: 'automatticons', 'genericons', $sans;
+
+@mixin noticon($char, $size) {
+	// This isn't very clean, but... we'll see ;)
+	font-size: $size;
+	content: $char;
+
+	// Copied verbatim
+	vertical-align: top;
+	text-align: center;
+	-moz-transition: color .1s ease-in 0;
+	-webkit-transition: color .1s ease-in 0;
+	display: inline-block;
+	font-family: "Noticons";
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	line-height: 1;
+	text-decoration: inherit;
+	text-transform: none;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	speak: none;
+}
+
+
+
+
+// Styles
+
+body {
+	font-size: $root-font-size * 1px; // See EM in _functions.scss for info
+	line-height: 1.618;
+	font-family: $sans;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $serif;
+	font-weight: $serif-bold;
+	text-rendering: optimizeLegibility; // voodoo to enable ligatures and kerning
+}
+
+.page h2 {
+	font-size: $size-beta;
+}
+
+.page h3 {
+	font-size: $size-gamma;
+}
+
+.page h4 {
+	font-size: $size-delta;
+}
+
+.page h5,
+.page h6 {
+	font-size: $size-epsilon;
+}

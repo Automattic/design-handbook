@@ -1,0 +1,42 @@
+// ==========================================================================
+// SITE NAVIGATION
+// Sidebar/Drawer With the main Site Navigation
+// ==========================================================================
+
+.main-navigation {
+	ul, li {
+		margin: 0;
+		padding: 0;
+	}
+	& > ul {
+		padding: 0;
+	}
+	
+
+	a {
+		display: block;
+		padding: 0.618em 2.625em;
+		color: rgba(white,.8);
+		&:hover {
+			background: rgba($light-blue,0.1);
+			color: white;
+		}
+	}
+
+	// second-level navigation
+	li > ul a { 
+		padding-left: 4.536em;
+	}
+
+	// Current item
+	li.current > a {
+		background: rgba($dark-blue,0.15);
+		font-weight: $bold;
+		color: rgba(white,.9);
+	}
+	
+	// Mobile menu trigger
+	.menu-toggle {
+		display: none; 
+	}
+}

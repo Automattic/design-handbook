@@ -1,0 +1,140 @@
+// ==========================================================================
+// HEADER
+// Site Header
+// ==========================================================================
+
+
+
+// Styles
+
+.site-header {
+	background: $wordpress-blue url('../images/handbook-logo.svg') no-repeat 50% 20%;
+	background-size: 80%;
+	.site-branding {
+		visibility: hidden;
+	}
+
+	@include breakpoint(narrow-desktop) {
+		background-image: url('../images/handbook-logo-horizontal.svg');
+		background-position: 50% 50%;
+		background-size: 90%;
+		margin: 0;
+		padding: $vertical-margin / 2;
+	}
+
+	@include breakpoint(phablet) {
+		background-image: url('../images/handbook-logo.svg');
+		background-size: 60%;
+		padding: $vertical-margindouble;
+	}
+
+/*
+
+	color: rgba(white,.95);
+
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+
+	//box-shadow: inset 0 -5px rgba(0, 86, 132, 0.1);
+
+	h1 {
+		display: inline;
+		font-size: 1.75em;
+		font-family: $sans;
+		font-weight: 400;
+		line-height: 1.2;
+		margin: 0;
+		
+
+		.design-handbook {
+			display: block;
+			font-size: 0.667em;
+			font-weight: $bold;
+			text-transform: uppercase;
+			color: rgba(white,.5)
+		}
+	}
+
+	a {
+		color: rgba(white,.9);
+		text-decoration: none;
+		&:hover {
+			color: white;
+		}
+	}
+
+	.site-branding {
+		margin: 1.75em 0 2.625em 2.25em;
+		@include breakpoint(narrow-desktop) {
+			margin: 0;
+			padding: $vertical-margin $vertical-margindouble;
+		}
+
+		&:before {
+			@include noticon( "\f205", 32px);
+			margin: 0.102em 0 0 -1.2em;
+			position: absolute;
+			color: rgba(white,.9)
+		}
+	}
+*/
+
+}
+
+
+/**
+ * The WordPress.com Masterbar
+ */
+
+ /*
+
+.site-header {
+	display: block;
+	background: $wordpress-blue;
+	color: rgba(white,.95);
+	height: $masterbar-height;
+	position: fixed;
+		left: 0;
+		top: 0;
+	width: 100%;
+	
+	-webkit-font-smoothing: subpixel-antialiased;
+	// box-shadow: inset 0 -2px rgba(0, 86, 132, 0.2);
+
+	@include breakpoint( large-screens ) {
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	h1 {
+		display: inline-block;
+		font-size: 1em;
+		font-family: $sans;
+		line-height: $masterbar-height;
+		margin: 0;
+	}
+
+	a {
+		color: rgba(white,.9);
+		text-decoration: none;
+		&:hover {
+			color: white;
+		}
+	}
+
+	.site-branding {
+		padding: 0 0.519em;
+		@include breakpoint(mobile) {
+			padding: 0;
+		}
+
+		&:before {
+			@include noticon( "\f205", 32px);
+			line-height: 1.45;
+			margin: 0;
+		}
+	}
+
+}
+
+*/

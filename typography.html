@@ -3,137 +3,148 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title>WordPress.com Typography</title>
-		<meta name="description" content="">
+		<title>Typography | WordPress.com Design Handbook</title>
+		<meta name="description" content="WordPress.com Design Handbook">
 		<meta name="viewport" content="width=device-width">
 		<link rel='stylesheet' href='css/style.css'>
 		<script src='js/vendor/modernizr-2.6.2.min.js'></script>
 
-		<link href='http://fonts.googleapis.com/css?family=Merriweather:700,900|Open+Sans:300italic,400italic,600italic,400,300,600|Source+Code+Pro:400,500,600' rel='stylesheet' type='text/css'>
+		<link rel="icon" type="image/x-icon" href="https://s2.wp.com/i/favicon.ico" sizes="16x16" />
+
+		<link href='http://fonts.googleapis.com/css?family=Merriweather:700,900|Open+Sans:400italic,700italic,400,700,300' rel='stylesheet' type='text/css'>
 	</head>
 
 	<body>
-		<header class="library-navigation">
-			<div class="library-logo"><span class="wpcom-logo">Menu</span></div>
-			<ul>
-				<li><a href="index.html">Colors</a></li>
-				<li class="current"><a href="typography.html">Typography</a></li>
-				<li><a href="icons.html">Icons</a></li>
-				<li><a href="components.html">Components</a></li>
-			</ul>
-		</header>
 
-		<header class="library-header">
-			<h1>Typographic Style Guide</h1>
-			<p>Follow a few simple guidelines, and great typography is suddenly within reach.</p>
-		</header>
+		<header id="masthead" class="site-header" role="banner">
+			<div class="site-branding">
+				<h1 class="site-title"><a href="index.html" rel="home">WordPress.com <span class="design-handbook">Design Handbook</span></a></h1>
+			</div>
+		</header><!-- #masthead -->
 
-		<section class="pattern-group">
-			<article class="pattern">
-				<h3 id="open-sans">Open Sans</h3>
-				<p>WordPress.com uses Open Sans as the default text face across all the public areas of WordPress.com. It works great pretty much everywhere, but it's especially great for body copy and UI.</p>
+		<div id="content" class="site-content">
 
-				<p>You can choose which variants of Open Sans to include by using <a href="http://www.google.com/fonts#UsePlace:use/Collection:Open+Sans">Google Fonts</a>.</p>
+			<nav id="site-navigation" class="main-navigation" role="navigation">
+				<button class="menu-toggle">Navigation</button>
+				<ul>
+					<li><a href="index.html">Introduction</a></li>
+					<li><a href="logo.html">Logotype</a></li>
+					<li><a href="colors.html">Colors</a></li>
+					<li class="current"><a href="typography.html">Typography</a></li>
+					<li><a href="icons.html">Iconography</a></li>
+					<li><a href="metrics.html">Metrics</a></li>
+					<li><a href="patterns.html">Patterns</a></li>
+				</ul>
+			</nav><!-- #site-navigation -->
 
-				<section class="swatches col-3">
-					<div class="swatch open-sans-300">
-						<div class="type-demo">
-							Aa
-						</div>
-						<ul class="swatch-details">
-							<li><strong>Open Sans 300</strong></li>
+			<main id="main" class="site-main" role="main">
+				<article id="handbook-typography" class="page">
+
+					<header class="page-header">
+						<h1>Typography</h1>
+						<p>WordPress is all about spreading ideas, freedom of speech, specifically through the written word. On this page, we'll explore the guidelines for consistent typography on WordPress.com</p>
+					</header>
+
+					<section id="typography-typefaces" class="typography-typefaces article-section">
+						<h2>Typefaces</h2>
+						<p>WordPress.com uses two typefaces: <strong>Open Sans</strong> and <strong>Merriweather</strong>. These two faces, if used correctly, should be another vital element of our design language, giving a sense of familiarity to the users.</p>
+
+						<h3>Open Sans</h3>
+						<p>Open Sans is a humanist sans serif typeface designed by Steve Matteson, Type Director of Ascender Corp. Designed with an upright stress, open forms and a neutral, yet friendly appearance. It was optimized for print, web, and mobile interfaces, and has excellent legibility characteristics in its letterforms. It has inspired us greatly and the name itself aligns well with our values as a company. This typeface has gotten increasingly popular, so we might consider a more tailored approach in the future. But for now, Open Sans is queen: it's in our Logotype, it's our text face.</p>
+
+						<h3>Merriweather</h3>
+						<p>This gracious typeface by Eben Sorkin started being used after very many typesetting explorations. Eventually we all agreed Merriweather was the winner. Merriweather features a very large x height, slightly condensed letterforms, a mild diagonal stress, sturdy serifs and open forms. It should be in all titles and potentially in some blockquotes.</p>
+					</section><!-- #typography-typefaces -->
+
+					<section id="typography-weights" class="typography-weights article-section">
+						<h2>Weights and Styles</h2>
+						<p>We are very specific as to what weights to use of our glorious typefaces. Only in this way can we assure that our design language is consistent. We use multiple weights from Open Sans: Light, Regular, Semi-bold, and Bold. As for Merriweather, we stick to the Bold weight.</p>
+					</section><!-- #typography-weights -->
+
+
+					<section id="typography-modularscale" class="typography-modularscale article-section">
+						<h2>Typographic Modular Scale</h2>
+
+						<figure class="blockquote">
+							<blockquote cite="http://www.amazon.com/Elements-Typographic-Style-Version-Anniversary/dp/088179211X">
+								<p>A modular scale, like a musical scale, is a prearranged set of harmonious proportions.</p>
+							</blockquote>
+							<figcaption><cite class="author"><small><a href="http://www.amazon.com/Elements-Typographic-Style-Version-Anniversary/dp/088179211X">Robert Bringhurst</a></small></cite></figcaption>
+						</figure>
+
+						<p>An harmonic ratio helps in creating a more harmonious design and also helps standardize stuff. If we use the same scale across WordPress.com, things feel more cohesive - it's as much about consistency as it is about harmony: instead of using arbitrary numbers, we conform to a harmonic scale.</p>
+
+						<p>We use a double strand Perfect Fift scale based on the ideal text size of 16px and with the secondary important number 14px. This forms, roughly, the following scale:</p>
+
+						<table>
+							<tr>
+								<th>Pixels</th>
+								<th>Ems</th>
+							</tr>
+							<tr>
+								<td>54</td>
+								<td>3.375</td>
+							</tr>
+							<tr>
+								<td>47</td>
+								<td>2.953</td>
+							</tr>
+							<tr>
+								<td>36</td>
+								<td>2.25</td>
+							</tr>
+							<tr>
+								<td>32</td>
+								<td>1.969</td>
+							</tr>
+							<tr>
+								<td>24</td>
+								<td>1.5</td>
+							</tr>
+							<tr>
+								<td>21</td>
+								<td>1.313</td>
+							</tr>
+							<tr>
+								<td>16</td>
+								<td>1</td>
+							</tr>
+							<tr>
+								<td>14</td>
+								<td>0.875</td>
+							</tr>
+							<tr>
+								<td>11</td>
+								<td>0.667</td>
+							</tr>
+						</table>
+
+						<h3>Resources on Modular Scales:</h3>
+						<ul>
+							<li><a href="http://vimeo.com/17079380">More Perfect Typography (Video)</a>, by Tim Brown (Highly recomended)</li>
+							<li><a href="http://alistapart.com/article/more-meaningful-typography">More Meaningful Typography</a>, by Tim Brown for ALA</li>
+							<li><a href="http://blog.8thlight.com/billy-whited/2011/10/28/r-a-ela-tional-design.html">R(a|ela)tional Design</a>, by Bill Whited</li>
 						</ul>
-					</div>
+					</section><!-- #typography-modularscale -->
 
-					<div class="swatch open-sans-500">
-						<div class="type-demo">
-							Aa
-						</div>
-						<ul class="swatch-details">
-							<li><strong>Open Sans 500</strong></li>
-						</ul>
-					</div>
+					<section id="typography-typesetting" class="typography-typesetting article-section">
+						<h2>Typesetting</h2>
 
-					<div class="swatch open-sans-title">
-						<div class="type-demo">
-							Posts by Type
-						</div>
-						<ul class="swatch-details">
-							<li><strong>Open Sans Title</strong></li>
-						</ul>
-					</div>
-				</section>
-			</article>
+						<p>Get a <a href="http://codepen.io/hugobaeta/full/mAudq/">typesetting sample on this codepen</a>.</p>
+					</section><!-- #typography-typesetting -->
 
-			<article class="pattern">
-				<h3 id="merriweather">Merriweather</h3>
-				<p>Merriweather makes a great counterpart to Open Sans. Its best suited for larger font sizes and bolder weights &mdash; a great face for titles.</p>
+				</article>
+				<nav id="page-navigation" class="page-links">
+					<ul>
+						<li class="page-links-previous"><a href="colors.html">Colors</a></li>
+						<li class="page-links-next"><a href="icons.html">Iconography</a></li>
+					</ul>
+				</nav><!-- #page-navigation -->
+			</main><!-- #main -->
 
-				<p>You can choose which variants of Merriweather to include by using <a href="http://www.google.com/fonts#UsePlace:use/Collection:Merriweather">Google Fonts</a>.</p>
+		</div><!-- #content -->
 
-				<section class="swatches col-2">
-					<div class="swatch merriweather-900">
-						<div class="type-demo">
-							Aa
-						</div>
-						<ul class="swatch-details">
-							<li><strong>Merriweather 900</strong></li>
-						</ul>
-					</div>
 
-					<div class="swatch merriweather-700">
-						<div class="type-demo">
-							Aa
-						</div>
-						<ul class="swatch-details">
-							<li><strong>Merriweather 700</strong></li>
-						</ul>
-					</div>
-				</section>
-			</article>
-
-			<article class="pattern">
-				<h3>Line Height, Font Size, and Modular Scale</h3>
-
-				<p>Paragraph line-height should be 1.618 (the <em>golden</em><strike>rod</strike> ratio.) For titles and larger type, this feels a little too "spacey," so try to keep those down to 1.258</p>
-			</article>
-
-			<article class="pattern">
-				<h3>Typesetting Sample</h3>
-				<p>Here's a simple example to help you hit the ground running.</p>
-
-				<div class="sample">
-					<article id="typesetting-sample">
-						<h1><a href="#">The Principles of Good Design</a></h1>
-						<h4><a href="#">May 13, 2014</a>&nbsp;&nbsp;&nbsp;&nbsp;By <a href="#">Mel Choyce</a></h4>
-						<p>Is beauty objectively true? Are there principles you can use to guide you to it in your work? Can designers from both the sciences and the arts look at each others work and find beauty? These are important questions for all designers.</p>
-					</article>
-					<pre>
-						<code data-language="css">h1 {
-	font-family: "Merriweather", georgia, serif;
-	font-size: 2.291em;
-	font-weight: 700;
-	line-height: 1.258;
-}
-
-h4 {
-	font-family: "Open Sans", helvetica, arial, sans-serif;
-	font-weight: 700;
-	font-size: 0.875em;
-	line-height: 1.618;
-	text-transform: uppercase;
-	letter-spacing: 0.079em;
-}
-
-p {
-	font-family: "Open Sans", helvetica, arial, sans-serif;
-	fong-weight: 400;
-	font-size: 1em;
-}</code>
-					</pre>
-				</div>
-			</article>
-		</section>
 
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script>

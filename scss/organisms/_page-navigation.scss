@@ -1,0 +1,44 @@
+// ==========================================================================
+// PAGE NAVIGATION
+// Used on the bottom of each page to provide previous and next navigation
+// ==========================================================================
+
+.page-links {
+	padding: 0;
+	border-top: 1px solid rgba($medium-gray,.5);
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		@extend %clearfix;
+		li {
+			&.page-links-previous a {
+				float: left;
+				&:before {
+					content: 'Previously';
+				}
+			}
+			&.page-links-next a {
+				float: right;
+				text-align: right;
+				&:before {
+					content: 'Up next';
+				}
+			}
+			a {
+				display: block;
+				width: 45%;
+				padding: 1.618em 0;
+				&:before {
+					display: block;
+					font-weight: bold;
+					font-size: 0.618em;
+					text-transform: uppercase;
+					letter-spacing: .03em;
+					color: rgba($medium-gray-dark,.5);
+				}
+			}
+		}
+	}
+}
+

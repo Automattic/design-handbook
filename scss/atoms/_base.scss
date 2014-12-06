@@ -2,73 +2,40 @@
 //  Base styles: opinionated defaults
 // ==========================================================================
 
-// Sets box-sizing default to border-box on all elements
-*,
-*:before,
-*:after {
-	// Paul Irish box sizing!!!
-	// http://www.paulirish.com/2012/box-sizing-border-box-ftw/
-	box-sizing: border-box;
-
-	@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-	only screen and (min-resolution: 144dpi) {
-		// Style adjustments for high resolution devices
-
-		// Only looks good on HiDPI and on icons
-		-webkit-font-smoothing: antialiased;
-
-	}
-}
 html,
 button,
 input,
 select,
 textarea {
-	color: #333;
+	color: $text-gray;
 }
 html,
 body {
-	background: $light-gray;
-}
-body {
-	font-size: $root-font-size * 1px; // See EM in _functions.scss for info
-	line-height: 1.4;
-	font-family: $open-sans;
+	background: $ultra-light-gray;
 }
 
 // (highlight color, text color)
 ::selection {
-	background: #0074c2;
+	background: $medium-blue;
 	color: #fff;
 	text-shadow: none;
 }
 
-// ==========================================================================
-// Headings
-// ==========================================================================
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-weight: $bold;
-}
 
 // ==========================================================================
 // Links
 // ==========================================================================
 
 a {
-	color: #0d72b2;
+	color: $medium-blue;
 	text-decoration: none;
 
 	&:visited {
-		color: #0d72b2;
+		color: $medium-blue;
 	}
 	&:hover {
-		color: #0f92e5;
+		color: $wordpress-blue;
 	}
 	&:focus {
 		outline: thin dotted;
