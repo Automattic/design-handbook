@@ -16,7 +16,7 @@ h4,
 h5,
 h6 {
   font-family: "Merriweather", Georgia, "Times New Roman", Times, serif;
-  font-weight: 900;
+  font-weight: 700;
   text-rendering: optimizeLegibility;
 }
 
@@ -1560,7 +1560,7 @@ button,
 input,
 select,
 textarea {
-  color: rgba(50, 65, 85, 0.85);
+  color: #455a75;
 }
 
 html,
@@ -2207,29 +2207,7 @@ textarea {
   font-size: 1.333em;
   font-weight: 300;
   text-rendering: optimizeLegibility;
-  color: #7096af;
-}
-@media (max-width: 500px) {
-  .page-header p {
-    font-size: 1.094em;
-  }
-}
-
-.page-header h1 {
-  font-size: 3.157em;
-  line-height: 1.333;
-  color: #0085be;
-}
-@media (max-width: 500px) {
-  .page-header h1 {
-    font-size: 2.369em;
-  }
-}
-.page-header p {
-  font-size: 1.333em;
-  font-weight: 300;
-  text-rendering: optimizeLegibility;
-  color: #7096af;
+  color: #90aec2;
 }
 @media (max-width: 500px) {
   .page-header p {
@@ -2389,6 +2367,27 @@ body {
   border-top-color: rgba(210, 222, 230, 0.8);
 }
 
+.swatches .swatch {
+  margin: 20px 0;
+}
+@media screen and (min-width: 800px) {
+  .swatches .swatch {
+    margin: 1%;
+  }
+  .swatches.col-1 .swatch {
+    width: 96%;
+  }
+  .swatches.col-2 .swatch {
+    width: 48%;
+  }
+  .swatches.col-3 .swatch {
+    width: 31.33%;
+  }
+  .swatches.col-4 .swatch {
+    width: 23%;
+  }
+}
+
 .wpcom-blue {
   background-color: #0085be;
 }
@@ -2417,6 +2416,14 @@ body {
   background-color: #d2dee6;
 }
 
+.medium-gray-darker {
+  background-color: #b1c6d4;
+}
+
+.medium-gray-darkerer {
+  background-color: #90aec2;
+}
+
 .dark-gray {
   background-color: #324155;
 }
@@ -2430,15 +2437,15 @@ body {
 }
 
 .valid-green {
-  background-color: #4cb420;
+  background-color: #4ab85e;
 }
 
 .warning-yellow {
-  background-color: #ffba00;
+  background-color: #f0b746;
 }
 
 .error-red {
-  background-color: #dd3d36;
+  background-color: #d9534f;
 }
 
 .swatches:after {
@@ -2451,10 +2458,10 @@ body {
 }
 .swatches .swatch {
   width: 100%;
+  min-width: 170px;
   height: 300px;
   position: relative;
   float: left;
-  margin: 20px 0;
   border: 1px solid rgba(0, 0, 0, 0.05);
   -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05);
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05);
@@ -2490,23 +2497,6 @@ body {
   margin-top: -8px;
   margin-bottom: 8px;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-}
-@media screen and (min-width: 800px) {
-  .swatches .swatch {
-    margin: 0 1%;
-  }
-  .swatches.col-1 .swatch {
-    width: 96%;
-  }
-  .swatches.col-2 .swatch {
-    width: 48%;
-  }
-  .swatches.col-3 .swatch {
-    width: 31.33%;
-  }
-  .swatches.col-4 .swatch {
-    width: 23%;
-  }
 }
 
 /* Design and Code Samples */
@@ -2585,18 +2575,6 @@ body {
 }
 
 /* Color Swatch */
-.swatches {
-  padding: 2% 0;
-  margin: 0 -2%;
-}
-.swatches:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0;
-}
 .swatches .swatch .type-demo {
   line-height: 200px;
   width: 100%;
@@ -2627,23 +2605,6 @@ body {
   font-family: 'Merriweather';
   font-weight: 900;
   font-size: 100px;
-}
-@media screen and (min-width: 800px) {
-  .swatches .swatch {
-    margin: 0 1%;
-  }
-  .swatches.col-1 .swatch {
-    width: 96%;
-  }
-  .swatches.col-2 .swatch {
-    width: 48%;
-  }
-  .swatches.col-3 .swatch {
-    width: 31.33%;
-  }
-  .swatches.col-4 .swatch {
-    width: 23%;
-  }
 }
 
 /* Type Swatch */

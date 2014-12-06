@@ -1,15 +1,10 @@
-# WordPress.com Styles
+# WordPress.com Design Handbook
 
-Initial work for what may become a handy dandy style guide full of all sorts of goodies.
+This is the repository for the WordPress.com Design Handbook – a style guide of all that is WordPress.com.
 
-## CSS
-### BEM
-Let's try this BEM thing. Initially, I tried block_element-modifier, but I like the ability to hyphen separate words in an element.
-
-Syntax:  ``.block__element--modifier``
-Example: ``.wpcom-header__site-title--gigantor``
-
-Why two underscores?
-Readability. It's easier to scan through BEM with the extra gap.
-
-For reference: http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/
+- **Logotype**: History of the WordPress.com brand and guidelines for use of Logotype, the W mark, and sub-headings
+- **Colors**: List of our primary and secondary colors and their uses
+- **Typography**: Typefaces and ours Modular Scales
+- **Iconography**: Guidelines for uses of Iconography
+- **Metrics**: Exapanded Modular Scale grid
+- **Patterns**: Blueprints for several elements of WordPress.com

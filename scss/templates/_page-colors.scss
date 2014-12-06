@@ -1,18 +1,20 @@
 // Color definitions
 
-.wpcom-blue { background-color: $wordpress-blue; }
-.light-blue { background-color: $light-blue; }
-.medium-blue { background-color: $medium-blue; }
-.dark-blue { background-color: $dark-blue; }
-.ultra-light-gray { background-color: $ultra-light-gray; }
-.light-gray { background-color: $light-gray; }
-.medium-gray { background-color: $medium-gray; }
-.dark-gray { background-color: $dark-gray; }
-.fire-orange { background-color: $fire-orange; }
-.jazzy-orange { background-color: $jazzy-orange; }
-.valid-green { background-color: $alert-green; }
-.warning-yellow { background-color: $alert-yellow; }
-.error-red { background-color: $alert-red; }
+.wpcom-blue 						{ background-color: $wordpress-blue; }
+.light-blue 						{ background-color: $light-blue; }
+.medium-blue 						{ background-color: $medium-blue; }
+.dark-blue 							{ background-color: $dark-blue; }
+.ultra-light-gray 			{ background-color: $ultra-light-gray; }
+.light-gray 						{ background-color: $light-gray; }
+.medium-gray 						{ background-color: $medium-gray; }
+.medium-gray-darker 		{ background-color: $medium-gray-darker; }
+.medium-gray-darkerer 	{ background-color: $medium-gray-darkerer; }
+.dark-gray 							{ background-color: $dark-gray; }
+.fire-orange 						{ background-color: $fire-orange; }
+.jazzy-orange 					{ background-color: $jazzy-orange; }
+.valid-green 						{ background-color: $alert-green; }
+.warning-yellow 				{ background-color: $alert-yellow; }
+.error-red 							{ background-color: $alert-red; }
 
 
 
@@ -30,10 +32,10 @@
 
 	.swatch {
 		width: 100%;
+		min-width: 170px;
 		height: 300px;
 		position: relative;
 		float: left;
-		margin: 20px 0;
 		border: 1px solid rgba(0,0,0,0.05);
 		box-shadow: 0 1px 1px 0 rgba(0,0,0,0.05);
 		ul {
@@ -68,15 +70,5 @@
 			margin-bottom: 8px;
 			font-family: $sans;
 		}
-	}
-
-	@media screen and ( min-width: 800px ) {
-		.swatch {
-			margin: 0 1%;
-		}
-		&.col-1 .swatch { width: 96%; }
-		&.col-2 .swatch { width: 48%; }
-		&.col-3 .swatch { width: 31.33%; }
-		&.col-4 .swatch { width: 23%; }
 	}
 }

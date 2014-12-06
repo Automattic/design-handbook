@@ -43,18 +43,13 @@ WordPress.com Styles
 // Templates Parts
 @import "organisms/site-header";
 @import "organisms/site-navigation";
-@import "organisms/page-header"; 
-@import "organisms/page-article"; 
-@import "organisms/page-navigation"; 
+@import "organisms/page-header";
+@import "organisms/page-navigation";
 @import "templates/layout"; // Basic Layout build
 
 // Pages
 @import "templates/page-colors";
 @import "templates/page-typography";
-
-// Main styles
-//@import "templates/main"; // All of your .classy styles
-//@import "media-queries"; // Media queries!
 
 // Support styles
 @import "atoms/helper"; // Some useful helper classes

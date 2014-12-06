@@ -19,7 +19,7 @@
 		font-size: $size-delta;
 		font-weight: 300;
 		text-rendering: optimizeLegibility;
-		color: $medium-gray-dark;
+		color: $medium-gray-darkerer;
 		@include breakpoint(phablet) {
 			font-size: $size-epsilon;
 		}

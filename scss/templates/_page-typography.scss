@@ -88,17 +88,6 @@
 
 /* Color Swatch */
 .swatches {
-	padding: 2% 0;
-	margin: 0 -2%;
-	&:after {
-		visibility: hidden;
-		display: block;
-		font-size: 0;
-		content: " ";
-		clear: both;
-		height: 0;
-	}
-
 	.swatch {
 		.type-demo {
 			line-height: 200px;
@@ -136,16 +125,6 @@
 			font-weight: 900;
 			font-size: 100px;
 		}
-	}
-
-	@media screen and ( min-width: 800px ) {
-		.swatch {
-			margin: 0 1%;
-		}
-		&.col-1 .swatch { width: 96%; }
-		&.col-2 .swatch { width: 48%; }
-		&.col-3 .swatch { width: 31.33%; }
-		&.col-4 .swatch { width: 23%; }
 	}
 }
 

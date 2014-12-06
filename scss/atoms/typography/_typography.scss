@@ -12,8 +12,8 @@ $root-scale-ratio: 1.333; //used as global line-height as well
 // Weights
 
 $normal: 400;
-$bold: 700; 
-$serif-bold: 900;
+$bold: 700;
+$serif-bold: 700;
 
 
 
@@ -31,8 +31,8 @@ $sans: 'Open Sans', $sans-fallback; // 400 400i 600 700 700i
 $sans-rtl: Tahoma, $sans-fallback;
 
 // NOTE:
-// If there are exceptions to these stacks, 
-// please mark them with a //typography-exception comment 
+// If there are exceptions to these stacks,
+// please mark them with a //typography-exception comment
 // so we can easily search for them later.
 
 
