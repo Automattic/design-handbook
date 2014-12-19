@@ -1,6 +1,6 @@
 module.exports = function(grunt) {
 
-    // 1. All configuration goes here 
+    // 1. All configuration goes here
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
@@ -31,13 +31,14 @@ module.exports = function(grunt) {
         sass: {
             dist: {
                 options: {
+                    sourcemap: 'none',
                     // Can be nested, compact, compressed, expanded
-                    style: 'expanded'
+                    style: 'compressed',
                 },
                 files: {
                     'css/style.css': 'scss/style.scss'
                 }
-            } 
+            }
         },
         autoprefixer: {
             options: {
