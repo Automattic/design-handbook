@@ -5,18 +5,17 @@ $medium-blue:            #00aadc;
 $dark-blue:              #005082;
 
 // Grays
-$gray: #87a6bc;
+$gray:                   #87a6bc;
 
 // $gray functions
 // lighten: 10, 20, 30
 // darken: 10, 20, 30
+// See wordpress.com/design-handbook/colors/ for examples.
 
-$gray-light: lighten($gray, 33%); //#f3f6f8
-$gray-dark: darken($gray, 38%); //#2e4453
+$gray-light:             lighten($gray, 33%); //#f3f6f8
+$gray-dark:              darken($gray, 38%); //#2e4453
 
 $text-gray:              $gray-dark;
-
-$white:                  #ffffff;
 
 // Oranges
 $fire-orange:            #d54e21;
@@ -27,11 +26,9 @@ $alert-yellow:           #f0b849;
 $alert-red:              #d94f4f;
 $alert-green:            #4ab866;
 
-// Link hovers
-$link-highlight:         tint($medium-blue, 20%);
-
-// Element highlight
-$element-highlight:		 lighten($fire-orange, 42%);
+// Essentials
+$white:                  rgba(255,255,255,1);
+$transparent:            rgba(255,255,255,0);
 
 // Depreciated Colors
 $ultra-light-gray:       #f4f8fA;
