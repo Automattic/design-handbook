@@ -2437,15 +2437,15 @@ body {
 }
 
 .valid-green {
-  background-color: #4ab85e;
+  background-color: #4ab866;
 }
 
 .warning-yellow {
-  background-color: #f0b746;
+  background-color: #f0b849;
 }
 
 .error-red {
-  background-color: #d9534f;
+  background-color: #d94f4f;
 }
 
 .swatches:after {
