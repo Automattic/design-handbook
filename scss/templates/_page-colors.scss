@@ -54,14 +54,14 @@
 			padding: 3px 0;
 			line-height: 1;
 			font-family: monospace;
-			color: rgba(0,0,0,0.6);
+			color: $gray;
 		}
 		strong {
 			font-size: 1rem;
 			display: block;
 			margin-bottom: 8px;
 			font-family: $sans;
-			color: rgba(0,0,0,0.8);
+			color: $text-gray;
 		}
 		small {
 			font-size: 0.6rem;
