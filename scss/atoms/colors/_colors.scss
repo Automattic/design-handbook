@@ -7,15 +7,19 @@ $dark-blue:              #005082;
 // Grays
 $gray:                   #87a6bc;
 
-// $gray functions
-// lighten: 10, 20, 30
-// darken: 10, 20, 30
+// $gray color functions:
 //
-// Example: lighten( $gray, 20 )
+// lighten( $gray, 10% )
+// lighten( $gray, 20% )
+// lighten( $gray, 30% )
+// darken( $gray, 10% )
+// darken( $gray, 20% )
+// darken( $gray, 30% )
+//
 // See wordpress.com/design-handbook/colors/ for more info.
 
-$gray-light:             lighten( $gray, 33 ); //#f3f6f8
-$gray-dark:              darken( $gray, 38 ); //#2e4453
+$gray-light:             lighten( $gray, 33% ); //#f3f6f8
+$gray-dark:              darken( $gray, 38% ); //#2e4453
 
 // Oranges
 $fire-orange:            #d54e21;
