@@ -1,22 +1,23 @@
 // Color definitions
 
-.wpcom-blue 						{ background-color: $wordpress-blue; }
-.light-blue 						{ background-color: $light-blue; }
-.medium-blue 						{ background-color: $medium-blue; }
-.dark-blue 							{ background-color: $dark-blue; }
-.ultra-light-gray 			{ background-color: $ultra-light-gray; }
-.light-gray 						{ background-color: $light-gray; }
-.medium-gray 						{ background-color: $medium-gray; }
-.medium-gray-darker 		{ background-color: $medium-gray-darker; }
-.medium-gray-darkerer 	{ background-color: $medium-gray-darkerer; }
-.dark-gray 							{ background-color: $dark-gray; }
-.fire-orange 						{ background-color: $fire-orange; }
-.jazzy-orange 					{ background-color: $jazzy-orange; }
-.valid-green 						{ background-color: $alert-green; }
-.warning-yellow 				{ background-color: $alert-yellow; }
-.error-red 							{ background-color: $alert-red; }
-
-
+.wpcom-blue 		 { background-color: $wordpress-blue; }
+.light-blue 		 { background-color: $light-blue; }
+.medium-blue 		 { background-color: $medium-blue; }
+.dark-blue 			 { background-color: $dark-blue; }
+.gray 					 { background-color: $gray; }
+.gray-light 		 { background-color: $gray-light; }
+.gray-lighten-30 { background-color: lighten( $gray, 30); }
+.gray-lighten-20 { background-color: lighten( $gray, 20); }
+.gray-lighten-10 { background-color: lighten( $gray, 10); }
+.gray-darken-10  { background-color: darken( $gray, 10); }
+.gray-darken-20  { background-color: darken( $gray, 20); }
+.gray-darken-30	 { background-color: darken( $gray, 30); }
+.gray-dark 	     { background-color: $gray-dark; }
+.fire-orange 		 { background-color: $fire-orange; }
+.jazzy-orange 	 { background-color: $jazzy-orange; }
+.valid-green 		 { background-color: $alert-green; }
+.warning-yellow  { background-color: $alert-yellow; }
+.error-red 			 { background-color: $alert-red; }
 
 // Color Swatch
 
@@ -53,14 +54,14 @@
 			padding: 3px 0;
 			line-height: 1;
 			font-family: monospace;
-			color: rgba(0,0,0,0.6);
+			color: $gray;
 		}
 		strong {
 			font-size: 1rem;
 			display: block;
 			margin-bottom: 8px;
 			font-family: $sans;
-			color: rgba(0,0,0,0.8);
+			color: $text-gray;
 		}
 		small {
 			font-size: 0.6rem;

@@ -55,6 +55,7 @@
 									<li><strong>WordPress.com Blue</strong></li>
 									<li>#0087be</li>
 									<li>rgb(0,135,190)</li>
+									<li>$wordpress-blue</li>
 									<!--
 									<li>$wordpress-blue</li>
 									<li>PMS 7460</li>
@@ -76,6 +77,7 @@
 									<li><strong>Light Blue</strong></li>
 									<li>#78dcfa</li>
 									<li>rgb(120,220,250)</li>
+									<li>$light-blue</li>
 								</ul>
 							</div>
 
@@ -84,6 +86,7 @@
 									<li><strong>Medium Blue</strong></li>
 									<li>#00aadc</li>
 									<li>rgba(0,170,220)</li>
+									<li>$medium-blue</li>
 								</ul>
 							</div>
 
@@ -92,6 +95,7 @@
 									<li><strong>Dark Blue</strong></li>
 									<li>#005082</li>
 									<li>rgb(0,80,130)</li>
+									<li>$dark-blue</li>
 								</ul>
 							</div>
 						</section>
@@ -101,56 +105,95 @@
 						<h2>Grays</h2>
 						<p>Grey, Gray, Cinza, Gris, Nezumi-iro &mdash; they blend! The new incarnation of grays bring a slight blue hue to them, to bring our brand together.</p>
 
-						<section class="swatches col-3">
-							<div class="swatch ultra-light-gray">
+						<section class="swatches col-1">
+							<div class="swatch gray">
 								<ul class="swatch-details">
-									<li><strong>Ultra Light Gray</strong></li>
-									<li><small>sidebar background</small></li>
-									<li>#f4f8fa</li>
-									<li>rgb(244,248,250)</li>
+									<li><strong>Gray</strong></li>
+									<!-- <li><small>middle of the road gray</small></li> -->
+									<li>#87a6bc</li>
+									<li>rgb(135,166,188)</li>
+									<li>$gray</li>
+								</ul>
+							</div>
+						</section>
+						<section class="swatches col-4">
+							<div class="swatch gray-light">
+								<ul class="swatch-details">
+									<li><strong>Gray Light</strong></li>
+									<!-- <li><small>ultra light</small></li> -->
+									<li>#f3f6f8</li>
+									<li>rgb(243,246,248)</li>
+									<li>$gray-light</li>
+								</ul>
+							</div>
+							
+							<div class="swatch gray-lighten-30">
+								<ul class="swatch-details">
+									<li><strong>Gray Lighten 30</strong></li>
+									<!-- <li><small>page background</small></li> -->
+									<li>#e9eff3</li>
+									<li>rgb(233,239,243)</li>
+									<li>lighten($gray,30)</li>
+								</ul>
+							</div>
+							
+							<div class="swatch gray-lighten-20">
+								<ul class="swatch-details">
+									<li><strong>Gray Lighten 20</strong></li>
+									<!-- <li><small>sidebar background</small></li> -->
+									<li>#c8d7e1</li>
+									<li>rgb(200,215,225)</li>
+									<li>lighten($gray,20)</li>
 								</ul>
 							</div>
 
-							<div class="swatch light-gray">
+							<div class="swatch gray-lighten-10">
 								<ul class="swatch-details">
-									<li><strong>Light Gray</strong></li>
-									<li><small>body background</small></li>
-									<li>#e8f0f5</li>
-									<li>rgb(232,240,247)</li>
+									<li><strong>Gray Lighten 10</strong></li>
+									<!-- <li><small>body background</small></li> -->
+									<li>#a8bece</li>
+									<li>rgb(168,190,206)</li>
+									<li>lighten($gray,10)</li>
 								</ul>
 							</div>
 
-							<div class="swatch medium-gray">
+							<div class="swatch gray-darken-10">
 								<ul class="swatch-details">
-									<li><strong>Medium Gray</strong></li>
-									<li><small>shadows and rules</small></li>
-									<li>#d2dee6</li>
-									<li>rgb(210,222,230)</li>
+									<li><strong>Gray Darken 10</strong></li>
+									<!-- <li><small>shadows and rules</small></li> -->
+									<li>#668eaa</li>
+									<li>rgb(102,142,170)</li>
+									<li>darken($gray,10)</li>
 								</ul>
 							</div>
 
-							<div class="swatch medium-gray-darker">
+							<div class="swatch gray-darken-20">
 								<ul class="swatch-details">
-									<li><strong>Medium Gray Darker</strong></li>
-									<li>#b1c6d4</li>
-									<li>rgb(177,198,212)</li>
+									<li><strong>Gray Darken 20</strong></li>
+									<!-- <li><small>text</small></li> -->
+									<li>#4f748e</li>
+									<li>rgb(79,116,142)</li>
+									<li>darken($gray,20)</li>
 								</ul>
 							</div>
 
-							<div class="swatch medium-gray-darkerer">
+							<div class="swatch gray-darken-30">
 								<ul class="swatch-details">
-									<li><strong>Medium Gray Darkerer</strong></li>
-									<li>#90aec2</li>
-									<li>rgb(144,174,194)</li>
+									<li><strong>Gray Darken 30</strong></li>
+									<!-- <li><small>text</small></li> -->
+									<li>#3d596d</li>
+									<li>rgb(61,89,109)</li>
+									<li>darken($gray,30)</li>
 								</ul>
 							</div>
 
-							<div class="swatch dark-gray">
+							<div class="swatch gray-dark">
 								<ul class="swatch-details">
-									<li><strong>Dark Gray</strong></li>
-									<li><small>007</small></li>
-									<li>#324155</li>
-									<li>rgb(50,65,85)</li>
+									<li><strong>Gray Dark</strong></li>
+									<!-- <li><small>text</small></li> -->
+									<li>#2e4453</li>
+									<li>rgb(46,68,83)</li>
+									<li>$gray-dark</li>
 								</ul>
 							</div>
 						</section>
@@ -166,6 +209,7 @@
 									<li><strong>Fire Orange</strong></li>
 									<li>#d54e21</li>
 									<li>rgb(213,78,33)</li>
+									<li>$fire-orange</li>
 								</ul>
 							</div>
 
@@ -174,6 +218,7 @@
 									<li><strong>Jazzy Orange</strong></li>
 									<li>#f0821e</li>
 									<li>rgb(240,130,30)</li>
+									<li>$jazzy-orange</li>
 								</ul>
 							</div>
 						</section>
@@ -181,30 +226,33 @@
 
 					<section id="colors-alerts" class="colors-alerts article-section">
 						<h2>Validations and Alerts</h2>
-						<p>These colors are useful for form field validation, alerts, warnings, and pats on the back. Not intended for large blocks of color. Works great with Noticons! Optimized for color blindness.</p>
+						<p>These colors are useful for form field validation, alerts, warnings, and pats on the back. Optimized for color blindness.</p>
 
 						<section class="swatches col-3">
 							<div class="swatch valid-green">
 								<ul class="swatch-details">
 									<li><strong>Valid Green</strong></li>
-									<li>#4cb420</li>
-									<li>rgb(76,180,32)</li>
+									<li>#4ab866</li>
+									<li>rgb(74,184,102)</li>
+									<li>$alert-green</li>
 								</ul>
 							</div>
 
 							<div class="swatch warning-yellow">
 								<ul class="swatch-details">
 									<li><strong>Warning Yellow</strong></li>
-									<li>#ffba00</li>
-									<li>rgb(255,186,0)</li>
+									<li>#f0b849</li>
+									<li>rgb(240,184,73)</li>
+									<li>$alert-yellow</li>
 								</ul>
 							</div>
 
 							<div class="swatch error-red">
 								<ul class="swatch-details">
 									<li><strong>Error Red</strong></li>
-									<li>#dd3d36</li>
-									<li>rgb(221,61,54)</li>
+									<li>#d94f4f</li>
+									<li>rgb(217,79,79)</li>
+									<li>$alert-red</li>
 								</ul>
 							</div>
 						</section>
