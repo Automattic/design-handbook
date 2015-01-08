@@ -125,3 +125,15 @@ body {
 		&.col-4 .swatch { width: 23%; }
 	}
 }
+
+.download-list {
+	margin-top: 0;
+	margin-bottom: $vertical-margindouble;
+	
+	small {
+		display: block;
+		line-height: 1.313;
+		margin-bottom: ($vertical-margin)/2;
+		color: $gray;
+	}
+}
