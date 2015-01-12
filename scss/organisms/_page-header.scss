@@ -10,7 +10,7 @@
 	h1 {
 		font-size: $size-tera;
 		line-height: 1.333;
-		color: $wordpress-blue;
+		color: $blue-wordpress;
 		@include breakpoint(phablet) {
 			font-size: $size-alpha;
 		}

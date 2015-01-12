@@ -16,7 +16,7 @@ body {
 
 // (highlight color, text color)
 ::selection {
-	background: $medium-blue;
+	background: $blue-medium;
 	color: #fff;
 	text-shadow: none;
 }
@@ -28,14 +28,14 @@ body {
 // ==========================================================================
 
 a {
-	color: $medium-blue;
+	color: $blue-medium;
 	text-decoration: none;
 
 	&:visited {
-		color: $medium-blue;
+		color: $blue-medium;
 	}
 	&:hover {
-		color: $wordpress-blue;
+		color: $blue-wordpress;
 	}
 	&:focus {
 		outline: thin dotted;

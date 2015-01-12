@@ -18,7 +18,7 @@
 		padding: 0.618em 2.625em;
 		color: rgba(white,.8);
 		&:hover {
-			background: rgba($light-blue,0.1);
+			background: rgba($blue-light,0.1);
 			color: white;
 		}
 	}
@@ -30,7 +30,7 @@
 
 	// Current item
 	li.current > a {
-		background: rgba($dark-blue,0.15);
+		background: rgba($blue-dark,0.15);
 		font-weight: $bold;
 		color: rgba(white,.9);
 	}
