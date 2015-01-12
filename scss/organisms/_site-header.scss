@@ -8,7 +8,7 @@
 // Styles
 
 .site-header {
-	background: $wordpress-blue url('../images/handbook-logo.svg') no-repeat 50% 20%;
+	background: $blue-wordpress url('../images/handbook-logo.svg') no-repeat 50% 20%;
 	background-size: 80%;
 	.site-branding {
 		visibility: hidden;
@@ -90,7 +90,7 @@
 
 .site-header {
 	display: block;
-	background: $wordpress-blue;
+	background: $blue-wordpress;
 	color: rgba(white,.95);
 	height: $masterbar-height;
 	position: fixed;

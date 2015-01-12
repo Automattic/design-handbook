@@ -1,9 +1,9 @@
 // Color definitions
 
-.wpcom-blue 		 { background-color: $wordpress-blue; }
-.light-blue 		 { background-color: $light-blue; }
-.medium-blue 		 { background-color: $medium-blue; }
-.dark-blue 			 { background-color: $dark-blue; }
+.wpcom-blue 		 { background-color: $blue-wordpress; }
+.light-blue 		 { background-color: $blue-light; }
+.medium-blue 		 { background-color: $blue-medium; }
+.dark-blue 			 { background-color: $blue-dark; }
 .gray 					 { background-color: $gray; }
 .gray-light 		 { background-color: $gray-light; }
 .gray-lighten-30 { background-color: lighten( $gray, 30); }
@@ -13,8 +13,8 @@
 .gray-darken-20  { background-color: darken( $gray, 20); }
 .gray-darken-30	 { background-color: darken( $gray, 30); }
 .gray-dark 	     { background-color: $gray-dark; }
-.fire-orange 		 { background-color: $fire-orange; }
-.jazzy-orange 	 { background-color: $jazzy-orange; }
+.fire-orange 		 { background-color: $orange-fire; }
+.jazzy-orange 	 { background-color: $orange-jazzy; }
 .valid-green 		 { background-color: $alert-green; }
 .warning-yellow  { background-color: $alert-yellow; }
 .error-red 			 { background-color: $alert-red; }
@@ -61,7 +61,7 @@
 			display: block;
 			margin-bottom: 8px;
 			font-family: $sans;
-			color: $text-gray;
+			color: $gray-dark;
 		}
 		small {
 			font-size: 0.6rem;

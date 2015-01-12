@@ -9,7 +9,7 @@
 
 	article {
 		background: #fff;
-		border: 2px solid rgba( $dark-blue, 0.4 );
+		border: 2px solid rgba( $blue-dark, 0.4 );
 	}
 
 	pre {
@@ -44,18 +44,18 @@
 		text-transform: uppercase;
 		letter-spacing: 0.079em;
 		margin: 0 0 15px 0;
-		color: lighten( $dark-gray, 50% );
+		color: lighten( $gray-dark, 50% );
 	}
 	h4 a {
-		color: lighten( $dark-gray, 30% );
+		color: lighten( $gray-dark, 30% );
 	}
 	h4 a:hover {
-		color: $fire-orange;
+		color: $orange-fire;
 	}
 
 	p {
 		margin: 0;
-		fong-weight: 400;
+		font-weight: 400;
 		font-size: 1em;
 		line-height: 1.618;
 	}
@@ -164,7 +164,7 @@ pre, code {
 font-family: 'Source Code Pro', Consolas, 'Liberation Mono', Courier, monospace;
 color: #333;
 font-weight: 300;
-background: $ultra-light-gray;
+background: $gray-light;
 -moz-border-radius: 3px;
 -webkit-border-radius: 3px;
 border-radius: 3px;
@@ -185,7 +185,7 @@ color: #0086B3;
 }
 
 pre .tag, pre .tag-name {
-color: $dark-blue;
+color: $blue-dark;
 font-weight: 600;
 }
 
@@ -194,12 +194,12 @@ font-weight: 500;
 }
 
 pre .css-property, pre .css-value, pre .vendor-prefix, pre .support.namespace {
-color: $dark-gray;
+color: $gray-dark;
 }
 
 pre .constant.numeric, pre .keyword.unit, pre .hex-color {
 font-weight: normal;
-color: $medium-blue;
+color: $blue-medium;
 }
 
 pre .entity.class {
@@ -211,12 +211,12 @@ color: #900;
 }
 
 pre .attribute, pre .variable {
-color: $medium-blue;
+color: $blue-medium;
 }
 
 pre .string, pre .support.value  {
 font-weight: normal;
-color: $fire-orange;
+color: $orange-fire;
 }
 
 pre .regexp {
