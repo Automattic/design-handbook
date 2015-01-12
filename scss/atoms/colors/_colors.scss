@@ -33,27 +33,3 @@ $alert-green:            #4ab866;
 // Essentials
 $white:                  rgba( 255,255,255,1 );
 $transparent:            rgba( 255,255,255,0 );
-
-// Depreciated Colors and Variables
-$wordpress-blue:         #0085be;
-$light-blue:             #78dcfa;
-$medium-blue:            #00aadc;
-$dark-blue:              #005082;
-
-$fire-orange:            #f0821e;
-$jazzy-orange:           #d54e21;
-
-$ultra-light-gray:       #f4f8fa;
-$light-gray:             #e8f0f5;
-$medium-gray:            #d2dee6;
-$dark-gray:              #324155;
-$ultra-light-light-gray: lighten($ultra-light-gray, 2%);
-$medium-gray-light:      lighten($medium-gray, 30%);
-$medium-gray-dark:       darken($medium-gray, 30%);
-$dark-gray-light:        lighten($dark-gray, 5%);
-$ultra-dark-gray: 	 	   rgb(30, 45, 65);
-
-$medium-gray-darker:     darken($medium-gray, 10%);
-$medium-gray-darkerer:   darken($medium-gray, 20%);
-
-$text-gray:              $gray-dark;

@@ -55,7 +55,7 @@ body {
 
 .site-main {
 	margin-left: $sidebar-width;
-	background: $ultra-light-gray;
+	background: $gray-light;
 	min-height: 100%;
 	@include breakpoint(narrow-desktop) {
 		margin-left: auto;
@@ -78,7 +78,7 @@ body {
 		@extend %negative-margins;
 		margin-bottom: $vertical-margindouble;
 		padding: $vertical-margin $horizontal-padding $vertical-margindouble;
-		border-bottom: 1px solid rgba($medium-gray,.5);
+		border-bottom: 1px solid rgba(lighten( $gray, 20% ),.5);
 		h1, p {
 			margin: 0;
 		}
@@ -107,7 +107,7 @@ body {
 		margin: $vertical-margin 0;
 	}
 	hr {
-		border-top-color: rgba($medium-gray,.8);
+		border-top-color: rgba(lighten( $gray, 20% ),.8);
 	}
 }
 

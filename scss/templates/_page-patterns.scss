@@ -44,10 +44,10 @@
 		text-transform: uppercase;
 		letter-spacing: 0.079em;
 		margin: 0 0 15px 0;
-		color: lighten( $dark-gray, 50% );
+		color: lighten( $gray-dark, 50% );
 	}
 	h4 a {
-		color: lighten( $dark-gray, 30% );
+		color: lighten( $gray-dark, 30% );
 	}
 	h4 a:hover {
 		color: $orange-fire;
@@ -185,7 +185,7 @@ pre, code {
 font-family: 'Source Code Pro', Consolas, 'Liberation Mono', Courier, monospace;
 color: #333;
 font-weight: 300;
-background: $ultra-light-gray;
+background: $gray-light;
 -moz-border-radius: 3px;
 -webkit-border-radius: 3px;
 border-radius: 3px;
@@ -215,7 +215,7 @@ font-weight: 500;
 }
 
 pre .css-property, pre .css-value, pre .vendor-prefix, pre .support.namespace {
-color: $dark-gray;
+color: $gray-dark;
 }
 
 pre .constant.numeric, pre .keyword.unit, pre .hex-color {
