@@ -273,6 +273,19 @@
 								<small>976 B Adobe Swatch Exchange</small></li>
 						</ul>
 					</section>
+					
+					<section>
+						<h2>Text Contrast</h2>
+						<p>While designing user interfaces, keep accessibility in mind. For <strong>optimal readability</strong>, text color should be <code>$gray-dark</code> against a white background. For minimum WCAG 2.0 compliance, use <code>darken( $gray, 20% )</code> or darker for text less than 18pt. When you need to create hierarchy in your design, take these guidelines into consideration (assuming text is on a white background):</p>
+						
+						<ul>
+							<li>For text that is non-essential but should still be readable, use <code>$gray</code> or darker (e.g. tags, sub-heads, timestamps, etc.).</li>
+							<li>Use caution when using colors lighter than <code>$gray</code>. These colors should only be used for elements that are not essential to be read by the user (e.g. disabled elements).</li>
+							<li>For bold text that's at least 14pt, the guidelines are less strict.</li>
+						</ul>
+						
+						<p>To check for WCAG compliance, click on the <span class="noticon noticon-fonts" style="vertical-align:middle;"></span> icon next to the color name.</p>
+					</section>
 				</article>
 				<nav id="page-navigation" class="page-links">
 					<ul>
