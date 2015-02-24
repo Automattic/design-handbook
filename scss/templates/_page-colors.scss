@@ -49,16 +49,30 @@
 			padding: 20px;
 			font-size: 0.8rem;
 			list-style: none;
+			
+			// Text contrast check icons
+			.contrast-check {
+				color: $gray;
+			}
+
+			.noticon-fonts:after { 
+				content: "\f8b5";
+				margin-left: 5px; 
+			}
+			.noticon-fonts:before { 
+				content: none; 
+			}
+
 		}
 		li {
 			padding: 3px 0;
 			line-height: 1;
+			display: block;
 			font-family: monospace;
 			color: $gray;
 		}
 		strong {
 			font-size: 1rem;
-			display: block;
 			margin-bottom: 8px;
 			font-family: $sans;
 			color: $gray-dark;
