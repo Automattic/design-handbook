@@ -8,3 +8,6 @@ This is the repository for the WordPress.com Design Handbook – a style guide o
 - **Iconography**: Guidelines for uses of Iconography
 - **Metrics**: Exapanded Modular Scale grid
 - **Patterns**: Blueprints for several elements of WordPress.com
+
+
+Github Repo: https://github.com/Automattic/style-guide
