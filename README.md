@@ -9,5 +9,6 @@ This is the repository for the WordPress.com Design Handbook – a style guide o
 - **Metrics**: Exapanded Modular Scale grid
 - **Patterns**: Blueprints for several elements of WordPress.com
 
+To update the live site, copy every file in this repo except for [file] and [file] over to the wpcom svn repo: [path/to/style-guide].
 
 Github Repo: https://github.com/Automattic/style-guide
