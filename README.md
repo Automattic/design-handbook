@@ -9,6 +9,18 @@ This is the repository for the WordPress.com Design Handbook – a style guide o
 - **Metrics**: Exapanded Modular Scale grid
 - **Patterns**: Blueprints for several elements of WordPress.com
 
-To update the live site, copy every file in this repo except for [file] and [file] over to the wpcom svn repo: [path/to/style-guide].
+## URLs
 
-Github Repo: https://github.com/Automattic/style-guide
+**Github Repo**: https://github.com/Automattic/style-guide
+
+**Live Site**: https://WordPress.com/design-handbook
+
+
+## Instructions to update the live site
+
+You'll need to manually copy the files over to the live path in `/themes/a8c/design-handbook/`with the exception of the following files and directories:
+
+- `/scss/`
+- `.gitignore`
+- `Gruntfile.js`
+- `package.json`
