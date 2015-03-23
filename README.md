@@ -21,6 +21,8 @@ This is the repository for the WordPress.com Design Handbook – a style guide o
 You'll need to manually copy the files over to the live path in `/themes/a8c/design-handbook/`with the exception of the following files and directories:
 
 - `/scss/`
+- `/node_modules/`
 - `.gitignore`
 - `Gruntfile.js`
 - `package.json`
+- `LICENSE.md`
