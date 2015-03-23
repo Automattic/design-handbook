@@ -29,4 +29,4 @@ You'll need to manually copy the files over to the live path in `/themes/a8c/des
 There might be some files on your local copy that you shouldn't copy over either:
 
 - `/node_modules/`
-- `/css/stye.css.map`
+- `/css/style.css.map`
