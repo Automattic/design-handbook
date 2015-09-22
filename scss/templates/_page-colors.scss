@@ -34,7 +34,7 @@
 	.swatch {
 		width: 100%;
 		min-width: 170px;
-		height: 350px;
+		height: 300px;
 		position: relative;
 		float: left;
 		border: 1px solid rgba(0,0,0,0.05);
@@ -48,12 +48,12 @@
 			background: white;
 			margin: 0;
 			padding: 20px;
-			font-size: 0.8rem;
+			font-size: 0.9rem;
 			list-style: none;
 			
 			// Text contrast check icons
 			.contrast-check {
-				color: $gray;
+				color: lighten( $gray, 10);
 				float: right;
 				margin-top: 4px;
 				
@@ -86,14 +86,14 @@
 					}
 					
 					dt {
-						color: darken( $gray, 20);
-						font-size: 0.8em;
+						color: $gray-dark;
+						font-size: 0.7rem;
 						padding-right: 0.8em;
 						text-align: right;
 					}
 					
 					dd {
-						color: $gray;
+						color: darken( $gray, 20);
 						font-family: monospace;
 						margin: 0;
 					}
