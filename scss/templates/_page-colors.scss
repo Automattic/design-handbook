@@ -86,7 +86,7 @@
 					}
 					
 					dt {
-						color: $gray-dark;
+						color: darken( $gray, 30);
 						font-size: 0.7rem;
 						padding-right: 0.8em;
 						text-align: right;
