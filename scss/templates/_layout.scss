@@ -115,11 +115,11 @@ body {
 	.swatch {
 		margin: 20px 0;
 	}
-	@media screen and ( min-width: 800px ) {
+	@media screen and ( min-width: 1200px ) {
 		.swatch {
 			margin: 1%;
 		}
-		&.col-1 .swatch { width: 96%; }
+		&.col-1 .swatch { width: 98%; }
 		&.col-2 .swatch { width: 48%; }
 		&.col-3 .swatch { width: 31.33%; }
 		&.col-4 .swatch { width: 23%; }
