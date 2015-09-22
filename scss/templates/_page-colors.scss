@@ -34,12 +34,13 @@
 	.swatch {
 		width: 100%;
 		min-width: 170px;
-		height: 300px;
+		height: 350px;
 		position: relative;
 		float: left;
 		border: 1px solid rgba(0,0,0,0.05);
 		box-shadow: 0 1px 1px 0 rgba(0,0,0,0.05);
-		ul {
+		
+		.swatch-details {
 			position: absolute;
 			bottom: -1px;
 			left: -1px;
@@ -53,27 +54,56 @@
 			// Text contrast check icons
 			.contrast-check {
 				color: $gray;
+				float: right;
+				margin-top: 4px;
+				
+				&:hover:after {
+					border-color: $gray;
+					background-color: $gray;
+					color: white;
+				}
 			}
 
 			.noticon-fonts:after { 
 				content: "\f8b5";
-				margin-left: 5px; 
+				margin-left: 5px;
+				border: 1px solid lighten( $gray, 20);
+				border-radius: 50%;
+				padding: 4px;
 			}
 			.noticon-fonts:before { 
 				content: none; 
 			}
+			
+			.color-names {
+				line-height: 1.4;
 
+				dl {
+					display: table-row;
+					
+					dt, dd {
+						display: table-cell;
+					}
+					
+					dt {
+						color: darken( $gray, 20);
+						font-size: 0.8em;
+						padding-right: 0.8em;
+						text-align: right;
+					}
+					
+					dd {
+						color: $gray;
+						font-family: monospace;
+						margin: 0;
+					}
+				}
+			}
 		}
-		li {
-			padding: 3px 0;
-			line-height: 1;
-			display: block;
-			font-family: monospace;
-			color: $gray;
-		}
-		strong {
+
+		h4 {
 			font-size: 1rem;
-			margin-bottom: 8px;
+			margin: 0 0 8px;
 			font-family: $sans;
 			color: $gray-dark;
 		}
