@@ -40,18 +40,76 @@
 
 					<header class="page-header">
 						<h1>Iconography</h1>
-						<p>Icons carry a tremendous weight in conveying branding and design language. They give a UI its most recognizable elements of identity when used correctly.</p>
+						<p>Icons carry a tremendous weight in conveying branding and design language. They give a UI its most recognizable elements of identity when used&nbsp;correctly.</p>
 					</header>
 
-					<p>Right now we are in flux as we build <a href="https://github.com/Automattic/Gridicons">Gridicons</a>, an evolved icon set for WordPress.com. These are the icon sets currently available:</p>
+					<h2>Gridicons</h2>
+					<p><a href="https://github.com/automattic/gridicons">Gridicons</a> is the brand new icon set designed from the bottom up for WordPress.com. It features a consistent style.</p>
+
+					<p>Gridicons are born with a 24px base grid. Strokes are 2px thick and icons are solid. If an icon is hollow, it generally means the &ldquo;inactive&rdquo; version of that icon. For example an outline bookmark icon becomes solid once clicked.</p>
+
+					<p>Though Gridicons are vector graphics and theoretically infinitely scalable, in practice we have to work within the limitations of antialiasing so icons stay crisp. Since Gridicons are designed for 24px, they look perfect at that size. That&rsquo;s why by default, this is the size you should be using.</p>
+
+					<p>If you need to use icons that are larger than 24px, other perfect sizes are 2x duplicates, such as 48px. You can use 36px as well but this will require the use of an additional <code>offset-adjust</code> feature</a>.</p>
+					
+					<p>Same thing if you need smaller than 24px icons. At this size, gridicons will look blurry, so you should avoid this if at all possible. 18px icons will not do for main navigation, for example.</p>
+
+					<h3>The offset-adjust Hack</h3>
+
+					<p>Some icons at 18 and 36px size needs an extra feature in order to look crisp. The code looks like this:</p>
+
+					<pre>
+.offset-adjust {
+    transform: translate(.5px, .5px);
+}</pre>
+
+					<p>What this basically does is nudge the pixels up and to the left by half a pixel. In the case of 36px icons (1.5&times;24) what it means is that icons can be perfectly crisp. In the case of 18px icons, it means icons will be <em>crisper</em>, though not perfect. Just trust us on the math.</p>
+
+The tricky part is that not all icons need this offset-adjust hack, only some icons do. We are currently working out how to best roll this feature out.
+
+					<h3>Do&rsquo;s and Don&rsquo;ts</h3>
 
 					<ul>
-						<li><a href="http://wordpress.com/i/noticons/example.html">Noticons</a> (from <em>&ldquo;notification icons&rdquo;</em>) is our WordPress.com icon font. It contains every icon &ldquo;Genericons&rdquo; has, plus some that are specific to WordPress.com. You can use Genericons for themes and other projects. <strong>(Please do not use Noticons outside of their intended 16px font-size or 2x multiples thereof (32px, 64px). Even fonts look fuzzy outside of their pixel grid.)</strong></li>
-						<li><a href="http://genericons.com">Genericons</a> is an Open Source icon font. Most of it is included in Noticons. Useful for themes and non-WordPress.com stuff.</li>
-						<li><a href="https://developer.wordpress.org/resource/dashicons/">Dashicons</a> is the official icon font of the WordPress admin. It should only be used within /wp-admin/.</li>
+						<li>Do use Gridicons at 24px or 48px.</li>
+						<li>Do use Gridicons at 36px if you add the offset-adjust hack on a per-icon basis.</li>
+						<li>Only use 18px Gridicons if you really must, and don&rsquo;t use it in main navigation.</li>
+						<li>Don&rsquo;t use Noticons or Dashicons; we want to phase them out.</li>
 					</ul>
+					
+					<h2>App Icons</h2>
+					
+					<p>WordPress apps for iOS, OSX, Android and even the favicons share the same overarching style:</p>
 
+					<ul>
+						<li>Flat in design, using the single-ring WordPress logo</li>
+						<li>Background is Medium Blue</li>
+						<li>Logo is white</li>
+					</ul>
+					
+					<p>It was decided to make the icons medium blue instead of WordPress.com blue for contrast reasons. When updating or creating new versions of the icons, use the existing Sketch templates for iOS and Android for generating new icons. These are already adjusted to individual platform standards.</p>
+					
+					<h3 id="favicon">Favicon</h3>
 
+					<p>The favicon requires additional work, as it needs to be highly compressed and work at tiny sizes:</p>
+
+					<ul>
+						<li>Do use the same general general design guidelines as the apps, medium blue and white.</li>
+						<li>Don&rsquo;t use roundrects or squares, use a circle</li>
+						<li>Don&rsquo;t bake in a drop shadow into the icon</li>
+					</ul>
+					
+					<p>The 16px icon is the important one. It needs extra pixelhinting in order to work. But do any larger sizes (32, 64, 96) on the same grid as the 16px ones, don&rsquo;t change the design just because there are more pixels to work with. The 192px version is used by Android bookmarks, so if you like you can use the Android icon of the same size for this resolution.</p>
+					
+					<p>Once the favicons and saved as high quality PNGs, are designed, run the files through <a href="https://pngmini.com/">ImageAlpha</a> to compress them as much as you can. The best way to compress them is to reduce the number of colors in the image. This app is amazing for that. You can shave off up to 70% of the filesize by reducing from 256 to maybe 32 colors, whatever is visually sufficient. Once they&rsquo;re through ImageAlpha, run them through <a href="https://imageoptim.com/">ImageOptim</a> for further shavings.</p>
+					
+					<p>Finally, build the favicon. Only include 16 and 32px sizes directly in the .ico file. If you need a 64px version, include it through a separate meta tag:</p>
+					
+					<pre><code>&lt;link rel="icon" type="image/png" href="favicon-64x64.png" sizes="64x64"&gt;</code></pre>
+					<h3 id="more-resources">More resources</h3>
+					<ul>
+					<li><a href="https://github.com/audreyr/favicon-cheat-sheet">Favicon Cheat Sheet</a></li>
+					<li><a href="https://css-tricks.com/favicon-quiz/">Favicon Quiz</a></li>
+					</ul>
 				</article>
 				<nav id="page-navigation" class="page-links">
 					<ul>
