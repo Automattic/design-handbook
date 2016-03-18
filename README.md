@@ -11,7 +11,7 @@ This is the repository for the WordPress.com Design Handbook – a style guide o
 
 ## URLs
 
-**Github Repo**: https://github.com/Automattic/style-guide
+**Github Repo**: https://github.com/Automattic/design-handbook
 
 **Live Site**: https://WordPress.com/design-handbook
 
