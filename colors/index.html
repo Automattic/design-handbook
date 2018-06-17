@@ -622,10 +622,10 @@
 					
 					<section>
 						<h2>Text Contrast</h2>
-						<p>While designing with color in user interfaces, keep accessibility in mind. For <strong>optimal readability</strong>, text color should be <code>$gray-dark</code> against a white background. For <a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-contrast">minimum WCAG 2.0 compliance</a>, use <code>darken( $gray, 20% )</code> or darker for regular-weight text less than 18pt. When you need to create hierarchy in your design, take these guidelines into consideration (assuming text is on a white background):</p>
+						<p>While designing with color in user interfaces, keep accessibility in mind. For <strong>optimal readability</strong>, text color should be <code>$gray-dark</code> against a white background. For <a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-contrast">minimum WCAG 2.0 compliance</a>, use <code>$gray-text-min</code> (equal to <code>darken( $gray, 18% )</code>) or darker for regular-weight text less than 18pt. When you need to create hierarchy in your design, take these guidelines into consideration (assuming text is on a white background):</p>
 						
 						<ul>
-							<li>For text that is non-essential but should still be readable, use <code>$gray</code> or darker (e.g. tags, sub-heads, timestamps, etc.).</li>
+							<li>For text that is non-essential, use <code>$gray</code> or darker (e.g. tags, sub-heads, timestamps, etc.). Keep in mind that this does not pass WCAG 2.0 guidelines.</li>
 							<li>Use caution when using colors lighter than <code>$gray</code>. These colors should only be used for elements that are not essential to be read by the user (e.g. disabled elements).</li>
 							<li>The WCAG 2.0 formula differentiates between text smaller than 18pt and text larger than 18pt (or text that is bold and larger than 14pt).</li>
 						</ul>
